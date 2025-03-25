@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table id="compile_source_files" title="Design Files Read" column_number="2">
+        <column_headers>
+            <data>File Name</data>
+            <data>File Type</data>
+        </column_headers>
+        <row>
+            <data>D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/rtl/hs_ad_da.v</data>
+            <data>Verilog</data>
+        </row>
+        <row>
+            <data>D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/rtl/da_wave_send.v</data>
+            <data>Verilog</data>
+        </row>
+        <row>
+            <data>D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/rom_256x8b/rom_256x8b.idf</data>
+            <data>IP</data>
+        </row>
+        <row>
+            <data>D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.idf</data>
+            <data>IP</data>
+        </row>
+    </table>
+    <table id="compile_runtime" title="Compile Runtime &amp; Memory" column_number="7">
+        <column_headers>
+            <data>Cpu Time</data>
+            <data>Process Cpu Time</data>
+            <data>Real Time</data>
+            <data>Peak Memory (MB)</data>
+            <data>Operation System</data>
+            <data>CPU</data>
+            <data>RAM(GB)</data>
+        </column_headers>
+        <row>
+            <data>0h:0m:1s</data>
+            <data>0h:0m:1s</data>
+            <data>0h:0m:5s</data>
+            <data>136</data>
+            <data>WINDOWS 10 x86_64</data>
+            <data>Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz</data>
+            <data>8</data>
+        </row>
+    </table>
+    <table id="compile_messages" title="Compile Messages" column_number="1">
+        <column_headers/>
+        <row>
+            <data message="5">Flow-4058: The device information PGL50G-6MBG324 of IP 'D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/rom_256x8b/rom_256x8b.idf' is not the same as the current project.</data>
+        </row>
+        <row>
+            <data message="5">Flow-4058: The device information PGL50G-6MBG324 of IP 'D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.idf' is not the same as the current project.</data>
+        </row>
+        <row>
+            <data message="4">Enable Verilog2k features and keywords</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0001: Analyzing file D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/rtl/hs_ad_da.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/rtl/hs_ad_da.v(line number: 23)] Analyzing module hs_ad_da (library work)</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0001: Analyzing file D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/rtl/da_wave_send.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/rtl/da_wave_send.v(line number: 23)] Analyzing module da_wave_send (library work)</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0001: Analyzing file D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/rom_256x8b/rtl/ipm_distributed_rom_v1_3_rom_256x8b.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/rom_256x8b/rtl/ipm_distributed_rom_v1_3_rom_256x8b.v(line number: 19)] Analyzing module ipm_distributed_rom_v1_3_rom_256x8b (library work)</data>
+        </row>
+        <row>
+            <data message="4">[D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/rom_256x8b/rtl/ipm_distributed_rom_v1_3_rom_256x8b.v(line number: 26)] Convert attribute name from syn_romstyle to PAP_RAM_STYLE</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0001: Analyzing file D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/rom_256x8b/rom_256x8b.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/rom_256x8b/rom_256x8b.v(line number: 18)] Analyzing module rom_256x8b (library work)</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0001: Analyzing file D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 18)] Analyzing module pll_clk (library work)</data>
+        </row>
+        <row>
+            <data message="4">Module &quot;hs_ad_da&quot; is set as top module.</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/rtl/hs_ad_da.v(line number: 23)] Elaborating module hs_ad_da</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/rtl/hs_ad_da.v(line number: 53)] Elaborating instance u_pll_clk</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 18)] Elaborating module pll_clk</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 230)] Elaborating instance u_pll_e3</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 117)] Net clkfb in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 120)] Net pfden in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 121)] Net clkout0_gate in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 122)] Net clkout0_2pad_gate in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 123)] Net clkout1_gate in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 124)] Net clkout2_gate in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 125)] Net clkout3_gate in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 126)] Net clkout4_gate in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 127)] Net clkout5_gate in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 128)] Net dyn_idiv in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 129)] Net dyn_odiv0 in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 130)] Net dyn_odiv1 in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 131)] Net dyn_odiv2 in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 132)] Net dyn_odiv3 in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 133)] Net dyn_odiv4 in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 134)] Net dyn_fdiv in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 135)] Net dyn_duty0 in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 136)] Net dyn_duty1 in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 137)] Net dyn_duty2 in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 138)] Net dyn_duty3 in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/pll_clk/pll_clk.v(line number: 139)] Net dyn_duty4 in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/rtl/hs_ad_da.v(line number: 61)] Elaborating instance u_da_wave_send</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/rtl/da_wave_send.v(line number: 23)] Elaborating module da_wave_send</data>
+        </row>
+        <row>
+            <data message="4">Module instance {hs_ad_da/u_da_wave_send} parameter value:
+    FREQ_ADJ = 8'b00000101</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/rtl/hs_ad_da.v(line number: 71)] Elaborating instance u_rom_256x8b</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/rom_256x8b/rom_256x8b.v(line number: 18)] Elaborating module rom_256x8b</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/rom_256x8b/rom_256x8b.v(line number: 54)] Elaborating instance u_ipm_distributed_rom_rom_256x8b</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/rom_256x8b/rtl/ipm_distributed_rom_v1_3_rom_256x8b.v(line number: 19)] Elaborating module ipm_distributed_rom_v1_3_rom_256x8b</data>
+        </row>
+        <row>
+            <data message="4">Module instance {hs_ad_da/u_rom_256x8b/u_ipm_distributed_rom_rom_256x8b} parameter value:
+    ADDR_WIDTH = 32'b00000000000000000000000000001000
+    DATA_WIDTH = 32'b00000000000000000000000000001000
+    RST_TYPE = ASYNC
+    OUT_REG = 32'b00000000000000000000000000000000
+    INIT_FILE = dds_256x8b_wave_rom_256x8b.dat
+    FILE_FORMAT = HEX</data>
+        </row>
+        <row>
+            <data message="4">Found Verilog include file D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/rom_256x8b/rtl/dds_256x8b_wave_rom_256x8b.dat</data>
+        </row>
+        <row>
+            <data message="4">[D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/rom_256x8b/rtl/ipm_distributed_rom_v1_3_rom_256x8b.v(line number: 48)] Loading memory data from file D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj/ipcore/rom_256x8b/rtl/dds_256x8b_wave_rom_256x8b.dat</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+    </table>
+    <general_container id="compile_settings">
+        <table_container>
+            <table id="compile_settings" title="Compile Settings" column_number="2">
+                <column_headers>
+                    <data>Name</data>
+                    <data>Value</data>
+                </column_headers>
+                <row>
+                    <data>Part</data>
+                    <data>PGL25G-6MBG324</data>
+                </row>
+                <row>
+                    <data>Top Module</data>
+                    <data>hs_ad_da</data>
+                </row>
+            </table>
+        </table_container>
+        <general_container align="3">
+            <table_container>
+                <data>Verilog</data>
+                <table id="" title="" column_number="2">
+                    <column_headers>
+                        <data>Name</data>
+                        <data>Value</data>
+                    </column_headers>
+                    <row>
+                        <data>SystemVerilog</data>
+                        <data>false</data>
+                    </row>
+                    <row>
+                        <data>Allow Duplicate Modules</data>
+                        <data>false</data>
+                    </row>
+                    <row>
+                        <data>Multiple File Compilation Unit</data>
+                        <data>true</data>
+                    </row>
+                    <row>
+                        <data>Include Path Order: 
+ (Relative to Verilog File)</data>
+                        <data>D:/ywd/dps4/ccccccccccc/pm/25G/25G/30_hs_ad_da/prj	</data>
+                    </row>
+                    <row>
+                        <data>Parameters/Generics</data>
+                        <data></data>
+                    </row>
+                    <row>
+                        <data>Compiler Directives</data>
+                        <data></data>
+                    </row>
+                    <row>
+                        <data>Loop Limit</data>
+                        <data>2000</data>
+                    </row>
+                </table>
+            </table_container>
+            <table_container>
+                <data>Options</data>
+                <table id="" title="" column_number="2">
+                    <column_headers>
+                        <data>Name</data>
+                        <data>Value</data>
+                    </column_headers>
+                    <row>
+                        <data>FSM Compiler</data>
+                        <data>auto</data>
+                    </row>
+                </table>
+            </table_container>
+        </general_container>
+    </general_container>
+</tables>

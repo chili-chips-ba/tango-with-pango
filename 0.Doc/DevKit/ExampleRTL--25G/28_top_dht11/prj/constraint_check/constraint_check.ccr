@@ -1,0 +1,42 @@
+##### Written on 2023/10/07 17:19:48 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL25G-6MBG324
+
+Top Module : 
+	top_dht11
+
+Constraint File(s) : 
+	C:/Users/Admin/Desktop/25G/21_top_dht11/prj/top_dht11.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 1 critical warning(s), 0 warning(s), out of 233 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:key} {PAP_IO_LOC} {N5}
+	C: ConstraintEditor-2002: [C:/Users/Admin/Desktop/25G/21_top_dht11/prj/top_dht11.fdc(line number: 231)] | Port key has been placed at location N5, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

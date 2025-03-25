@@ -1,0 +1,89 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/PDS/ip_pll/prj/sim/behav
+T_opt
+!s110 1694763584
+VUfn9Y2@Hc6Id776azJUAH3
+04 9 4 work tb_ip_pll fast 0
+=1-d8bbc14fe46f-65040a3e-e1-3030
+o-quiet -auto_acc_if_foreign -work work -L work -L usim -L adc -L ddrc -L ddrphy -L hsst_e2 -L iolhr_dft -L ipal_e1 -L pciegen2 +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vip_pll
+Z2 !s110 1694757456
+!i10b 1
+!s100 7YH4=b]Qi[@=EEZhiMd;k2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IkMaOeDd_CUEjeaiUcK0^41
+R0
+w1694594706
+8E:/PDS/ip_pll/rtl/ip_pll.v
+FE:/PDS/ip_pll/rtl/ip_pll.v
+!i122 0
+L0 19 29
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z6 !s108 1694757455.000000
+Z7 !s107 E:/PDS/ip_pll/sim/tb/tb_ip_pll.v|E:/PDS/ip_pll/prj/ipcore/pll_clk/pll_clk.v|E:/PDS/ip_pll/rtl/ip_pll.v|
+Z8 !s90 -reportprogress|300|-work|work|E:/PDS/ip_pll/rtl/ip_pll.v|E:/PDS/ip_pll/prj/ipcore/pll_clk/pll_clk.v|E:/PDS/ip_pll/sim/tb/tb_ip_pll.v|
+!i113 0
+Z9 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vpll_clk
+R2
+!i10b 1
+!s100 bWigENceG]e^bK66k=DD03
+R3
+Ih>AYl3F:YWTI<6VnaO@^O1
+R0
+w1694588432
+8E:/PDS/ip_pll/prj/ipcore/pll_clk/pll_clk.v
+FE:/PDS/ip_pll/prj/ipcore/pll_clk/pll_clk.v
+!i122 0
+L0 18 267
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vtb_ip_pll
+R2
+!i10b 1
+!s100 <4an>i_a<K_;_en[WBk3d1
+R3
+Io1k`7PMb24FJf`nAEo>KE3
+R0
+w1694604824
+8E:/PDS/ip_pll/sim/tb/tb_ip_pll.v
+FE:/PDS/ip_pll/sim/tb/tb_ip_pll.v
+!i122 0
+L0 3 37
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1

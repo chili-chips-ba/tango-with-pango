@@ -1,0 +1,1 @@
+.rtl_screen -top_module {mux2_1} -include_path {<D:/Desktop/25G/3_mux2_1/prj>} -design_files {<D:/Desktop/25G/3_mux2_1/rtl/mux2_1.v|work>}

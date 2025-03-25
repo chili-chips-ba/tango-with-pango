@@ -1,0 +1,1 @@
+.rtl_screen -top_module {shfit_reg} -include_path {<D:/Desktop/25G/6_reg/prj>} -design_files {<D:/Desktop/25G/6_reg/rtl/shfit_reg.v|work>}

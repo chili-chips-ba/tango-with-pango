@@ -1,0 +1,227 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/PDS/ip_fifo/prj/sim/behav
+T_opt
+!s110 1697422759
+V7Qja749z@Ezko4n?jINH01
+04 10 4 work tb_ip_fifo fast 0
+=1-d8bbc14fe46f-652c9da4-39c-8d4
+o-quiet -auto_acc_if_foreign -work work -L work -L usim -L adc -L ddrc -L ddrphy -L hsst_e2 -L iolhr_dft -L ipal_e1 -L pciegen2 +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vasync_fifo
+Z2 !s110 1697422699
+!i10b 1
+!s100 8HD>og_RJ9]OhXFP=Re=E3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+In?9kN^gEPE;J8`;Fa05=e1
+R0
+Z4 w1697098588
+8E:/PDS/ip_fifo/prj/ipcore/async_fifo/async_fifo.v
+FE:/PDS/ip_fifo/prj/ipcore/async_fifo/async_fifo.v
+!i122 0
+L0 16 171
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z7 !s108 1697422699.000000
+Z8 !s107 E:/PDS/ip_fifo/sim/tb/tb_ip_fifo.v|E:/PDS/ip_fifo/prj/ipcore/pll_clk/pll_clk.v|E:/PDS/ip_fifo/prj/ipcore/async_fifo/async_fifo.v|E:/PDS/ip_fifo/prj/ipcore/async_fifo/rtl/ipml_fifo_v1_7_async_fifo.v|E:/PDS/ip_fifo/prj/ipcore/async_fifo/rtl/ipml_sdpram_v1_6_async_fifo.v|E:/PDS/ip_fifo/prj/ipcore/async_fifo/rtl/ipml_fifo_ctrl_v1_4_async_fifo.v|E:/PDS/ip_fifo/rtl/fifo_rd.v|E:/PDS/ip_fifo/rtl/fifo_wr.v|E:/PDS/ip_fifo/rtl/ip_fifo.v|
+Z9 !s90 -reportprogress|300|-work|work|E:/PDS/ip_fifo/rtl/ip_fifo.v|E:/PDS/ip_fifo/rtl/fifo_wr.v|E:/PDS/ip_fifo/rtl/fifo_rd.v|E:/PDS/ip_fifo/prj/ipcore/async_fifo/rtl/ipml_fifo_ctrl_v1_4_async_fifo.v|E:/PDS/ip_fifo/prj/ipcore/async_fifo/rtl/ipml_sdpram_v1_6_async_fifo.v|E:/PDS/ip_fifo/prj/ipcore/async_fifo/rtl/ipml_fifo_v1_7_async_fifo.v|E:/PDS/ip_fifo/prj/ipcore/async_fifo/async_fifo.v|E:/PDS/ip_fifo/prj/ipcore/pll_clk/pll_clk.v|E:/PDS/ip_fifo/sim/tb/tb_ip_fifo.v|
+!i113 0
+Z10 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vfifo_rd
+R2
+!i10b 1
+!s100 _HNk<7kNOboiT9T@Q^m]I0
+R3
+I9TSXB`H;bDMlD3N2PP;M11
+R0
+w1697184972
+8E:/PDS/ip_fifo/rtl/fifo_rd.v
+FE:/PDS/ip_fifo/rtl/fifo_rd.v
+!i122 0
+L0 19 44
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1
+vfifo_wr
+R2
+!i10b 1
+!s100 3SHfLlIL<[Mg>VF9Vizfc3
+R3
+I[;bAYCna87m0S[`fz5e;i1
+R0
+w1697184702
+8E:/PDS/ip_fifo/rtl/fifo_wr.v
+FE:/PDS/ip_fifo/rtl/fifo_wr.v
+!i122 0
+L0 20 54
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1
+vip_fifo
+R2
+!i10b 1
+!s100 An;SddLK>m>J7JkUOYn082
+R3
+I4FThBTWLVcNoIl^J;`PEH3
+R0
+w1697421532
+8E:/PDS/ip_fifo/rtl/ip_fifo.v
+FE:/PDS/ip_fifo/rtl/ip_fifo.v
+!i122 0
+L0 19 80
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1
+vipml_fifo_ctrl_v1_4_async_fifo
+R2
+!i10b 1
+!s100 <[VBD4^4jh<RFd`X5D8X23
+R3
+Ihk:0VOUYnAHzk?PH6OFZ32
+R0
+R4
+8E:/PDS/ip_fifo/prj/ipcore/async_fifo/rtl/ipml_fifo_ctrl_v1_4_async_fifo.v
+FE:/PDS/ip_fifo/prj/ipcore/async_fifo/rtl/ipml_fifo_ctrl_v1_4_async_fifo.v
+!i122 0
+L0 22 365
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1
+vipml_fifo_v1_7_async_fifo
+R2
+!i10b 1
+!s100 Qim]fF`Ml0f]mOfL^IG5Y0
+R3
+IK[B]E;^Al^^<lzd;j:`8k2
+R0
+R4
+8E:/PDS/ip_fifo/prj/ipcore/async_fifo/rtl/ipml_fifo_v1_7_async_fifo.v
+FE:/PDS/ip_fifo/prj/ipcore/async_fifo/rtl/ipml_fifo_v1_7_async_fifo.v
+!i122 0
+L0 23 116
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1
+vipml_sdpram_v1_6_async_fifo
+R2
+!i10b 1
+!s100 YeBL=VI>RidT>L^IjSl6:0
+R3
+Ij<d8RMEcKW0`TQVimJC[N0
+R0
+R4
+8E:/PDS/ip_fifo/prj/ipcore/async_fifo/rtl/ipml_sdpram_v1_6_async_fifo.v
+FE:/PDS/ip_fifo/prj/ipcore/async_fifo/rtl/ipml_sdpram_v1_6_async_fifo.v
+!i122 0
+L0 18 1099
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1
+vpll_clk
+R2
+!i10b 1
+!s100 ik0TjM021K^>6Q?^L4OcM3
+R3
+I?>6z@RKWa=6G8@<H9QeII0
+R0
+w1697164955
+8E:/PDS/ip_fifo/prj/ipcore/pll_clk/pll_clk.v
+FE:/PDS/ip_fifo/prj/ipcore/pll_clk/pll_clk.v
+!i122 0
+L0 18 263
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1
+vtb_ip_fifo
+R2
+!i10b 1
+!s100 gVm2`9Y7ENM>3SDjN_1;R1
+R3
+Ib9k9lW9T:0<8=bBD97?CC2
+R0
+w1697422642
+8E:/PDS/ip_fifo/sim/tb/tb_ip_fifo.v
+FE:/PDS/ip_fifo/sim/tb/tb_ip_fifo.v
+!i122 0
+L0 3 51
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1

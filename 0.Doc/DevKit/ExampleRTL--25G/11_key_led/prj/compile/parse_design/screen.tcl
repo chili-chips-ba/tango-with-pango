@@ -1,0 +1,1 @@
+.rtl_screen -top_module {key_led} -include_path {<D:/ywd/dps4/ccccccccccc/pm/25G/25G/11_key_led/prj>} -design_files {<D:/ywd/dps4/ccccccccccc/pm/25G/25G/11_key_led/rtl/key_led.v|work>}

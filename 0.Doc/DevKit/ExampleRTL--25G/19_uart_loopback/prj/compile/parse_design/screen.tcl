@@ -1,0 +1,1 @@
+.rtl_screen -top_module {uart_loopback} -include_path {<C:/Users/VIDEO/Desktop/19_uart_loopback/prj>} -design_files {<C:/Users/VIDEO/Desktop/19_uart_loopback/rtl/uart_loopback.v|work><C:/Users/VIDEO/Desktop/19_uart_loopback/rtl/uart_rx.v|work><C:/Users/VIDEO/Desktop/19_uart_loopback/rtl/uart_tx.v|work>}

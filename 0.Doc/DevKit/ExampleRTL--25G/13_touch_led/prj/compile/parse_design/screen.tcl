@@ -1,0 +1,1 @@
+.rtl_screen -top_module {touch_led} -include_path {<D:/ywd/dps4/ccccccccccc/pm/25G/25G/13_touch_led/prj>} -design_files {<D:/ywd/dps4/ccccccccccc/pm/25G/25G/13_touch_led/rtl/touch_led.v|work>}

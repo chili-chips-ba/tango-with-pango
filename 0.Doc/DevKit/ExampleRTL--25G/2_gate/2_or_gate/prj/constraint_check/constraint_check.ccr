@@ -1,0 +1,45 @@
+##### Written on 2023/09/20 10:18:57 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL25G-6MBG324
+
+Top Module : 
+	or_gate
+
+Constraint File(s) : 
+	D:/Desktop/25G/2_gate/2_or_gate/prj/or_gate.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 2 critical warning(s), 0 warning(s), out of 17 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:A} {PAP_IO_LOC} {N5}
+	C: ConstraintEditor-2002: [D:/Desktop/25G/2_gate/2_or_gate/prj/or_gate.fdc(line number: 9)] | Port A has been placed at location N5, whose type is share pin.
+
+define_attribute {p:B} {PAP_IO_LOC} {P6}
+	C: ConstraintEditor-2002: [D:/Desktop/25G/2_gate/2_or_gate/prj/or_gate.fdc(line number: 14)] | Port B has been placed at location P6, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

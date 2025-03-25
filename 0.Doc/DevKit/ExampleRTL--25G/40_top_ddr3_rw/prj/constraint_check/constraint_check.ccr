@@ -1,0 +1,129 @@
+##### Written on 2023/09/19 10:27:38 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL25G-6MBG324
+
+Top Module : 
+	ddr3_rw_top
+
+Constraint File(s) : 
+	E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 30 critical warning(s), 0 warning(s), out of 451 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:mem_rst_n} {PAP_IO_LOC} {F14}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 37)] | Port mem_rst_n has been placed at location F14, whose type is share pin.
+
+define_attribute {p:mem_ck} {PAP_IO_LOC} {G16}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 44)] | Port mem_ck has been placed at location G16, whose type is share pin.
+
+define_attribute {p:mem_ck_n} {PAP_IO_LOC} {G18}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 51)] | Port mem_ck_n has been placed at location G18, whose type is share pin.
+
+define_attribute {p:mem_cke} {PAP_IO_LOC} {D17}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 58)] | Port mem_cke has been placed at location D17, whose type is share pin.
+
+define_attribute {p:mem_cs_n} {PAP_IO_LOC} {F15}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 65)] | Port mem_cs_n has been placed at location F15, whose type is share pin.
+
+define_attribute {p:mem_we_n} {PAP_IO_LOC} {K12}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 86)] | Port mem_we_n has been placed at location K12, whose type is share pin.
+
+define_attribute {p:mem_a[0]} {PAP_IO_LOC} {H15}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 100)] | Port mem_a[0] has been placed at location H15, whose type is share pin.
+
+define_attribute {p:mem_a[1]} {PAP_IO_LOC} {H16}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 107)] | Port mem_a[1] has been placed at location H16, whose type is share pin.
+
+define_attribute {p:mem_a[2]} {PAP_IO_LOC} {F18}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 114)] | Port mem_a[2] has been placed at location F18, whose type is share pin.
+
+define_attribute {p:mem_a[4]} {PAP_IO_LOC} {E18}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 128)] | Port mem_a[4] has been placed at location E18, whose type is share pin.
+
+define_attribute {p:mem_a[7]} {PAP_IO_LOC} {F17}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 149)] | Port mem_a[7] has been placed at location F17, whose type is share pin.
+
+define_attribute {p:mem_a[8]} {PAP_IO_LOC} {H12}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 156)] | Port mem_a[8] has been placed at location H12, whose type is share pin.
+
+define_attribute {p:mem_a[9]} {PAP_IO_LOC} {G13}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 163)] | Port mem_a[9] has been placed at location G13, whose type is share pin.
+
+define_attribute {p:mem_a[10]} {PAP_IO_LOC} {E16}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 170)] | Port mem_a[10] has been placed at location E16, whose type is share pin.
+
+define_attribute {p:mem_a[11]} {PAP_IO_LOC} {G14}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 177)] | Port mem_a[11] has been placed at location G14, whose type is share pin.
+
+define_attribute {p:mem_a[12]} {PAP_IO_LOC} {D18}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 184)] | Port mem_a[12] has been placed at location D18, whose type is share pin.
+
+define_attribute {p:mem_a[13]} {PAP_IO_LOC} {C17}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 191)] | Port mem_a[13] has been placed at location C17, whose type is share pin.
+
+define_attribute {p:mem_a[14]} {PAP_IO_LOC} {C18}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 198)] | Port mem_a[14] has been placed at location C18, whose type is share pin.
+
+define_attribute {p:mem_ba[0]} {PAP_IO_LOC} {H13}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 205)] | Port mem_ba[0] has been placed at location H13, whose type is share pin.
+
+define_attribute {p:mem_ba[1]} {PAP_IO_LOC} {H14}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 212)] | Port mem_ba[1] has been placed at location H14, whose type is share pin.
+
+define_attribute {p:mem_ba[2]} {PAP_IO_LOC} {K13}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 219)] | Port mem_ba[2] has been placed at location K13, whose type is share pin.
+
+define_attribute {p:mem_dq[0]} {PAP_IO_LOC} {M16}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 226)] | Port mem_dq[0] has been placed at location M16, whose type is share pin.
+
+define_attribute {p:mem_dq[1]} {PAP_IO_LOC} {M18}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 237)] | Port mem_dq[1] has been placed at location M18, whose type is share pin.
+
+define_attribute {p:mem_dq[2]} {PAP_IO_LOC} {L17}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 248)] | Port mem_dq[2] has been placed at location L17, whose type is share pin.
+
+define_attribute {p:mem_dq[3]} {PAP_IO_LOC} {L18}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 259)] | Port mem_dq[3] has been placed at location L18, whose type is share pin.
+
+define_attribute {p:mem_dq[6]} {PAP_IO_LOC} {J16}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 292)] | Port mem_dq[6] has been placed at location J16, whose type is share pin.
+
+define_attribute {p:mem_dq[7]} {PAP_IO_LOC} {J18}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 303)] | Port mem_dq[7] has been placed at location J18, whose type is share pin.
+
+define_attribute {p:mem_dqs[0]} {PAP_IO_LOC} {K17}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 314)] | Port mem_dqs[0] has been placed at location K17, whose type is share pin.
+
+define_attribute {p:mem_dqs_n[0]} {PAP_IO_LOC} {K18}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 323)] | Port mem_dqs_n[0] has been placed at location K18, whose type is share pin.
+
+define_attribute {p:mem_dq[8]} {PAP_IO_LOC} {N17}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/top_ddr3_rw/prj/source/ddr3_rw_pin.fdc(line number: 339)] | Port mem_dq[8] has been placed at location N17, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

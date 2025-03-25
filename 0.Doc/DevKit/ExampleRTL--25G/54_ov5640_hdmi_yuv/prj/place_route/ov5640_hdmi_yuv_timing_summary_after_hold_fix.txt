@@ -1,0 +1,220 @@
+Design Summary : Some Constraints Violated.
+
+Setup Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ ui_clk                 ui_clk                       1.746       0.000              0          12398
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        ui_clk                      -5.106     -61.192             15             15
+ ioclk1                 ioclk1                       1.698       0.000              0             48
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                    14.803       0.000              0            203
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                     1.762       0.000              0             41
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     0.756       0.000              0            177
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     0.607       0.000              0             74
+ ov5640_hdmi_yuv|cam_pclk
+                        ov5640_hdmi_yuv|cam_pclk
+                                                   994.843       0.000              0            418
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     0.979       0.000              0            636
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                    -2.331     -24.187             11             11
+====================================================================================================
+
+Hold Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ ui_clk                 ui_clk                       0.122       0.000              0          12398
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        ui_clk                       0.776       0.000              0             15
+ ioclk1                 ioclk1                       0.444       0.000              0             48
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                     0.339       0.000              0            203
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                     3.818       0.000              0             41
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     0.311       0.000              0            177
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     0.119       0.000              0             74
+ ov5640_hdmi_yuv|cam_pclk
+                        ov5640_hdmi_yuv|cam_pclk
+                                                     0.339       0.000              0            418
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     0.310       0.000              0            636
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     3.346       0.000              0             11
+====================================================================================================
+
+Recovery Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ ui_clk                 ui_clk                       5.443       0.000              0           1771
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        ui_clk                       2.124       0.000              0           1420
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                     9.777       0.000              0             62
+ ov5640_hdmi_yuv|cam_pclk
+                        ov5640_hdmi_yuv|cam_pclk
+                                                   996.974       0.000              0             49
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                    -4.720    -276.660             65             65
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                    11.187       0.000              0             44
+====================================================================================================
+
+Removal Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ ui_clk                 ui_clk                       0.552       0.000              0           1771
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        ui_clk                       0.251       0.000              0           1420
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                     0.509       0.000              0             62
+ ov5640_hdmi_yuv|cam_pclk
+                        ov5640_hdmi_yuv|cam_pclk
+                                                     0.757       0.000              0             49
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     4.084       0.000              0             65
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     0.579       0.000              0             44
+====================================================================================================
+
+Minimum Pulse Width Summary(Slow Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Setup Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ ui_clk                 ui_clk                       4.175       0.000              0          12398
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        ui_clk                      -2.809     -29.907             14             15
+ ioclk1                 ioclk1                       1.836       0.000              0             48
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                    16.247       0.000              0            203
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                     4.927       0.000              0             41
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     1.286       0.000              0            177
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     1.296       0.000              0             74
+ ov5640_hdmi_yuv|cam_pclk
+                        ov5640_hdmi_yuv|cam_pclk
+                                                   996.362       0.000              0            418
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     4.723       0.000              0            636
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     0.063       0.000              0             11
+====================================================================================================
+
+Hold Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ ui_clk                 ui_clk                       0.103       0.000              0          12398
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        ui_clk                       0.998       0.000              0             15
+ ioclk1                 ioclk1                       0.380       0.000              0             48
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                     0.264       0.000              0            203
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                     2.343       0.000              0             41
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     0.251       0.000              0            177
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     0.205       0.000              0             74
+ ov5640_hdmi_yuv|cam_pclk
+                        ov5640_hdmi_yuv|cam_pclk
+                                                     0.264       0.000              0            418
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     0.251       0.000              0            636
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     2.059       0.000              0             11
+====================================================================================================
+
+Recovery Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ ui_clk                 ui_clk                       6.704       0.000              0           1771
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        ui_clk                       4.295       0.000              0           1420
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                    12.952       0.000              0             62
+ ov5640_hdmi_yuv|cam_pclk
+                        ov5640_hdmi_yuv|cam_pclk
+                                                   997.969       0.000              0             49
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                    -1.629     -85.744             65             65
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                    11.794       0.000              0             44
+====================================================================================================
+
+Removal Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ ui_clk                 ui_clk                       0.397       0.000              0           1771
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        ui_clk                       0.675       0.000              0           1420
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                     0.404       0.000              0             62
+ ov5640_hdmi_yuv|cam_pclk
+                        ov5640_hdmi_yuv|cam_pclk
+                                                     0.583       0.000              0             49
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     2.597       0.000              0             65
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     0.458       0.000              0             44
+====================================================================================================
+
+Minimum Pulse Width Summary(Fast Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+

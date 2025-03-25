@@ -1,0 +1,42 @@
+//
+// Generated (version 2022.2-SP4.2<build 132111>) at Wed Sep 20 08:53:31 2023
+//
+
+module led
+(
+    input key,
+    output led
+);
+    wire nt_key;
+    wire nt_led;
+
+    GTP_GRS GRS_INST (
+            .GRS_N (1'b1));
+
+    GTP_LUT1 /* N0 */ #(
+            .INIT(2'b01))
+        N0 (
+            .Z (nt_led),
+            .I0 (nt_key));
+	// LUT = ~I0 ;
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="N5", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_PULLUP="TRUE" *)    GTP_INBUF /* key_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        key_ibuf (
+            .O (nt_key),
+            .I (key));
+	// ../../rtl/led.v:20
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="M14", PAP_IO_VCCIO="1.5", PAP_IO_STANDARD="LVCMOS15", PAP_IO_DRIVE="8", PAP_IO_PULLUP="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* led_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        led_obuf (
+            .O (led),
+            .I (nt_led));
+	// ../../rtl/led.v:22
+
+
+endmodule
+

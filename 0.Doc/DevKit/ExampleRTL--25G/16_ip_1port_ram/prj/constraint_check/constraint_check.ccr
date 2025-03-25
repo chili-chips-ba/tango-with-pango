@@ -1,0 +1,43 @@
+##### Written on 2023/09/22 19:47:04 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL25G-6MBG324
+
+Top Module : 
+	ip_1port_ram
+
+Constraint File(s) : 
+	E:/PDS/ip_1port_ram/prj/ip_1port_ram.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 0 critical warning(s), 4 warning(s), out of 11 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+W: ConstraintEditor-4019: Port Bus 'ram_addr' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port Bus 'ram_rd_data' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port Bus 'ram_wr_data' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'ram_rw_en' unspecified I/O constraint.
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

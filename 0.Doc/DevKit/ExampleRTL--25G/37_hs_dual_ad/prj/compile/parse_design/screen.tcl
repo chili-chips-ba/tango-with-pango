@@ -1,0 +1,1 @@
+.rtl_screen -top_module {hs_dual_ad} -include_path {<C:/Users/VIDEO/Desktop/37_hs_dual_ad/prj>} -design_files {<C:/Users/VIDEO/Desktop/37_hs_dual_ad/rtl/hs_dual_ad.v|work><C:/Users/VIDEO/Desktop/37_hs_dual_ad/prj/ipcore/pll_clk/pll_clk.v|work>}

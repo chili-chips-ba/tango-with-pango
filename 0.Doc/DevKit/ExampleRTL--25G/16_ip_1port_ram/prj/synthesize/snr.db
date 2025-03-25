@@ -1,0 +1,2915 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table id="synthesize_resource_utilization" title="Resource Utilization By Entity" column_number="33" tree="">
+        <column_headers>
+            <data>Module Inst Name</data>
+            <data>LUT</data>
+            <data>FF</data>
+            <data>Distributed RAM</data>
+            <data>APM</data>
+            <data>DRM</data>
+            <data>ADC</data>
+            <data>CGRA</data>
+            <data>CRYSTAL</data>
+            <data>DLL</data>
+            <data>DQSL</data>
+            <data>EFUSECODE</data>
+            <data>FLSIF</data>
+            <data>HMEMC</data>
+            <data>HSST</data>
+            <data>IO</data>
+            <data>IOCKDIV</data>
+            <data>IOCKDLY</data>
+            <data>IOCKGATE</data>
+            <data>IPAL</data>
+            <data>LUT CARRY</data>
+            <data>LUT6 MUX</data>
+            <data>LUT7 MUX</data>
+            <data>LUT8 MUX</data>
+            <data>OSC</data>
+            <data>PCIE</data>
+            <data>PLL</data>
+            <data>RCKB</data>
+            <data>RESCAL</data>
+            <data>SCANCHAIN</data>
+            <data>START</data>
+            <data>UDID</data>
+            <data>USCM</data>
+        </column_headers>
+        <row>
+            <data>ip_1port_ram</data>
+            <data>25</data>
+            <data>20</data>
+            <data>0</data>
+            <data>0</data>
+            <data>0.5</data>
+            <data>0</data>
+            <data>0</data>
+            <data>0</data>
+            <data>0</data>
+            <data>0</data>
+            <data>0</data>
+            <data>0</data>
+            <data>0</data>
+            <data>0</data>
+            <data>24</data>
+            <data>0</data>
+            <data>0</data>
+            <data>0</data>
+            <data>0</data>
+            <data>12</data>
+            <data>0</data>
+            <data>0</data>
+            <data>0</data>
+            <data>0</data>
+            <data>0</data>
+            <data>0</data>
+            <data>0</data>
+            <data>0</data>
+            <data>0</data>
+            <data>1</data>
+            <data>0</data>
+            <data>0</data>
+            <row>
+                <data>u_ram_1port</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0.5</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <row>
+                    <data>U_ipml_spram_ram_1port</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0.5</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                </row>
+            </row>
+            <row>
+                <data>u_ram_rw</data>
+                <data>25</data>
+                <data>20</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>12</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+            </row>
+        </row>
+    </table>
+    <table id="synthesize_check_timing_summary" title="Check Timing Summary" column_number="2">
+        <column_headers>
+            <data>Check</data>
+            <data>Number of Issues</data>
+        </column_headers>
+        <row>
+            <data>no_clock</data>
+            <data>0</data>
+            <table_container>
+                <table id="no_clock_detailed_report" title="no_clock" column_number="1" tree="">
+                    <column_headers>
+                        <data>Issues</data>
+                    </column_headers>
+                    <row>
+                        <data>There are 0 clock pins with no clock driven</data>
+                    </row>
+                    <row>
+                        <data>There are 0 nodes without an associated clock assignment.</data>
+                    </row>
+                    <row>
+                        <data>There are 0 ports with an input/output delay that no clock specified.</data>
+                    </row>
+                </table>
+            </table_container>
+        </row>
+        <row>
+            <data>virtual_clock</data>
+            <data>1</data>
+            <table_container>
+                <table id="virtual_clock_detailed_report" title="virtual_clock" column_number="1" tree="">
+                    <column_headers>
+                        <data>Issues</data>
+                    </column_headers>
+                    <row>
+                        <data>No virtual clock was found.</data>
+                    </row>
+                </table>
+            </table_container>
+        </row>
+        <row>
+            <data>unexpandable_clocks</data>
+            <data>0</data>
+            <table_container>
+                <table id="unexpandable_clocks_detailed_report" title="unexpandable_clocks" column_number="1" tree="">
+                    <column_headers>
+                        <data>Issues</data>
+                    </column_headers>
+                    <row>
+                        <data>There are 0 clock sets in which the period is not expandable.</data>
+                    </row>
+                </table>
+            </table_container>
+        </row>
+        <row>
+            <data>no_input_delay</data>
+            <data>1</data>
+            <table_container>
+                <table id="no_input_delay_detailed_report" title="no_input_delay" column_number="1" tree="">
+                    <column_headers>
+                        <data>Issues</data>
+                    </column_headers>
+                    <row>
+                        <data>There are 1 input ports with no input delay specified.</data>
+                        <row>
+                            <data>sys_rst_n</data>
+                        </row>
+                    </row>
+                </table>
+            </table_container>
+        </row>
+        <row>
+            <data>no_output_delay</data>
+            <data>22</data>
+            <table_container>
+                <table id="no_output_delay_detailed_report" title="no_output_delay" column_number="1" tree="">
+                    <column_headers>
+                        <data>Issues</data>
+                    </column_headers>
+                    <row>
+                        <data>There are 22 output ports with no output delay specified.</data>
+                        <row>
+                            <data>ram_addr[0]</data>
+                        </row>
+                        <row>
+                            <data>ram_addr[1]</data>
+                        </row>
+                        <row>
+                            <data>ram_addr[2]</data>
+                        </row>
+                        <row>
+                            <data>ram_addr[3]</data>
+                        </row>
+                        <row>
+                            <data>ram_addr[4]</data>
+                        </row>
+                        <row>
+                            <data>ram_rd_data[0]</data>
+                        </row>
+                        <row>
+                            <data>ram_rd_data[1]</data>
+                        </row>
+                        <row>
+                            <data>ram_rd_data[2]</data>
+                        </row>
+                        <row>
+                            <data>ram_rd_data[3]</data>
+                        </row>
+                        <row>
+                            <data>ram_rd_data[4]</data>
+                        </row>
+                        <row>
+                            <data>ram_rd_data[5]</data>
+                        </row>
+                        <row>
+                            <data>ram_rd_data[6]</data>
+                        </row>
+                        <row>
+                            <data>ram_rd_data[7]</data>
+                        </row>
+                        <row>
+                            <data>ram_rw_en</data>
+                        </row>
+                        <row>
+                            <data>ram_wr_data[0]</data>
+                        </row>
+                        <row>
+                            <data>ram_wr_data[1]</data>
+                        </row>
+                        <row>
+                            <data>ram_wr_data[2]</data>
+                        </row>
+                        <row>
+                            <data>ram_wr_data[3]</data>
+                        </row>
+                        <row>
+                            <data>ram_wr_data[4]</data>
+                        </row>
+                        <row>
+                            <data>ram_wr_data[5]</data>
+                        </row>
+                        <row>
+                            <data>ram_wr_data[6]</data>
+                        </row>
+                        <row>
+                            <data>ram_wr_data[7]</data>
+                        </row>
+                    </row>
+                </table>
+            </table_container>
+        </row>
+        <row>
+            <data>partial_input_delay</data>
+            <data>0</data>
+            <table_container>
+                <table id="partial_input_delay_detailed_report" title="partial_input_delay" column_number="1" tree="">
+                    <column_headers>
+                        <data>Issues</data>
+                    </column_headers>
+                    <row>
+                        <data>There are 0 input ports with partial input delay specified.</data>
+                    </row>
+                </table>
+            </table_container>
+        </row>
+        <row>
+            <data>partial_output_delay</data>
+            <data>0</data>
+            <table_container>
+                <table id="partial_output_delay_detailed_report" title="partial_output_delay" column_number="1" tree="">
+                    <column_headers>
+                        <data>Issues</data>
+                    </column_headers>
+                    <row>
+                        <data>There are 0 output ports with partial output delay specified.</data>
+                    </row>
+                </table>
+            </table_container>
+        </row>
+        <row>
+            <data>io_min_max_delay_consistency</data>
+            <data>0</data>
+            <table_container>
+                <table id="io_min_max_delay_consistency_detailed_report" title="io_min_max_delay_consistency" column_number="1" tree="">
+                    <column_headers>
+                        <data>Issues</data>
+                    </column_headers>
+                    <row>
+                        <data>There are 0 io delay sets that min delay values are not less than max delay values.</data>
+                    </row>
+                </table>
+            </table_container>
+        </row>
+        <row>
+            <data>input_delay_assigned_to_clock</data>
+            <data>0</data>
+            <table_container>
+                <table id="input_delay_assigned_to_clock_detailed_report" title="input_delay_assigned_to_clock" column_number="1" tree="">
+                    <column_headers>
+                        <data>Issues</data>
+                    </column_headers>
+                    <row>
+                        <data>There are 0 input delays set on clock ports.</data>
+                    </row>
+                </table>
+            </table_container>
+        </row>
+        <row>
+            <data>loops</data>
+            <data>0</data>
+            <table_container>
+                <table id="loops_detailed_report" title="loops" column_number="1" tree="">
+                    <column_headers>
+                        <data>Issues</data>
+                    </column_headers>
+                    <row>
+                        <data>There are 0 combinational loops in the design.</data>
+                    </row>
+                </table>
+            </table_container>
+        </row>
+        <row>
+            <data>latch_loops</data>
+            <data>0</data>
+            <table_container>
+                <table id="latch loops_detailed_report" title="latch_loops" column_number="1" tree="">
+                    <column_headers>
+                        <data>Issues</data>
+                    </column_headers>
+                    <row>
+                        <data>There are 0 latch loops in the design.</data>
+                    </row>
+                </table>
+            </table_container>
+        </row>
+        <row>
+            <data>latchs</data>
+            <data>0</data>
+            <table_container>
+                <table id="latchs_detailed_report" title="latchs" column_number="1" tree="">
+                    <column_headers>
+                        <data>Issues</data>
+                    </column_headers>
+                    <row>
+                        <data>There are 0 latchs in the design.</data>
+                    </row>
+                </table>
+            </table_container>
+        </row>
+    </table>
+    <table id="synthesize_report_timing_clock_summary" title="Clock Summary" column_number="10" tree="">
+        <column_headers>
+            <data>Clock Name</data>
+            <data>Type</data>
+            <data>Period</data>
+            <data>Frequency</data>
+            <data>Rise</data>
+            <data>Fall</data>
+            <data>Clock Load</data>
+            <data>Non-clock Load</data>
+            <data>Source</data>
+            <data>Targets</data>
+        </column_headers>
+        <row>
+            <data>clk</data>
+            <data>Declared</data>
+            <data>20.0000</data>
+            <data>50.0000MHz</data>
+            <data>0.0000</data>
+            <data>10.0000</data>
+            <data>22</data>
+            <data>0</data>
+            <data/>
+            <data>{ sys_clk }</data>
+        </row>
+    </table>
+    <table id="synthesize_report_timing_fmax" title="Fmax Summary" column_number="4">
+        <column_headers>
+            <data>Clock</data>
+            <data>Fmax</data>
+            <data>Requested Frequency</data>
+            <data>Slack</data>
+        </column_headers>
+        <row>
+            <data>clk</data>
+            <data>302.4803MHz</data>
+            <data>50.0000MHz</data>
+            <data>16.694</data>
+        </row>
+    </table>
+    <table id="synthesize_report_clock_interaction" title="Clock Interaction" column_number="12">
+        <column_headers>
+            <data>Launch Clock</data>
+            <data>Capture Clock</data>
+            <data>Common Primary Clock</data>
+            <data>Inter-Clock Constrains</data>
+            <data>WNS(ns)</data>
+            <data>TNS(ns)</data>
+            <data>Failing End Point(TNS)</data>
+            <data>Total End Point(TNS)</data>
+            <data>WHS(ns)</data>
+            <data>THS(ns)</data>
+            <data>Failing End Point(THS)</data>
+            <data>Total End Point(THS)</data>
+        </column_headers>
+        <row>
+            <data>clk</data>
+            <data>clk</data>
+            <data>YES</data>
+            <data>Timed</data>
+            <data>16.694</data>
+            <data>0.000</data>
+            <data>0</data>
+            <data>39</data>
+            <data>1.145</data>
+            <data>0.000</data>
+            <data>0</data>
+            <data>39</data>
+        </row>
+    </table>
+    <table id="synthesize_report_clock_network" title="Clock Network" column_number="1" tree="">
+        <column_headers/>
+        <row>
+            <data>clk (50.00MHZ) (drive 22 loads) (min_rise, max_rise, min_fall, max_fall)</data>
+            <row>
+                <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk (0.000, 0.000, 0.000, 0.000)</data>
+                <row>
+                    <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/I (0.000, 0.000, 0.000, 0.000)</data>
+                    <row>
+                        <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/O (1.211, 1.211, 1.312, 1.312)</data>
+                        <row>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">nt_sys_clk (net)</data>
+                            <row>
+                                <data file_id="../ipcore/ram_1port/rtl/ipml_spram_v1_5_ram_1port.v" line_number="510">u_ram_1port/U_ipml_spram_ram_1port/ADDR_LOOP[0].DATA_LOOP[0].U_GTP_DRM9K/CLKA (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../ipcore/ram_1port/rtl/ipml_spram_v1_5_ram_1port.v" line_number="510">u_ram_1port/U_ipml_spram_ram_1port/ADDR_LOOP[0].DATA_LOOP[0].U_GTP_DRM9K/CLKB (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../../rtl/ram_rw.v" line_number="58">u_ram_rw/ram_addr[0]/CLK (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../../rtl/ram_rw.v" line_number="58">u_ram_rw/ram_addr[1]/CLK (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../../rtl/ram_rw.v" line_number="58">u_ram_rw/ram_addr[2]/CLK (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../../rtl/ram_rw.v" line_number="58">u_ram_rw/ram_addr[3]/CLK (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../../rtl/ram_rw.v" line_number="58">u_ram_rw/ram_addr[4]/CLK (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../../rtl/ram_rw.v" line_number="40">u_ram_rw/ram_en/CLK (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../../rtl/ram_rw.v" line_number="68">u_ram_rw/ram_wr_data[0]/CLK (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../../rtl/ram_rw.v" line_number="68">u_ram_rw/ram_wr_data[1]/CLK (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../../rtl/ram_rw.v" line_number="68">u_ram_rw/ram_wr_data[2]/CLK (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../../rtl/ram_rw.v" line_number="68">u_ram_rw/ram_wr_data[3]/CLK (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../../rtl/ram_rw.v" line_number="68">u_ram_rw/ram_wr_data[4]/CLK (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../../rtl/ram_rw.v" line_number="68">u_ram_rw/ram_wr_data[5]/CLK (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../../rtl/ram_rw.v" line_number="68">u_ram_rw/ram_wr_data[6]/CLK (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../../rtl/ram_rw.v" line_number="68">u_ram_rw/ram_wr_data[7]/CLK (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/CLK (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[1]/CLK (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[2]/CLK (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[3]/CLK (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[4]/CLK (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                            <row>
+                                <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[5]/CLK (4.415, 4.415, 4.516, 4.516)</data>
+                            </row>
+                        </row>
+                    </row>
+                </row>
+            </row>
+        </row>
+    </table>
+    <table id="synthesize_report_timing_setup" title="Setup Summary" column_number="6">
+        <column_headers>
+            <data>Launch Clock</data>
+            <data>Capture Clock</data>
+            <data>WNS(ns)</data>
+            <data>TNS(ns)</data>
+            <data>Failing Endpoints</data>
+            <data>Total Endpoints</data>
+        </column_headers>
+        <row>
+            <data>clk</data>
+            <data>clk</data>
+            <data>16.694</data>
+            <data>0.000</data>
+            <data>0</data>
+            <data>39</data>
+        </row>
+    </table>
+    <table id="synthesize_report_timing_hold" title="Hold Summary" column_number="6">
+        <column_headers>
+            <data>Launch Clock</data>
+            <data>Capture Clock</data>
+            <data>WHS(ns)</data>
+            <data>THS(ns)</data>
+            <data>Failing Endpoints</data>
+            <data>Total Endpoints</data>
+        </column_headers>
+        <row>
+            <data>clk</data>
+            <data>clk</data>
+            <data>1.145</data>
+            <data>0.000</data>
+            <data>0</data>
+            <data>39</data>
+        </row>
+    </table>
+    <table id="synthesize_report_timing_mpw" title="Minimum Pulse Width Summary" column_number="5">
+        <column_headers>
+            <data>Clock</data>
+            <data>WPWS</data>
+            <data>TPWS</data>
+            <data>Failing End Point</data>
+            <data>Total End Point</data>
+        </column_headers>
+        <row>
+            <data>clk</data>
+            <data>9.102</data>
+            <data>0.000</data>
+            <data>0</data>
+            <data>22</data>
+        </row>
+    </table>
+    <table id="synthesize_report_timing_path_setup" title="Setup Path Summary" column_number="17">
+        <column_headers>
+            <data>Slack</data>
+            <data>Logic Levels</data>
+            <data>High Fanout</data>
+            <data>Start Point</data>
+            <data>End Point</data>
+            <data>Exception</data>
+            <data>Launch Clock</data>
+            <data>Capture Clock</data>
+            <data>Clock Edges</data>
+            <data>Clock Skew</data>
+            <data>Launch Clock Delay</data>
+            <data>Capture Clock Delay</data>
+            <data>Clock Pessimism Removal</data>
+            <data>Requirement</data>
+            <data>Data delay</data>
+            <data>Logic delay</data>
+            <data>Route delay</data>
+        </column_headers>
+        <row>
+            <data>16.694</data>
+            <data>4</data>
+            <data>8</data>
+            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/CLK</data>
+            <data file_id="../../rtl/ram_rw.v" line_number="68">u_ram_rw/ram_wr_data[7]/D</data>
+            <data/>
+            <data>clk</data>
+            <data>clk</data>
+            <data>rise-rise</data>
+            <data>0.000</data>
+            <data>4.415</data>
+            <data>4.415</data>
+            <data>0.000</data>
+            <data>20.000</data>
+            <data>3.290</data>
+            <data>1.366 (41.5%)</data>
+            <data>1.924 (58.5%)</data>
+            <general_container>
+                <data>Path #1: setup slack is 16.694(MET)</data>
+                <table_container>
+                    <table id="arrival" title="Data arrival time is 7.705" column_number="6">
+                        <column_headers>
+                            <data>Location</data>
+                            <data>Delay Type</data>
+                            <data>Incr</data>
+                            <data>Path</data>
+                            <data>Trans</data>
+                            <data>Logical Resource</data>
+                        </column_headers>
+                        <row>
+                            <data>Clock clk (rising edge)</data>
+                            <data/>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data>r</data>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>sys_clk</data>
+                            <data></data>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk (port)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/I (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data>td</data>
+                            <data>1.211</data>
+                            <data>1.211</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/O (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=22)</data>
+                            <data>3.204</data>
+                            <data>4.415</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">nt_sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/CLK (GTP_DFF_C)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>tco</data>
+                            <data>0.329</data>
+                            <data>4.744</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/Q (GTP_DFF_C)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=4)</data>
+                            <data>0.641</data>
+                            <data>5.385</data>
+                            <data> </data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="29">u_ram_rw/rw_cnt [0]</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data object_valid="true">u_ram_rw/N9_mux4_4/I0 (GTP_LUT3)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.233</data>
+                            <data>5.618</data>
+                            <data>f</data>
+                            <data object_valid="true">u_ram_rw/N9_mux4_4/Z (GTP_LUT3)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=2)</data>
+                            <data>0.553</data>
+                            <data>6.171</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/_N89</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data object_valid="true">u_ram_rw/N28/I4 (GTP_LUT5)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.185</data>
+                            <data>6.356</data>
+                            <data>r</data>
+                            <data object_valid="true">u_ram_rw/N28/Z (GTP_LUT5)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=8)</data>
+                            <data>0.730</data>
+                            <data>7.086</data>
+                            <data> </data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="71">u_ram_rw/N28</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_1/I2 (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.233</data>
+                            <data>7.319</data>
+                            <data>f</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_1/COUT (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>7.319</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/_N63</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_2/CIN (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.030</data>
+                            <data>7.349</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_2/COUT (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>7.349</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/_N64</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_3/CIN (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.030</data>
+                            <data>7.379</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_3/COUT (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>7.379</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/_N65</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_4/CIN (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.030</data>
+                            <data>7.409</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_4/COUT (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>7.409</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/_N66</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_5/CIN (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.030</data>
+                            <data>7.439</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_5/COUT (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>7.439</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/_N67</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_6/CIN (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.030</data>
+                            <data>7.469</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_6/COUT (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>7.469</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/_N68</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_7/CIN (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.236</data>
+                            <data>7.705</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_7/Z (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>7.705</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/N39 [7]</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="68">u_ram_rw/ram_wr_data[7]/D (GTP_DFF_C)</data>
+                        </row>
+                    </table>
+                </table_container>
+                <table_container>
+                    <table id="require" title="Data required time is 24.399" column_number="6">
+                        <column_headers>
+                            <data>Location</data>
+                            <data>Delay Type</data>
+                            <data>Incr</data>
+                            <data>Path</data>
+                            <data>Trans</data>
+                            <data>Logical Resource</data>
+                        </column_headers>
+                        <row>
+                            <data>Clock clk (rising edge)</data>
+                            <data/>
+                            <data>20.000</data>
+                            <data>20.000</data>
+                            <data>r</data>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>sys_clk</data>
+                            <data></data>
+                            <data>0.000</data>
+                            <data>20.000</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk (port)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>20.000</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/I (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data>td</data>
+                            <data>1.211</data>
+                            <data>21.211</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/O (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=22)</data>
+                            <data>3.204</data>
+                            <data>24.415</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">nt_sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="68">u_ram_rw/ram_wr_data[7]/CLK (GTP_DFF_C)</data>
+                        </row>
+                        <row>
+                            <data>clock pessimism</data>
+                            <data/>
+                            <data>0.000</data>
+                            <data>24.415</data>
+                            <data/>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>clock uncertainty</data>
+                            <data/>
+                            <data>-0.050</data>
+                            <data>24.365</data>
+                            <data/>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>Setup time</data>
+                            <data/>
+                            <data>0.034</data>
+                            <data>24.399</data>
+                            <data/>
+                            <data/>
+                        </row>
+                    </table>
+                </table_container>
+            </general_container>
+        </row>
+        <row>
+            <data>16.724</data>
+            <data>4</data>
+            <data>8</data>
+            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/CLK</data>
+            <data file_id="../../rtl/ram_rw.v" line_number="68">u_ram_rw/ram_wr_data[6]/D</data>
+            <data/>
+            <data>clk</data>
+            <data>clk</data>
+            <data>rise-rise</data>
+            <data>0.000</data>
+            <data>4.415</data>
+            <data>4.415</data>
+            <data>0.000</data>
+            <data>20.000</data>
+            <data>3.260</data>
+            <data>1.336 (41.0%)</data>
+            <data>1.924 (59.0%)</data>
+            <general_container>
+                <data>Path #2: setup slack is 16.724(MET)</data>
+                <table_container>
+                    <table id="arrival" title="Data arrival time is 7.675" column_number="6">
+                        <column_headers>
+                            <data>Location</data>
+                            <data>Delay Type</data>
+                            <data>Incr</data>
+                            <data>Path</data>
+                            <data>Trans</data>
+                            <data>Logical Resource</data>
+                        </column_headers>
+                        <row>
+                            <data>Clock clk (rising edge)</data>
+                            <data/>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data>r</data>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>sys_clk</data>
+                            <data></data>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk (port)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/I (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data>td</data>
+                            <data>1.211</data>
+                            <data>1.211</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/O (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=22)</data>
+                            <data>3.204</data>
+                            <data>4.415</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">nt_sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/CLK (GTP_DFF_C)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>tco</data>
+                            <data>0.329</data>
+                            <data>4.744</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/Q (GTP_DFF_C)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=4)</data>
+                            <data>0.641</data>
+                            <data>5.385</data>
+                            <data> </data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="29">u_ram_rw/rw_cnt [0]</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data object_valid="true">u_ram_rw/N9_mux4_4/I0 (GTP_LUT3)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.233</data>
+                            <data>5.618</data>
+                            <data>f</data>
+                            <data object_valid="true">u_ram_rw/N9_mux4_4/Z (GTP_LUT3)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=2)</data>
+                            <data>0.553</data>
+                            <data>6.171</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/_N89</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data object_valid="true">u_ram_rw/N28/I4 (GTP_LUT5)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.185</data>
+                            <data>6.356</data>
+                            <data>r</data>
+                            <data object_valid="true">u_ram_rw/N28/Z (GTP_LUT5)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=8)</data>
+                            <data>0.730</data>
+                            <data>7.086</data>
+                            <data> </data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="71">u_ram_rw/N28</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_1/I2 (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.233</data>
+                            <data>7.319</data>
+                            <data>f</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_1/COUT (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>7.319</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/_N63</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_2/CIN (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.030</data>
+                            <data>7.349</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_2/COUT (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>7.349</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/_N64</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_3/CIN (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.030</data>
+                            <data>7.379</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_3/COUT (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>7.379</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/_N65</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_4/CIN (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.030</data>
+                            <data>7.409</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_4/COUT (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>7.409</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/_N66</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_5/CIN (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.030</data>
+                            <data>7.439</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_5/COUT (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>7.439</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/_N67</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_6/CIN (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.236</data>
+                            <data>7.675</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_6/Z (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>7.675</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/N39 [6]</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="68">u_ram_rw/ram_wr_data[6]/D (GTP_DFF_C)</data>
+                        </row>
+                    </table>
+                </table_container>
+                <table_container>
+                    <table id="require" title="Data required time is 24.399" column_number="6">
+                        <column_headers>
+                            <data>Location</data>
+                            <data>Delay Type</data>
+                            <data>Incr</data>
+                            <data>Path</data>
+                            <data>Trans</data>
+                            <data>Logical Resource</data>
+                        </column_headers>
+                        <row>
+                            <data>Clock clk (rising edge)</data>
+                            <data/>
+                            <data>20.000</data>
+                            <data>20.000</data>
+                            <data>r</data>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>sys_clk</data>
+                            <data></data>
+                            <data>0.000</data>
+                            <data>20.000</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk (port)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>20.000</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/I (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data>td</data>
+                            <data>1.211</data>
+                            <data>21.211</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/O (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=22)</data>
+                            <data>3.204</data>
+                            <data>24.415</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">nt_sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="68">u_ram_rw/ram_wr_data[6]/CLK (GTP_DFF_C)</data>
+                        </row>
+                        <row>
+                            <data>clock pessimism</data>
+                            <data/>
+                            <data>0.000</data>
+                            <data>24.415</data>
+                            <data/>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>clock uncertainty</data>
+                            <data/>
+                            <data>-0.050</data>
+                            <data>24.365</data>
+                            <data/>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>Setup time</data>
+                            <data/>
+                            <data>0.034</data>
+                            <data>24.399</data>
+                            <data/>
+                            <data/>
+                        </row>
+                    </table>
+                </table_container>
+            </general_container>
+        </row>
+        <row>
+            <data>16.754</data>
+            <data>4</data>
+            <data>8</data>
+            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/CLK</data>
+            <data file_id="../../rtl/ram_rw.v" line_number="68">u_ram_rw/ram_wr_data[5]/D</data>
+            <data/>
+            <data>clk</data>
+            <data>clk</data>
+            <data>rise-rise</data>
+            <data>0.000</data>
+            <data>4.415</data>
+            <data>4.415</data>
+            <data>0.000</data>
+            <data>20.000</data>
+            <data>3.230</data>
+            <data>1.306 (40.4%)</data>
+            <data>1.924 (59.6%)</data>
+            <general_container>
+                <data>Path #3: setup slack is 16.754(MET)</data>
+                <table_container>
+                    <table id="arrival" title="Data arrival time is 7.645" column_number="6">
+                        <column_headers>
+                            <data>Location</data>
+                            <data>Delay Type</data>
+                            <data>Incr</data>
+                            <data>Path</data>
+                            <data>Trans</data>
+                            <data>Logical Resource</data>
+                        </column_headers>
+                        <row>
+                            <data>Clock clk (rising edge)</data>
+                            <data/>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data>r</data>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>sys_clk</data>
+                            <data></data>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk (port)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/I (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data>td</data>
+                            <data>1.211</data>
+                            <data>1.211</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/O (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=22)</data>
+                            <data>3.204</data>
+                            <data>4.415</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">nt_sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/CLK (GTP_DFF_C)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>tco</data>
+                            <data>0.329</data>
+                            <data>4.744</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/Q (GTP_DFF_C)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=4)</data>
+                            <data>0.641</data>
+                            <data>5.385</data>
+                            <data> </data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="29">u_ram_rw/rw_cnt [0]</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data object_valid="true">u_ram_rw/N9_mux4_4/I0 (GTP_LUT3)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.233</data>
+                            <data>5.618</data>
+                            <data>f</data>
+                            <data object_valid="true">u_ram_rw/N9_mux4_4/Z (GTP_LUT3)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=2)</data>
+                            <data>0.553</data>
+                            <data>6.171</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/_N89</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data object_valid="true">u_ram_rw/N28/I4 (GTP_LUT5)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.185</data>
+                            <data>6.356</data>
+                            <data>r</data>
+                            <data object_valid="true">u_ram_rw/N28/Z (GTP_LUT5)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=8)</data>
+                            <data>0.730</data>
+                            <data>7.086</data>
+                            <data> </data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="71">u_ram_rw/N28</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_1/I2 (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.233</data>
+                            <data>7.319</data>
+                            <data>f</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_1/COUT (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>7.319</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/_N63</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_2/CIN (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.030</data>
+                            <data>7.349</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_2/COUT (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>7.349</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/_N64</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_3/CIN (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.030</data>
+                            <data>7.379</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_3/COUT (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>7.379</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/_N65</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_4/CIN (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.030</data>
+                            <data>7.409</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_4/COUT (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>7.409</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/_N66</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_5/CIN (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.236</data>
+                            <data>7.645</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="72">u_ram_rw/N30_1_5/Z (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>7.645</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/N39 [5]</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="68">u_ram_rw/ram_wr_data[5]/D (GTP_DFF_C)</data>
+                        </row>
+                    </table>
+                </table_container>
+                <table_container>
+                    <table id="require" title="Data required time is 24.399" column_number="6">
+                        <column_headers>
+                            <data>Location</data>
+                            <data>Delay Type</data>
+                            <data>Incr</data>
+                            <data>Path</data>
+                            <data>Trans</data>
+                            <data>Logical Resource</data>
+                        </column_headers>
+                        <row>
+                            <data>Clock clk (rising edge)</data>
+                            <data/>
+                            <data>20.000</data>
+                            <data>20.000</data>
+                            <data>r</data>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>sys_clk</data>
+                            <data></data>
+                            <data>0.000</data>
+                            <data>20.000</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk (port)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>20.000</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/I (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data>td</data>
+                            <data>1.211</data>
+                            <data>21.211</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/O (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=22)</data>
+                            <data>3.204</data>
+                            <data>24.415</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">nt_sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="68">u_ram_rw/ram_wr_data[5]/CLK (GTP_DFF_C)</data>
+                        </row>
+                        <row>
+                            <data>clock pessimism</data>
+                            <data/>
+                            <data>0.000</data>
+                            <data>24.415</data>
+                            <data/>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>clock uncertainty</data>
+                            <data/>
+                            <data>-0.050</data>
+                            <data>24.365</data>
+                            <data/>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>Setup time</data>
+                            <data/>
+                            <data>0.034</data>
+                            <data>24.399</data>
+                            <data/>
+                            <data/>
+                        </row>
+                    </table>
+                </table_container>
+            </general_container>
+        </row>
+    </table>
+    <table id="synthesize_report_timing_path_hold" title="Hold Path Summary" column_number="17">
+        <column_headers>
+            <data>Slack</data>
+            <data>Logic Levels</data>
+            <data>High Fanout</data>
+            <data>Start Point</data>
+            <data>End Point</data>
+            <data>Exception</data>
+            <data>Launch Clock</data>
+            <data>Capture Clock</data>
+            <data>Clock Edges</data>
+            <data>Clock Skew</data>
+            <data>Launch Clock Delay</data>
+            <data>Capture Clock Delay</data>
+            <data>Clock Pessimism Removal</data>
+            <data>Requirement</data>
+            <data>Data delay</data>
+            <data>Logic delay</data>
+            <data>Route delay</data>
+        </column_headers>
+        <row>
+            <data>1.145</data>
+            <data>1</data>
+            <data>4</data>
+            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/CLK</data>
+            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/D</data>
+            <data/>
+            <data>clk</data>
+            <data>clk</data>
+            <data>rise-rise</data>
+            <data>0.000</data>
+            <data>4.415</data>
+            <data>4.415</data>
+            <data>0.000</data>
+            <data>0.000</data>
+            <data>1.192</data>
+            <data>0.551 (46.2%)</data>
+            <data>0.641 (53.8%)</data>
+            <general_container>
+                <data>Path #1: hold slack is 1.145(MET)</data>
+                <table_container>
+                    <table id="arrival" title="Data arrival time is 5.607" column_number="6">
+                        <column_headers>
+                            <data>Location</data>
+                            <data>Delay Type</data>
+                            <data>Incr</data>
+                            <data>Path</data>
+                            <data>Trans</data>
+                            <data>Logical Resource</data>
+                        </column_headers>
+                        <row>
+                            <data>Clock clk (rising edge)</data>
+                            <data/>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data>r</data>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>sys_clk</data>
+                            <data></data>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk (port)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/I (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data>td</data>
+                            <data>1.211</data>
+                            <data>1.211</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/O (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=22)</data>
+                            <data>3.204</data>
+                            <data>4.415</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">nt_sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/CLK (GTP_DFF_C)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>tco</data>
+                            <data>0.323</data>
+                            <data>4.738</data>
+                            <data>f</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/Q (GTP_DFF_C)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=4)</data>
+                            <data>0.641</data>
+                            <data>5.379</data>
+                            <data> </data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="29">u_ram_rw/rw_cnt [0]</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/N35[0]/I1 (GTP_LUT2)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.228</data>
+                            <data>5.607</data>
+                            <data>f</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/N35[0]/Z (GTP_LUT2)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>5.607</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/N35 [0]</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data>f</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/D (GTP_DFF_C)</data>
+                        </row>
+                    </table>
+                </table_container>
+                <table_container>
+                    <table id="require" title="Data required time is 4.462" column_number="6">
+                        <column_headers>
+                            <data>Location</data>
+                            <data>Delay Type</data>
+                            <data>Incr</data>
+                            <data>Path</data>
+                            <data>Trans</data>
+                            <data>Logical Resource</data>
+                        </column_headers>
+                        <row>
+                            <data>Clock clk (rising edge)</data>
+                            <data/>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data>r</data>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>sys_clk</data>
+                            <data></data>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk (port)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/I (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data>td</data>
+                            <data>1.211</data>
+                            <data>1.211</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/O (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=22)</data>
+                            <data>3.204</data>
+                            <data>4.415</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">nt_sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/CLK (GTP_DFF_C)</data>
+                        </row>
+                        <row>
+                            <data>clock pessimism</data>
+                            <data/>
+                            <data>0.000</data>
+                            <data>4.415</data>
+                            <data/>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>clock uncertainty</data>
+                            <data/>
+                            <data>0.000</data>
+                            <data>4.415</data>
+                            <data/>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>Hold time</data>
+                            <data/>
+                            <data>0.047</data>
+                            <data>4.462</data>
+                            <data/>
+                            <data/>
+                        </row>
+                    </table>
+                </table_container>
+            </general_container>
+        </row>
+        <row>
+            <data>1.175</data>
+            <data>1</data>
+            <data>4</data>
+            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/CLK</data>
+            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[1]/D</data>
+            <data/>
+            <data>clk</data>
+            <data>clk</data>
+            <data>rise-rise</data>
+            <data>0.000</data>
+            <data>4.415</data>
+            <data>4.415</data>
+            <data>0.000</data>
+            <data>0.000</data>
+            <data>1.214</data>
+            <data>0.573 (47.2%)</data>
+            <data>0.641 (52.8%)</data>
+            <general_container>
+                <data>Path #2: hold slack is 1.175(MET)</data>
+                <table_container>
+                    <table id="arrival" title="Data arrival time is 5.629" column_number="6">
+                        <column_headers>
+                            <data>Location</data>
+                            <data>Delay Type</data>
+                            <data>Incr</data>
+                            <data>Path</data>
+                            <data>Trans</data>
+                            <data>Logical Resource</data>
+                        </column_headers>
+                        <row>
+                            <data>Clock clk (rising edge)</data>
+                            <data/>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data>r</data>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>sys_clk</data>
+                            <data></data>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk (port)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/I (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data>td</data>
+                            <data>1.211</data>
+                            <data>1.211</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/O (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=22)</data>
+                            <data>3.204</data>
+                            <data>4.415</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">nt_sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/CLK (GTP_DFF_C)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>tco</data>
+                            <data>0.323</data>
+                            <data>4.738</data>
+                            <data>f</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/Q (GTP_DFF_C)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=4)</data>
+                            <data>0.641</data>
+                            <data>5.379</data>
+                            <data> </data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="29">u_ram_rw/rw_cnt [0]</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="52">u_ram_rw/N12_1_1/I0 (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.250</data>
+                            <data>5.629</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="52">u_ram_rw/N12_1_1/Z (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>5.629</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/N35 [1]</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[1]/D (GTP_DFF_C)</data>
+                        </row>
+                    </table>
+                </table_container>
+                <table_container>
+                    <table id="require" title="Data required time is 4.454" column_number="6">
+                        <column_headers>
+                            <data>Location</data>
+                            <data>Delay Type</data>
+                            <data>Incr</data>
+                            <data>Path</data>
+                            <data>Trans</data>
+                            <data>Logical Resource</data>
+                        </column_headers>
+                        <row>
+                            <data>Clock clk (rising edge)</data>
+                            <data/>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data>r</data>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>sys_clk</data>
+                            <data></data>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk (port)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/I (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data>td</data>
+                            <data>1.211</data>
+                            <data>1.211</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/O (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=22)</data>
+                            <data>3.204</data>
+                            <data>4.415</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">nt_sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[1]/CLK (GTP_DFF_C)</data>
+                        </row>
+                        <row>
+                            <data>clock pessimism</data>
+                            <data/>
+                            <data>0.000</data>
+                            <data>4.415</data>
+                            <data/>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>clock uncertainty</data>
+                            <data/>
+                            <data>0.000</data>
+                            <data>4.415</data>
+                            <data/>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>Hold time</data>
+                            <data/>
+                            <data>0.039</data>
+                            <data>4.454</data>
+                            <data/>
+                            <data/>
+                        </row>
+                    </table>
+                </table_container>
+            </general_container>
+        </row>
+        <row>
+            <data>1.175</data>
+            <data>1</data>
+            <data>4</data>
+            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/CLK</data>
+            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[2]/D</data>
+            <data/>
+            <data>clk</data>
+            <data>clk</data>
+            <data>rise-rise</data>
+            <data>0.000</data>
+            <data>4.415</data>
+            <data>4.415</data>
+            <data>0.000</data>
+            <data>0.000</data>
+            <data>1.214</data>
+            <data>0.573 (47.2%)</data>
+            <data>0.641 (52.8%)</data>
+            <general_container>
+                <data>Path #3: hold slack is 1.175(MET)</data>
+                <table_container>
+                    <table id="arrival" title="Data arrival time is 5.629" column_number="6">
+                        <column_headers>
+                            <data>Location</data>
+                            <data>Delay Type</data>
+                            <data>Incr</data>
+                            <data>Path</data>
+                            <data>Trans</data>
+                            <data>Logical Resource</data>
+                        </column_headers>
+                        <row>
+                            <data>Clock clk (rising edge)</data>
+                            <data/>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data>r</data>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>sys_clk</data>
+                            <data></data>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk (port)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/I (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data>td</data>
+                            <data>1.211</data>
+                            <data>1.211</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/O (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=22)</data>
+                            <data>3.204</data>
+                            <data>4.415</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">nt_sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/CLK (GTP_DFF_C)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>tco</data>
+                            <data>0.323</data>
+                            <data>4.738</data>
+                            <data>f</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[0]/Q (GTP_DFF_C)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=4)</data>
+                            <data>0.641</data>
+                            <data>5.379</data>
+                            <data> </data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="29">u_ram_rw/rw_cnt [0]</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ram_rw.v" line_number="52">u_ram_rw/N12_1_2/I0 (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data>td</data>
+                            <data>0.250</data>
+                            <data>5.629</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="52">u_ram_rw/N12_1_2/Z (GTP_LUT5CARRY)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>5.629</data>
+                            <data> </data>
+                            <data object_valid="true">u_ram_rw/N35 [2]</data>
+                        </row>
+                        <row>
+                            <data> </data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[2]/D (GTP_DFF_C)</data>
+                        </row>
+                    </table>
+                </table_container>
+                <table_container>
+                    <table id="require" title="Data required time is 4.454" column_number="6">
+                        <column_headers>
+                            <data>Location</data>
+                            <data>Delay Type</data>
+                            <data>Incr</data>
+                            <data>Path</data>
+                            <data>Trans</data>
+                            <data>Logical Resource</data>
+                        </column_headers>
+                        <row>
+                            <data>Clock clk (rising edge)</data>
+                            <data/>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data>r</data>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>sys_clk</data>
+                            <data></data>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk (port)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=1)</data>
+                            <data>0.000</data>
+                            <data>0.000</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/I (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data>td</data>
+                            <data>1.211</data>
+                            <data>1.211</data>
+                            <data>r</data>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">sys_clk_ibuf/O (GTP_INBUF)</data>
+                        </row>
+                        <row>
+                            <data/>
+                            <data>net (fanout=22)</data>
+                            <data>3.204</data>
+                            <data>4.415</data>
+                            <data/>
+                            <data file_id="../../rtl/ip_1port_ram.v" line_number="21">nt_sys_clk</data>
+                        </row>
+                        <row>
+                            <data></data>
+                            <data/>
+                            <data/>
+                            <data/>
+                            <data>r</data>
+                            <data file_id="../../rtl/ram_rw.v" line_number="48">u_ram_rw/rw_cnt[2]/CLK (GTP_DFF_C)</data>
+                        </row>
+                        <row>
+                            <data>clock pessimism</data>
+                            <data/>
+                            <data>0.000</data>
+                            <data>4.415</data>
+                            <data/>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>clock uncertainty</data>
+                            <data/>
+                            <data>0.000</data>
+                            <data>4.415</data>
+                            <data/>
+                            <data/>
+                        </row>
+                        <row>
+                            <data>Hold time</data>
+                            <data/>
+                            <data>0.039</data>
+                            <data>4.454</data>
+                            <data/>
+                            <data/>
+                        </row>
+                    </table>
+                </table_container>
+            </general_container>
+        </row>
+    </table>
+    <table id="synthesize_report_timing_path_mpw" title="Minimum Pulse Width Path Summary" column_number="7">
+        <column_headers>
+            <data>Slack</data>
+            <data>Actual Width</data>
+            <data>Require Width</data>
+            <data>Clock</data>
+            <data>Type</data>
+            <data>Location</data>
+            <data>Pin</data>
+        </column_headers>
+        <row>
+            <data>9.102</data>
+            <data>10.000</data>
+            <data>0.898</data>
+            <data>clk</data>
+            <data>High Pulse Width</data>
+            <data></data>
+            <data file_id="../ipcore/ram_1port/rtl/ipml_spram_v1_5_ram_1port.v" line_number="510">u_ram_1port/U_ipml_spram_ram_1port/ADDR_LOOP[0].DATA_LOOP[0].U_GTP_DRM9K/CLKA</data>
+        </row>
+        <row>
+            <data>9.102</data>
+            <data>10.000</data>
+            <data>0.898</data>
+            <data>clk</data>
+            <data>Low Pulse Width</data>
+            <data></data>
+            <data file_id="../ipcore/ram_1port/rtl/ipml_spram_v1_5_ram_1port.v" line_number="510">u_ram_1port/U_ipml_spram_ram_1port/ADDR_LOOP[0].DATA_LOOP[0].U_GTP_DRM9K/CLKA</data>
+        </row>
+        <row>
+            <data>9.102</data>
+            <data>10.000</data>
+            <data>0.898</data>
+            <data>clk</data>
+            <data>High Pulse Width</data>
+            <data></data>
+            <data file_id="../ipcore/ram_1port/rtl/ipml_spram_v1_5_ram_1port.v" line_number="510">u_ram_1port/U_ipml_spram_ram_1port/ADDR_LOOP[0].DATA_LOOP[0].U_GTP_DRM9K/CLKB</data>
+        </row>
+    </table>
+    <table id="synthesize_resource_usage" title="GTP Usage" column_number="2">
+        <column_headers>
+            <data>GTP Name</data>
+            <data>Usage</data>
+        </column_headers>
+        <comment>
+            <data>
+Total LUTs: 25 of 22560 (0.11%)
+	LUTs as dram: 0 of 7568 (0.00%)
+	LUTs as logic: 25
+Total Registers: 20 of 33840 (0.06%)
+Total Latches: 0
+
+DRM18K:
+Total DRM18K = 0.5 of 60 (0.83%)
+
+APMs:
+Total APMs = 0.00 of 40 (0.00%)
+
+Total I/O ports = 24 of 226 (10.62%)
+</data>
+        </comment>
+        <row>
+            <data>GTP_DFF_C                   </data>
+            <data>20</data>
+        </row>
+        <row>
+            <data>GTP_DRM9K                    </data>
+            <data>1</data>
+        </row>
+        <row>
+            <data>GTP_GRS                      </data>
+            <data>1</data>
+        </row>
+        <row>
+            <data>GTP_INV                      </data>
+            <data>2</data>
+        </row>
+        <row>
+            <data>GTP_LUT2                     </data>
+            <data>5</data>
+        </row>
+        <row>
+            <data>GTP_LUT3                     </data>
+            <data>2</data>
+        </row>
+        <row>
+            <data>GTP_LUT4                     </data>
+            <data>2</data>
+        </row>
+        <row>
+            <data>GTP_LUT5                     </data>
+            <data>4</data>
+        </row>
+        <row>
+            <data>GTP_LUT5CARRY               </data>
+            <data>12</data>
+        </row>
+        <row>
+            <data>GTP_INBUF                  </data>
+            <data>2</data>
+        </row>
+        <row>
+            <data>GTP_OUTBUF                </data>
+            <data>22</data>
+        </row>
+    </table>
+    <table id="synthesize_constraint_files" title="Constraint Files Read" column_number="2">
+        <column_headers>
+            <data>File Name</data>
+            <data>File Type</data>
+        </column_headers>
+        <row>
+            <data>E:/PDS/ip_1port_ram/prj/ip_1port_ram.fdc</data>
+            <data>fdc</data>
+        </row>
+    </table>
+    <table id="synthesize_runtime" title="Synthesize Runtime &amp; Memory" column_number="7">
+        <column_headers>
+            <data>Cpu Time</data>
+            <data>Process Cpu Time</data>
+            <data>Real Time</data>
+            <data>Peak Memory (MB)</data>
+            <data>Operation System</data>
+            <data>CPU</data>
+            <data>RAM(GB)</data>
+        </column_headers>
+        <row>
+            <data>0h:0m:2s</data>
+            <data>0h:0m:2s</data>
+            <data>0h:0m:4s</data>
+            <data>234</data>
+            <data>WINDOWS 10 x86_64</data>
+            <data>AMD Ryzen 9 3900X 12-Core Processor</data>
+            <data>16</data>
+        </row>
+    </table>
+    <table id="synthesize_messages" title="Synthesize Messages" column_number="1">
+        <column_headers/>
+        <row>
+            <data message="5">ConstraintEditor-4019: Port Bus 'ram_addr' unspecified I/O constraint.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4019: Port Bus 'ram_rd_data' unspecified I/O constraint.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4019: Port Bus 'ram_wr_data' unspecified I/O constraint.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4019: Port 'ram_rw_en' unspecified I/O constraint.</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on u_ram_1port/U_ipml_spram_ram_1port/N60 (bmsREDAND).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on out_xor (bmsREDXOR).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on out_xor_1 (bmsREDXOR).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on out_xor_2 (bmsREDXOR).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on out_xor_3 (bmsREDXOR).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on out_xor_4 (bmsREDXOR).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on out_xor_5 (bmsREDXOR).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on out_xor (bmsREDXOR).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on out_xor_1 (bmsREDXOR).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on out_xor_2 (bmsREDXOR).</data>
+        </row>
+        <row>
+            <data message="5">Unable to honor max fanout constraint for gtp_inv driven net N1</data>
+        </row>
+        <row>
+            <data message="5">Unable to honor max fanout constraint for gtp_inv driven net N1</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_addr[0]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_addr[1]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_addr[2]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_addr[3]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_addr[4]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_rd_data[0]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_rd_data[1]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_rd_data[2]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_rd_data[3]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_rd_data[4]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_rd_data[5]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_rd_data[6]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_rd_data[7]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_rw_en' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_wr_data[0]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_wr_data[1]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_wr_data[2]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_wr_data[3]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_wr_data[4]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_wr_data[5]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_wr_data[6]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4087: Port 'ram_wr_data[7]' is not constrained, it is treated as combinational output.</data>
+        </row>
+        <row>
+            <data message="5">Timing-4086: Port 'sys_rst_n' is not constrained, it is treated as combinational input.</data>
+        </row>
+    </table>
+    <general_container id="synthesize_settings">
+        <table_container>
+            <table id="synthesize_settings" title="Synthesize Settings" column_number="2">
+                <column_headers>
+                    <data>Name</data>
+                    <data>Value</data>
+                </column_headers>
+                <row>
+                    <data>Part</data>
+                    <data>PGL25G-6MBG324</data>
+                </row>
+                <row>
+                    <data>Top Module</data>
+                    <data>ip_1port_ram</data>
+                </row>
+            </table>
+        </table_container>
+        <general_container align="3">
+            <table_container>
+                <data>Option</data>
+                <table id="" title="" column_number="2">
+                    <column_headers>
+                        <data>Name</data>
+                        <data>Value</data>
+                    </column_headers>
+                    <row>
+                        <data>Fanout Guide</data>
+                        <data>10000</data>
+                    </row>
+                    <row>
+                        <data>Disable I/O Insertion</data>
+                        <data>false</data>
+                    </row>
+                    <row>
+                        <data>Enable Advanced LUT Combining</data>
+                        <data>true</data>
+                    </row>
+                    <row>
+                        <data>Automatic Read/Write Check Insertion for RAM</data>
+                        <data>false</data>
+                    </row>
+                    <row>
+                        <data>Resource Sharing</data>
+                        <data>true</data>
+                    </row>
+                    <row>
+                        <data>Pipelining</data>
+                        <data>true</data>
+                    </row>
+                    <row>
+                        <data>Retiming</data>
+                        <data>false</data>
+                    </row>
+                    <row>
+                        <data>Minimum Control-set Size</data>
+                        <data>2</data>
+                    </row>
+                </table>
+            </table_container>
+            <table_container>
+                <data>Timing Report</data>
+                <table id="" title="" column_number="2">
+                    <column_headers>
+                        <data>Name</data>
+                        <data>Value</data>
+                    </column_headers>
+                    <row>
+                        <data>Total Number of Paths (-max_path)</data>
+                        <data>3</data>
+                    </row>
+                    <row>
+                        <data>Number of Paths per Endpoint (-nworst)</data>
+                        <data>1</data>
+                    </row>
+                    <row>
+                        <data>Report Exception</data>
+                        <data>true</data>
+                    </row>
+                </table>
+            </table_container>
+            <table_container>
+                <data>Constraints</data>
+                <table id="" title="" column_number="2">
+                    <column_headers>
+                        <data>Name</data>
+                        <data>Value</data>
+                    </column_headers>
+                    <row>
+                        <data>Frequency (MHz)</data>
+                        <data>1</data>
+                    </row>
+                    <row>
+                        <data>Use Clock Period for Unconstrained IO</data>
+                        <data>false</data>
+                    </row>
+                </table>
+            </table_container>
+        </general_container>
+    </general_container>
+</tables>

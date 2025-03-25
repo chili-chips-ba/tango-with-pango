@@ -1,0 +1,1 @@
+.rtl_screen -top_module {top_key_beep} -include_path {<D:/ywd/dps4/ccccccccccc/pm/25G/25G/12_top_key_beep/prj>} -design_files {<D:/ywd/dps4/ccccccccccc/pm/25G/25G/12_top_key_beep/rtl/top_key_beep.v|work><D:/ywd/dps4/ccccccccccc/pm/25G/25G/12_top_key_beep/rtl/key_debounce.v|work><D:/ywd/dps4/ccccccccccc/pm/25G/25G/12_top_key_beep/rtl/key_beep.v|work>}

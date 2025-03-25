@@ -1,0 +1,159 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/prj/sim/behav
+T_opt
+!s110 1696750099
+Vi5WiGo]aR`9BUM8nGU[^40
+04 14 4 work tb_top_traffic fast 0
+04 7 4 usim GTP_GRS fast 0
+=1-047c1648650d-65225a12-394-a0c
+o-quiet -auto_acc_if_foreign -work work -L work -L usim -L adc -L ddrc -L ddrphy -L hsst_e2 -L iolhr_dft -L ipal_e1 -L pciegen2 +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vbinary2bcd
+Z2 !s110 1696750096
+!i10b 1
+!s100 BhdRVJAzMLCgJWKK4396B1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IYRBG_mFD<YX`?HmoPg_cB2
+R0
+w1688178163
+8E:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/rtl/binary2bcd.v
+FE:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/rtl/binary2bcd.v
+!i122 0
+L0 19 67
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z6 !s108 1696750096.000000
+Z7 !s107 E:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/sim/tb_top_traffic.v|E:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/rtl/traffic_light_ctrl.v|E:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/rtl/top_traffic.v|E:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/rtl/seg_led.v|E:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/rtl/led_ctrl.v|E:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/rtl/binary2bcd.v|
+Z8 !s90 -reportprogress|300|-work|work|E:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/rtl/binary2bcd.v|E:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/rtl/led_ctrl.v|E:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/rtl/seg_led.v|E:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/rtl/top_traffic.v|E:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/rtl/traffic_light_ctrl.v|E:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/sim/tb_top_traffic.v|
+!i113 0
+Z9 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vled_ctrl
+R2
+!i10b 1
+!s100 ZCPe[_eV5[H6=CQ8mT1K:3
+R3
+IM>MO4]CAmD8nRWhl<kf?=2
+R0
+w1686627652
+8E:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/rtl/led_ctrl.v
+FE:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/rtl/led_ctrl.v
+!i122 0
+L0 19 53
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vseg_led
+R2
+!i10b 1
+!s100 D:nEF<JU=:FYX2j`oB7`I1
+R3
+I6b3fG1WU6M8lFFm]`fX720
+R0
+w1687847035
+8E:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/rtl/seg_led.v
+FE:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/rtl/seg_led.v
+!i122 0
+L0 19 103
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vtb_top_traffic
+R2
+!i10b 1
+!s100 dRj^@7WOdG]@BZUB<>9193
+R3
+IO^AJm<hj_57SfE=Nzin[O1
+R0
+w1685582482
+8E:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/sim/tb_top_traffic.v
+FE:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/sim/tb_top_traffic.v
+!i122 0
+L0 35 42
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vtop_traffic
+R2
+!i10b 1
+!s100 ^RaXC[cGcKnJLLbFQoB922
+R3
+IG9]k9f`:[aSkkDPJHGFKg2
+R0
+w1688001436
+8E:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/rtl/top_traffic.v
+FE:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/rtl/top_traffic.v
+!i122 0
+L0 19 88
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vtraffic_light_ctrl
+R2
+!i10b 1
+!s100 f97^Hcigbz;GZEa38c`l<3
+R3
+I>]f]]TWJXkFd3O3^MP@O?0
+R0
+w1686627674
+8E:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/rtl/traffic_light_ctrl.v
+FE:/Document/FPGA/PGL/PGL25G/Finalized/top_traffic/rtl/traffic_light_ctrl.v
+!i122 0
+L0 18 105
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1

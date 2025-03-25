@@ -1,0 +1,4 @@
+create_clock -name {eth_rxc} [get_ports {eth_rxc}] -period {8} -waveform {0.000 4.000}
+create_clock -name {sys_clk} [get_ports {sys_clk}] -period {20} -waveform {0.000 10.000}
+
+

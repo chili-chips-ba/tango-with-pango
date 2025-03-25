@@ -1,0 +1,1 @@
+.rtl_screen -top_module {counter} -include_path {<D:/Desktop/25G/7_counter/prj>} -design_files {<D:/Desktop/25G/7_counter/rtl/counter.v|work>}

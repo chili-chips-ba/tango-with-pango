@@ -1,0 +1,51 @@
+##### Written on 2023/10/13 09:23:03 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL25G-6MBG324
+
+Top Module : 
+	top_hdmi_block_move
+
+Constraint File(s) : 
+	D:/ywd/dps4/ysq/PGL25G/hdmi_block_move/prj/source/hdmi_block_move_pin.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 4 critical warning(s), 0 warning(s), out of 66 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:tmds_data_n[0]} {PAP_IO_LOC} {V10}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ysq/PGL25G/hdmi_block_move/prj/source/hdmi_block_move_pin.fdc(line number: 28)] | Port tmds_data_n[0] has been placed at location V10, whose type is share pin.
+
+define_attribute {p:tmds_data_p[0]} {PAP_IO_LOC} {U10}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ysq/PGL25G/hdmi_block_move/prj/source/hdmi_block_move_pin.fdc(line number: 49)] | Port tmds_data_p[0] has been placed at location U10, whose type is share pin.
+
+define_attribute {p:tmds_clk_n} {PAP_IO_LOC} {V16}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ysq/PGL25G/hdmi_block_move/prj/source/hdmi_block_move_pin.fdc(line number: 56)] | Port tmds_clk_n has been placed at location V16, whose type is share pin.
+
+define_attribute {p:tmds_clk_p} {PAP_IO_LOC} {U16}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ysq/PGL25G/hdmi_block_move/prj/source/hdmi_block_move_pin.fdc(line number: 63)] | Port tmds_clk_p has been placed at location U16, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

@@ -1,0 +1,117 @@
+//
+// Generated (version 2022.2-SP4.2<build 132111>) at Thu Oct 12 15:34:34 2023
+//
+
+module touch_led
+(
+    input sys_clk,
+    input sys_rst_n,
+    input touch_key,
+    output led
+);
+	// SDC constraint : (object sys_clk) (id 1000) (clock sys_clk) (23 : D:/ywd/dps4/ccccccccccc/pm/50G/50G/13_touch_led/prj/touch_led.fdc)
+    wire N2;
+    wire N5;
+    wire nt_led;
+    wire nt_sys_clk;
+    wire nt_sys_rst_n;
+    wire nt_touch_key;
+    wire touch_en;
+    wire touch_key_d0;
+    wire touch_key_d1;
+
+    GTP_GRS GRS_INST (
+            .GRS_N (1'b1));
+
+    GTP_LUT2 /* N1 */ #(
+            .INIT(4'b0010))
+        N1 (
+            .Z (touch_en),
+            .I0 (touch_key_d0),
+            .I1 (touch_key_d1));
+	// LUT = I0&~I1 ;
+	// ../../rtl/touch_led.v:41
+
+    GTP_INV N2_vname (
+            .Z (N2),
+            .I (nt_sys_rst_n));
+    // defparam N2_vname.orig_name = N2;
+
+    GTP_LUT1 /* N5 */ #(
+            .INIT(2'b01))
+        N5_vname (
+            .Z (N5),
+            .I0 (nt_led));
+    // defparam N5_vname.orig_name = N5;
+	// LUT = ~I0 ;
+
+    GTP_DFF_PE /* led */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b1))
+        led_vname (
+            .Q (nt_led),
+            .CE (touch_en),
+            .CLK (nt_sys_clk),
+            .D (N5),
+            .P (N2));
+    // defparam led_vname.orig_name = led;
+	// ../../rtl/touch_led.v:56
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="M14", PAP_IO_VCCIO="1.5", PAP_IO_STANDARD="LVCMOS15", PAP_IO_DRIVE="8", PAP_IO_PULLUP="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* led_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        led_obuf (
+            .O (led),
+            .I (nt_led));
+	// ../../rtl/touch_led.v:26
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="V9", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_PULLUP="TRUE" *)    GTP_INBUF /* sys_clk_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        sys_clk_ibuf (
+            .O (nt_sys_clk),
+            .I (sys_clk));
+	// ../../rtl/touch_led.v:21
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="C4", PAP_IO_VCCIO="1.8", PAP_IO_STANDARD="LVCMOS18", PAP_IO_PULLUP="TRUE" *)    GTP_INBUF /* sys_rst_n_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        sys_rst_n_ibuf (
+            .O (nt_sys_rst_n),
+            .I (sys_rst_n));
+	// ../../rtl/touch_led.v:22
+
+    GTP_DFF_C /* touch_key_d0 */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        touch_key_d0_vname (
+            .Q (touch_key_d0),
+            .C (N2),
+            .CLK (nt_sys_clk),
+            .D (nt_touch_key));
+    // defparam touch_key_d0_vname.orig_name = touch_key_d0;
+	// ../../rtl/touch_led.v:44
+
+    GTP_DFF_C /* touch_key_d1 */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        touch_key_d1_vname (
+            .Q (touch_key_d1),
+            .C (N2),
+            .CLK (nt_sys_clk),
+            .D (touch_key_d0));
+    // defparam touch_key_d1_vname.orig_name = touch_key_d1;
+	// ../../rtl/touch_led.v:44
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="D9", PAP_IO_VCCIO="1.8", PAP_IO_STANDARD="LVCMOS18", PAP_IO_PULLUP="TRUE" *)    GTP_INBUF /* touch_key_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        touch_key_ibuf (
+            .O (nt_touch_key),
+            .I (touch_key));
+	// ../../rtl/touch_led.v:23
+
+
+endmodule
+

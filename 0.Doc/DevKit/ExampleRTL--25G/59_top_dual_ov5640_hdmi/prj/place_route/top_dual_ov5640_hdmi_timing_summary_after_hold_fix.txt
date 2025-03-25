@@ -1,0 +1,244 @@
+Design Summary : Some Constraints Violated.
+
+Setup Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ cam_pclk_1             cam_pclk_1                   8.663       0.000              0            293
+ ui_clk                 cam_pclk_1                   4.706       0.000              0             11
+ cam_pclk_2             cam_pclk_2                  13.852       0.000              0            293
+ ui_clk                 cam_pclk_2                   5.289       0.000              0             11
+ ui_clk                 ui_clk                       2.798       0.000              0          12640
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        ui_clk                      -5.515     -93.158             25             26
+ cam_pclk_1             ui_clk                       0.399       0.000              0             13
+ cam_pclk_2             ui_clk                       1.119       0.000              0             13
+ ioclk1                 ioclk1                       1.698       0.000              0             48
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                    15.102       0.000              0            225
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                     1.809       0.000              0             40
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     0.568       0.000              0            177
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     0.499       0.000              0             74
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     0.889       0.000              0            994
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                    -2.478     -46.042             22             22
+====================================================================================================
+
+Hold Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ cam_pclk_1             cam_pclk_1                   0.327       0.000              0            293
+ ui_clk                 cam_pclk_1                   1.988       0.000              0             11
+ cam_pclk_2             cam_pclk_2                   0.325       0.000              0            293
+ ui_clk                 cam_pclk_2                   1.191       0.000              0             11
+ ui_clk                 ui_clk                       0.100       0.000              0          12640
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        ui_clk                      -4.232      -4.232              1             26
+ cam_pclk_1             ui_clk                       0.371       0.000              0             13
+ cam_pclk_2             ui_clk                      -3.408      -3.408              1             13
+ ioclk1                 ioclk1                       0.444       0.000              0             48
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                     0.311       0.000              0            225
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                     4.146       0.000              0             40
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     0.341       0.000              0            177
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     0.120       0.000              0             74
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     0.334       0.000              0            994
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     3.230       0.000              0             22
+====================================================================================================
+
+Recovery Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ cam_pclk_1             cam_pclk_1                   9.164       0.000              0             49
+ ui_clk                 cam_pclk_1                   2.934       0.000              0             33
+ cam_pclk_2             cam_pclk_2                  10.607       0.000              0             49
+ ui_clk                 cam_pclk_2                   3.464       0.000              0             33
+ ui_clk                 ui_clk                       5.965       0.000              0           1827
+ cam_pclk_1             ui_clk                       0.516       0.000              0             54
+ cam_pclk_2             ui_clk                       1.530       0.000              0             54
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        ui_clk                       1.505       0.000              0           1420
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                     9.234       0.000              0             62
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                    -4.710    -491.523            132            132
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                    11.433       0.000              0             44
+====================================================================================================
+
+Removal Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ cam_pclk_1             cam_pclk_1                   0.802       0.000              0             49
+ ui_clk                 cam_pclk_1                   2.901       0.000              0             33
+ cam_pclk_2             cam_pclk_2                   1.106       0.000              0             49
+ ui_clk                 cam_pclk_2                   2.009       0.000              0             33
+ ui_clk                 ui_clk                       0.437       0.000              0           1827
+ cam_pclk_1             ui_clk                       0.390       0.000              0             54
+ cam_pclk_2             ui_clk                       2.409       0.000              0             54
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        ui_clk                      -3.452    -284.641             90           1420
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                     0.663       0.000              0             62
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     3.962       0.000              0            132
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     0.533       0.000              0             44
+====================================================================================================
+
+Minimum Pulse Width Summary(Slow Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Setup Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ cam_pclk_1             cam_pclk_1                  12.322       0.000              0            293
+ ui_clk                 cam_pclk_1                   6.992       0.000              0             11
+ cam_pclk_2             cam_pclk_2                  15.684       0.000              0            293
+ ui_clk                 cam_pclk_2                   7.357       0.000              0             11
+ ui_clk                 ui_clk                       4.829       0.000              0          12640
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        ui_clk                      -2.985     -47.179             18             26
+ cam_pclk_1             ui_clk                       3.307       0.000              0             13
+ cam_pclk_2             ui_clk                       3.804       0.000              0             13
+ ioclk1                 ioclk1                       1.836       0.000              0             48
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                    16.482       0.000              0            225
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                     4.868       0.000              0             40
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     1.135       0.000              0            177
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     1.255       0.000              0             74
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     4.723       0.000              0            994
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                    -0.033      -0.033              1             22
+====================================================================================================
+
+Hold Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ cam_pclk_1             cam_pclk_1                   0.265       0.000              0            293
+ ui_clk                 cam_pclk_1                   1.263       0.000              0             11
+ cam_pclk_2             cam_pclk_2                   0.255       0.000              0            293
+ ui_clk                 cam_pclk_2                   0.775       0.000              0             11
+ ui_clk                 ui_clk                       0.100       0.000              0          12640
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        ui_clk                      -2.313      -2.313              1             26
+ cam_pclk_1             ui_clk                       0.709       0.000              0             13
+ cam_pclk_2             ui_clk                      -1.791      -1.791              1             13
+ ioclk1                 ioclk1                       0.380       0.000              0             48
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                     0.240       0.000              0            225
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                     2.559       0.000              0             40
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     0.265       0.000              0            177
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     0.211       0.000              0             74
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     0.267       0.000              0            994
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     1.995       0.000              0             22
+====================================================================================================
+
+Recovery Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ cam_pclk_1             cam_pclk_1                  12.543       0.000              0             49
+ ui_clk                 cam_pclk_1                   5.724       0.000              0             33
+ cam_pclk_2             cam_pclk_2                  13.496       0.000              0             49
+ ui_clk                 cam_pclk_2                   6.028       0.000              0             33
+ ui_clk                 ui_clk                       7.132       0.000              0           1827
+ cam_pclk_1             ui_clk                       3.182       0.000              0             54
+ cam_pclk_2             ui_clk                       3.965       0.000              0             54
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        ui_clk                       3.781       0.000              0           1420
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                    12.576       0.000              0             62
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                    -1.668    -125.264            132            132
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                    11.961       0.000              0             44
+====================================================================================================
+
+Removal Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ cam_pclk_1             cam_pclk_1                   0.681       0.000              0             49
+ ui_clk                 cam_pclk_1                   1.931       0.000              0             33
+ cam_pclk_2             cam_pclk_2                   0.811       0.000              0             49
+ ui_clk                 cam_pclk_2                   1.375       0.000              0             33
+ ui_clk                 ui_clk                       0.268       0.000              0           1827
+ cam_pclk_1             ui_clk                       0.723       0.000              0             54
+ cam_pclk_2             ui_clk                       2.034       0.000              0             54
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        ui_clk                      -1.847    -145.066             90           1420
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT2_Inferred
+                                                     0.491       0.000              0             62
+ ui_clk                 sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     2.515       0.000              0            132
+ sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     0.446       0.000              0             44
+====================================================================================================
+
+Minimum Pulse Width Summary(Fast Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+

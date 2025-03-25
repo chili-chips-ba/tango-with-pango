@@ -1,0 +1,122 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Desktop/12_top_key_beep/sim
+T_opt
+!s110 1685410602
+V07A8`lCLnmbJVDLe?;FAK2
+Z1 04 15 4 work tb_top_key_beep fast 0
+=1-d8bbc14fe651-64755327-21e-30a8
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2020.4;71
+R0
+T_opt1
+!s110 1685411529
+V>7BWl>Ingh[NbKS58gV0z1
+R1
+=1-d8bbc14fe651-647556c9-11f-220c
+o-quiet -auto_acc_if_foreign -work work
+R2
+n@_opt1
+R3
+vkey_beep
+Z4 !s110 1685410585
+!i10b 1
+!s100 ;[njmTUb3>faXokTGilhb1
+Z5 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I2obLEHOT9Jz3USR84OAO42
+R0
+w1685410162
+8D:/Desktop/12_top_key_beep/rtl/key_beep.v
+FD:/Desktop/12_top_key_beep/rtl/key_beep.v
+!i122 1
+L0 19 40
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z8 !s108 1685410585.000000
+!s107 D:/Desktop/12_top_key_beep/rtl/key_beep.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Desktop/12_top_key_beep/rtl/key_beep.v|
+!i113 0
+Z9 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vkey_debounce
+R4
+!i10b 1
+!s100 6OBc^KB5>edW0h1faWXke0
+R5
+IMd`:96LMeGkOhjQOFaL<R2
+R0
+w1685410119
+8D:/Desktop/12_top_key_beep/rtl/key_debounce.v
+FD:/Desktop/12_top_key_beep/rtl/key_debounce.v
+!i122 2
+L0 19 61
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/Desktop/12_top_key_beep/rtl/key_debounce.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Desktop/12_top_key_beep/rtl/key_debounce.v|
+!i113 0
+R9
+R2
+vtb_top_key_beep
+!s110 1685410584
+!i10b 1
+!s100 =Q:6_cQ6<`aL:KziHQ4V33
+R5
+Il3Z4D8WD7S0eCdEZKMRPU2
+R0
+w1677725006
+8D:/Desktop/12_top_key_beep/sim/tb/tb_top_key_beep.v
+FD:/Desktop/12_top_key_beep/sim/tb/tb_top_key_beep.v
+!i122 0
+L0 21 56
+R6
+R7
+r1
+!s85 0
+31
+!s108 1685410584.000000
+!s107 D:/Desktop/12_top_key_beep/sim/tb/tb_top_key_beep.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Desktop/12_top_key_beep/sim/tb/tb_top_key_beep.v|
+!i113 0
+R9
+R2
+vtop_key_beep
+R4
+!i10b 1
+!s100 [Aho3LlzLB1jCleLBP[]h2
+R5
+Ic8?`hDMFn`_V?K=@;2h^H3
+R0
+w1677734803
+8D:/Desktop/12_top_key_beep/rtl/top_key_beep.v
+FD:/Desktop/12_top_key_beep/rtl/top_key_beep.v
+!i122 3
+L0 19 37
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/Desktop/12_top_key_beep/rtl/top_key_beep.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Desktop/12_top_key_beep/rtl/top_key_beep.v|
+!i113 0
+R9
+R2

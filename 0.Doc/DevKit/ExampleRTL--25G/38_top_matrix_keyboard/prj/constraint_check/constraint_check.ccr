@@ -1,0 +1,57 @@
+##### Written on 2023/09/18 17:27:29 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL25G-6MBG324
+
+Top Module : 
+	top_matrix_keyboard
+
+Constraint File(s) : 
+	E:/Document/FPGA/PGL/PGL25G/Test program/top_matrix_keyboard/prj/source/top_matrix_keyboard_pin.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 6 critical warning(s), 0 warning(s), out of 239 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:seg_led_t[6]} {PAP_IO_LOC} {U13}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Test program/top_matrix_keyboard/prj/source/top_matrix_keyboard_pin.fdc(line number: 106)] | Port seg_led_t[6] has been placed at location U13, whose type is share pin.
+
+define_attribute {p:seg_led_t[3]} {PAP_IO_LOC} {T5}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Test program/top_matrix_keyboard/prj/source/top_matrix_keyboard_pin.fdc(line number: 127)] | Port seg_led_t[3] has been placed at location T5, whose type is share pin.
+
+define_attribute {p:seg_led_t[2]} {PAP_IO_LOC} {R8}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Test program/top_matrix_keyboard/prj/source/top_matrix_keyboard_pin.fdc(line number: 134)] | Port seg_led_t[2] has been placed at location R8, whose type is share pin.
+
+define_attribute {p:seg_led_t[0]} {PAP_IO_LOC} {R5}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Test program/top_matrix_keyboard/prj/source/top_matrix_keyboard_pin.fdc(line number: 148)] | Port seg_led_t[0] has been placed at location R5, whose type is share pin.
+
+define_attribute {p:sel_t[2]} {PAP_IO_LOC} {T8}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Test program/top_matrix_keyboard/prj/source/top_matrix_keyboard_pin.fdc(line number: 162)] | Port sel_t[2] has been placed at location T8, whose type is share pin.
+
+define_attribute {p:sel_t[1]} {PAP_IO_LOC} {V13}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Test program/top_matrix_keyboard/prj/source/top_matrix_keyboard_pin.fdc(line number: 169)] | Port sel_t[1] has been placed at location V13, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

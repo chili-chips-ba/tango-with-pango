@@ -1,0 +1,54 @@
+//
+// Generated (version 2022.2-SP4.2<build 132111>) at Mon Sep 18 17:13:36 2023
+//
+
+module latch
+(
+    input a,
+    input b,
+    output y
+);
+    wire nt_a;
+    wire nt_b;
+    wire nt_y;
+
+    GTP_GRS GRS_INST (
+            .GRS_N (1'b1));
+
+    GTP_LUT2 /* N4_1 */ #(
+            .INIT(4'b1000))
+        N4_1 (
+            .Z (nt_y),
+            .I0 (nt_a),
+            .I1 (nt_b));
+	// LUT = I0&I1 ;
+	// ../../rtl/latch.v:40
+
+    GTP_INBUF /* a_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        a_ibuf (
+            .O (nt_a),
+            .I (a));
+	// ../../rtl/latch.v:24
+
+    GTP_INBUF /* b_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        b_ibuf (
+            .O (nt_b),
+            .I (b));
+	// ../../rtl/latch.v:25
+
+    GTP_OUTBUF /* y_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        y_obuf (
+            .O (y),
+            .I (nt_y));
+	// ../../rtl/latch.v:27
+
+
+endmodule
+

@@ -1,0 +1,229 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/prj/sim/behav
+T_opt
+!s110 1696757382
+V8@[>R;D>>oG6A[F]K?0nl2
+04 15 4 work tb_lcd_rgb_char fast 0
+04 7 4 usim GTP_GRS fast 0
+=1-047c1648650d-65227686-269-2330
+o-quiet -auto_acc_if_foreign -work work -L work -L usim -L adc -L ddrc -L ddrphy -L hsst_e2 -L iolhr_dft -L ipal_e1 -L pciegen2 +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vblk_mem_gen_0
+Z2 !s110 1696757380
+!i10b 1
+!s100 6hfXLRBFH3W0Q:<FEX7=a1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I:PGDa4M17?WRJTM350Ek=1
+R0
+Z4 w1696749248
+8E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/prj/ipcore/blk_mem_gen_0/blk_mem_gen_0.v
+FE:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/prj/ipcore/blk_mem_gen_0/blk_mem_gen_0.v
+!i122 0
+L0 16 98
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z7 !s108 1696757380.000000
+Z8 !s107 E:\Document\FPGA\PGL\PGL25G\Finalized\lcd_rgb_char\prj\ipcore\blk_mem_gen_0\rtl\blk_mem_gen_0_init_param.v|E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/sim/tb_lcd_rgb_char.v|E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/prj/ipcore/blk_mem_gen_0/blk_mem_gen_0.v|E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/prj/ipcore/blk_mem_gen_0/rtl/ipml_spram_v1_5_blk_mem_gen_0.v|E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/prj/ipcore/blk_mem_gen_0/rtl/ipml_rom_v1_5_blk_mem_gen_0.v|E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/rtl/rd_id.v|E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/rtl/lcd_rgb_char.v|E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/rtl/lcd_driver.v|E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/rtl/lcd_display.v|E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/rtl/clk_div.v|
+Z9 !s90 -reportprogress|300|-work|work|E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/rtl/clk_div.v|E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/rtl/lcd_display.v|E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/rtl/lcd_driver.v|E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/rtl/lcd_rgb_char.v|E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/rtl/rd_id.v|E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/prj/ipcore/blk_mem_gen_0/rtl/ipml_rom_v1_5_blk_mem_gen_0.v|E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/prj/ipcore/blk_mem_gen_0/rtl/ipml_spram_v1_5_blk_mem_gen_0.v|E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/prj/ipcore/blk_mem_gen_0/blk_mem_gen_0.v|E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/sim/tb_lcd_rgb_char.v|
+!i113 0
+Z10 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vclk_div
+R2
+!i10b 1
+!s100 k7oLK2gP0hNdE?S]6?[FY0
+R3
+IcegcCbGBz2<=zlkL5=E<@3
+R0
+Z11 w1627800981
+8E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/rtl/clk_div.v
+FE:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/rtl/clk_div.v
+!i122 0
+L0 23 44
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1
+vipml_rom_v1_5_blk_mem_gen_0
+R2
+!i10b 1
+!s100 m1eia2dAYBd<3KcmUDD?A3
+R3
+IhkmW_AG1>=VfM?lbPR9zX0
+R0
+R4
+8E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/prj/ipcore/blk_mem_gen_0/rtl/ipml_rom_v1_5_blk_mem_gen_0.v
+FE:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/prj/ipcore/blk_mem_gen_0/rtl/ipml_rom_v1_5_blk_mem_gen_0.v
+!i122 0
+L0 18 68
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1
+vipml_spram_v1_5_blk_mem_gen_0
+R2
+!i10b 1
+!s100 iBNT[H[5zD7CR4;:cEz`d0
+R3
+I;GcO@^=AkcQjZUM<o`cWL0
+R0
+w1696749252
+8E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/prj/ipcore/blk_mem_gen_0/rtl/ipml_spram_v1_5_blk_mem_gen_0.v
+FE:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/prj/ipcore/blk_mem_gen_0/rtl/ipml_spram_v1_5_blk_mem_gen_0.v
+FE:\Document\FPGA\PGL\PGL25G\Finalized\lcd_rgb_char\prj\ipcore\blk_mem_gen_0\rtl\blk_mem_gen_0_init_param.v
+!i122 0
+L0 17 2297
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1
+vlcd_display
+R2
+!i10b 1
+!s100 l^En;HDkzal1c]A586L@A3
+R3
+I_;QH;X::E`jCB[n];lYLX2
+R0
+w1696573106
+8E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/rtl/lcd_display.v
+FE:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/rtl/lcd_display.v
+!i122 0
+L0 23 116
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1
+vlcd_driver
+R2
+!i10b 1
+!s100 XW8Sf4G9^lhVGFIeUjia`0
+R3
+Ik=DAH6^bF5^GKeKT?:@;[2
+R0
+w1687247225
+8E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/rtl/lcd_driver.v
+FE:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/rtl/lcd_driver.v
+!i122 0
+L0 23 243
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1
+vlcd_rgb_char
+R2
+!i10b 1
+!s100 ZcP<LN_DVk]LfIaFfm0Xh3
+R3
+I8z[1CnGFL:amdGfU@gRYi0
+R0
+w1635300075
+8E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/rtl/lcd_rgb_char.v
+FE:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/rtl/lcd_rgb_char.v
+!i122 0
+L0 23 79
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1
+vrd_id
+R2
+!i10b 1
+!s100 FZhR;`c3iGeXz]<oZPGiP0
+R3
+IeB5mLSzBd:GJVXldjQ<fW3
+R0
+R11
+8E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/rtl/rd_id.v
+FE:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/rtl/rd_id.v
+!i122 0
+L0 23 36
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1
+vtb_lcd_rgb_char
+R2
+!i10b 1
+!s100 a[ifi8?lYEY4=YG5g=6hZ0
+R3
+IQYaXcCjG]9KPh;j6Q6gM;2
+R0
+w1696731380
+8E:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/sim/tb_lcd_rgb_char.v
+FE:/Document/FPGA/PGL/PGL25G/Finalized/lcd_rgb_char/sim/tb_lcd_rgb_char.v
+!i122 0
+L0 3 43
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1

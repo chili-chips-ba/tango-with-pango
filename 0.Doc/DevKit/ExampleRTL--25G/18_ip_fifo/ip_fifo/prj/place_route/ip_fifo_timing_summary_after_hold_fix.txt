@@ -1,0 +1,156 @@
+Design Summary : All Constraints Met.
+
+Setup Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     4.912       0.000              0            858
+ clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     7.938       0.000              0             12
+ clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                    15.302       0.000              0            829
+ clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     7.709       0.000              0             12
+ DebugCore_JCLK         DebugCore_JCLK              23.242       0.000              0            893
+ DebugCore_CAPTURE      DebugCore_JCLK              19.701       0.000              0            215
+ DebugCore_JCLK         DebugCore_CAPTURE           46.287       0.000              0             32
+====================================================================================================
+
+Hold Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     0.108       0.000              0            858
+ clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     0.108       0.000              0             12
+ clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     0.141       0.000              0            829
+ clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     0.103       0.000              0             12
+ DebugCore_JCLK         DebugCore_JCLK               0.260       0.000              0            893
+ DebugCore_CAPTURE      DebugCore_JCLK              23.054       0.000              0            215
+ DebugCore_JCLK         DebugCore_CAPTURE            1.366       0.000              0             32
+====================================================================================================
+
+Recovery Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     7.534       0.000              0            279
+ clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                    16.862       0.000              0            257
+====================================================================================================
+
+Removal Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     0.466       0.000              0            279
+ clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     0.464       0.000              0            257
+====================================================================================================
+
+Minimum Pulse Width Summary(Slow Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Setup Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     6.455       0.000              0            858
+ clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     8.698       0.000              0             12
+ clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                    16.639       0.000              0            829
+ clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     8.537       0.000              0             12
+ DebugCore_JCLK         DebugCore_JCLK              23.841       0.000              0            893
+ DebugCore_CAPTURE      DebugCore_JCLK              21.155       0.000              0            215
+ DebugCore_JCLK         DebugCore_CAPTURE           47.713       0.000              0             32
+====================================================================================================
+
+Hold Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     0.201       0.000              0            858
+ clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     0.175       0.000              0             12
+ clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     0.158       0.000              0            829
+ clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     0.169       0.000              0             12
+ DebugCore_JCLK         DebugCore_JCLK               0.252       0.000              0            893
+ DebugCore_CAPTURE      DebugCore_JCLK              24.184       0.000              0            215
+ DebugCore_JCLK         DebugCore_CAPTURE            0.941       0.000              0             32
+====================================================================================================
+
+Recovery Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     8.294       0.000              0            279
+ clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                    17.833       0.000              0            257
+====================================================================================================
+
+Removal Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT1_Inferred
+                                                     0.446       0.000              0            279
+ clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                        clk|u_pll_clk/u_pll_e3/CLKOUT0_Inferred
+                                                     0.406       0.000              0            257
+====================================================================================================
+
+Minimum Pulse Width Summary(Fast Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+

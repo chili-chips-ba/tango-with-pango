@@ -1,0 +1,1 @@
+.rtl_screen -top_module {and_gate} -include_path {<D:/Desktop/25G/2_gate/1_and_gate/prj>} -design_files {<D:/Desktop/25G/2_gate/1_and_gate/rtl/and_gate.v|work>}

@@ -1,0 +1,51 @@
+##### Written on 2023/10/09 13:38:18 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL25G-6MBG324
+
+Top Module : 
+	hdmi_colorbar_top
+
+Constraint File(s) : 
+	E:/Document/FPGA/PGL/PGL25G/Finalized/hdmi_colorbar/prj/source/hdmi_colorbar.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 4 critical warning(s), 0 warning(s), out of 67 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:tmds_data_n[0]} {PAP_IO_LOC} {V10}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/hdmi_colorbar/prj/source/hdmi_colorbar.fdc(line number: 28)] | Port tmds_data_n[0] has been placed at location V10, whose type is share pin.
+
+define_attribute {p:tmds_data_p[0]} {PAP_IO_LOC} {U10}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/hdmi_colorbar/prj/source/hdmi_colorbar.fdc(line number: 49)] | Port tmds_data_p[0] has been placed at location U10, whose type is share pin.
+
+define_attribute {p:tmds_clk_n} {PAP_IO_LOC} {V16}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/hdmi_colorbar/prj/source/hdmi_colorbar.fdc(line number: 56)] | Port tmds_clk_n has been placed at location V16, whose type is share pin.
+
+define_attribute {p:tmds_clk_p} {PAP_IO_LOC} {U16}
+	C: ConstraintEditor-2002: [E:/Document/FPGA/PGL/PGL25G/Finalized/hdmi_colorbar/prj/source/hdmi_colorbar.fdc(line number: 63)] | Port tmds_clk_p has been placed at location U16, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

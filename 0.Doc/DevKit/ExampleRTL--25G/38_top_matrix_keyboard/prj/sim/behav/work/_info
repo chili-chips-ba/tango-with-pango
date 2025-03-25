@@ -1,0 +1,136 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/prj/sim/behav
+T_opt
+!s110 1696749964
+V[jJ^Bn57Q:R1H^hdW_]DO2
+04 22 4 work tb_top_matrix_keyboard fast 0
+04 7 4 usim GTP_GRS fast 0
+=1-047c1648650d-6522598c-17f-3da0
+o-quiet -auto_acc_if_foreign -work work -L work -L usim -L adc -L ddrc -L ddrphy -L hsst_e2 -L iolhr_dft -L ipal_e1 -L pciegen2 +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vkey_4x4
+Z2 !s110 1696749962
+!i10b 1
+!s100 hZ9hl?gBP<<RO<b?::e8j3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I]m:8P?^7U1ln0B@i4E1cf0
+R0
+w1693790996
+8E:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/rtl/key_4x4.v
+FE:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/rtl/key_4x4.v
+!i122 0
+L0 19 175
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z6 !s108 1696749962.000000
+Z7 !s107 E:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/sim/tb_top_matrix_keyboard.v|E:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/rtl/top_matrix_keyboard.v|E:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/rtl/swi_led.v|E:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/rtl/seg_led.v|E:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/rtl/key_4x4.v|
+Z8 !s90 -reportprogress|300|-work|work|E:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/rtl/key_4x4.v|E:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/rtl/seg_led.v|E:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/rtl/swi_led.v|E:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/rtl/top_matrix_keyboard.v|E:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/sim/tb_top_matrix_keyboard.v|
+!i113 0
+Z9 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vseg_led
+R2
+!i10b 1
+!s100 >RX[DbUj=9NJo8FNmDog32
+R3
+Ia:T_^gg5RIRoh70h=5PPX3
+R0
+w1693791002
+8E:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/rtl/seg_led.v
+FE:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/rtl/seg_led.v
+!i122 0
+L0 19 59
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vswi_led
+R2
+!i10b 1
+!s100 8A9Vzf>9f9QhY5YjfJ4kj0
+R3
+I_fmfclQKnZMGDAoGUST5z0
+R0
+w1693791007
+8E:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/rtl/swi_led.v
+FE:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/rtl/swi_led.v
+!i122 0
+L0 19 19
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vtb_top_matrix_keyboard
+R2
+!i10b 1
+!s100 l1@C2z`]Z`<6Y@o3llObk2
+R3
+IYznNa;2]V8UIi`jZVo<3b2
+R0
+w1684483879
+8E:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/sim/tb_top_matrix_keyboard.v
+FE:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/sim/tb_top_matrix_keyboard.v
+!i122 0
+L0 2 63
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vtop_matrix_keyboard
+R2
+!i10b 1
+!s100 QADXzSgG7<JM`>daI78?R2
+R3
+ICU0VP8k?7JY:TBhk<bbQR1
+R0
+w1693791012
+8E:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/rtl/top_matrix_keyboard.v
+FE:/Document/FPGA/PGL/PGL25G/Finalized/top_matrix_keyboard/rtl/top_matrix_keyboard.v
+!i122 0
+L0 19 48
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1

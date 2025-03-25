@@ -1,0 +1,147 @@
+##### Written on 2024/05/22 10:29:57 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL25G-6MBG324
+
+Top Module : 
+	eth_ddr3_lcd
+
+Constraint File(s) : 
+	C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 36 critical warning(s), 0 warning(s), out of 718 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:eth_txd[1]} {PAP_IO_LOC} {E13}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 20)] | Port eth_txd[1] has been placed at location E13, whose type is share pin.
+
+define_attribute {p:eth_txd[0]} {PAP_IO_LOC} {F13}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 27)] | Port eth_txd[0] has been placed at location F13, whose type is share pin.
+
+define_attribute {p:eth_rxd[3]} {PAP_IO_LOC} {C14}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 34)] | Port eth_rxd[3] has been placed at location C14, whose type is share pin.
+
+define_attribute {p:eth_rxd[2]} {PAP_IO_LOC} {D14}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 39)] | Port eth_rxd[2] has been placed at location D14, whose type is share pin.
+
+define_attribute {p:eth_rxd[1]} {PAP_IO_LOC} {A16}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 44)] | Port eth_rxd[1] has been placed at location A16, whose type is share pin.
+
+define_attribute {p:eth_rxd[0]} {PAP_IO_LOC} {B16}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 49)] | Port eth_rxd[0] has been placed at location B16, whose type is share pin.
+
+define_attribute {p:mem_rst_n} {PAP_IO_LOC} {F14}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 310)] | Port mem_rst_n has been placed at location F14, whose type is share pin.
+
+define_attribute {p:mem_ck} {PAP_IO_LOC} {G16}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 317)] | Port mem_ck has been placed at location G16, whose type is share pin.
+
+define_attribute {p:mem_ck_n} {PAP_IO_LOC} {G18}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 324)] | Port mem_ck_n has been placed at location G18, whose type is share pin.
+
+define_attribute {p:mem_cke} {PAP_IO_LOC} {D17}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 331)] | Port mem_cke has been placed at location D17, whose type is share pin.
+
+define_attribute {p:mem_cs_n} {PAP_IO_LOC} {F15}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 338)] | Port mem_cs_n has been placed at location F15, whose type is share pin.
+
+define_attribute {p:mem_we_n} {PAP_IO_LOC} {K12}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 359)] | Port mem_we_n has been placed at location K12, whose type is share pin.
+
+define_attribute {p:mem_a[0]} {PAP_IO_LOC} {H15}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 373)] | Port mem_a[0] has been placed at location H15, whose type is share pin.
+
+define_attribute {p:mem_a[1]} {PAP_IO_LOC} {H16}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 380)] | Port mem_a[1] has been placed at location H16, whose type is share pin.
+
+define_attribute {p:mem_a[2]} {PAP_IO_LOC} {F18}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 387)] | Port mem_a[2] has been placed at location F18, whose type is share pin.
+
+define_attribute {p:mem_a[4]} {PAP_IO_LOC} {E18}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 401)] | Port mem_a[4] has been placed at location E18, whose type is share pin.
+
+define_attribute {p:mem_a[7]} {PAP_IO_LOC} {F17}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 422)] | Port mem_a[7] has been placed at location F17, whose type is share pin.
+
+define_attribute {p:mem_a[8]} {PAP_IO_LOC} {H12}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 429)] | Port mem_a[8] has been placed at location H12, whose type is share pin.
+
+define_attribute {p:mem_a[9]} {PAP_IO_LOC} {G13}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 436)] | Port mem_a[9] has been placed at location G13, whose type is share pin.
+
+define_attribute {p:mem_a[10]} {PAP_IO_LOC} {E16}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 443)] | Port mem_a[10] has been placed at location E16, whose type is share pin.
+
+define_attribute {p:mem_a[11]} {PAP_IO_LOC} {G14}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 450)] | Port mem_a[11] has been placed at location G14, whose type is share pin.
+
+define_attribute {p:mem_a[12]} {PAP_IO_LOC} {D18}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 457)] | Port mem_a[12] has been placed at location D18, whose type is share pin.
+
+define_attribute {p:mem_a[13]} {PAP_IO_LOC} {C17}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 464)] | Port mem_a[13] has been placed at location C17, whose type is share pin.
+
+define_attribute {p:mem_a[14]} {PAP_IO_LOC} {C18}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 471)] | Port mem_a[14] has been placed at location C18, whose type is share pin.
+
+define_attribute {p:mem_ba[0]} {PAP_IO_LOC} {H13}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 478)] | Port mem_ba[0] has been placed at location H13, whose type is share pin.
+
+define_attribute {p:mem_ba[1]} {PAP_IO_LOC} {H14}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 485)] | Port mem_ba[1] has been placed at location H14, whose type is share pin.
+
+define_attribute {p:mem_ba[2]} {PAP_IO_LOC} {K13}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 492)] | Port mem_ba[2] has been placed at location K13, whose type is share pin.
+
+define_attribute {p:mem_dq[0]} {PAP_IO_LOC} {M16}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 499)] | Port mem_dq[0] has been placed at location M16, whose type is share pin.
+
+define_attribute {p:mem_dq[1]} {PAP_IO_LOC} {M18}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 510)] | Port mem_dq[1] has been placed at location M18, whose type is share pin.
+
+define_attribute {p:mem_dq[2]} {PAP_IO_LOC} {L17}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 521)] | Port mem_dq[2] has been placed at location L17, whose type is share pin.
+
+define_attribute {p:mem_dq[3]} {PAP_IO_LOC} {L18}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 532)] | Port mem_dq[3] has been placed at location L18, whose type is share pin.
+
+define_attribute {p:mem_dq[6]} {PAP_IO_LOC} {J16}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 565)] | Port mem_dq[6] has been placed at location J16, whose type is share pin.
+
+define_attribute {p:mem_dq[7]} {PAP_IO_LOC} {J18}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 576)] | Port mem_dq[7] has been placed at location J18, whose type is share pin.
+
+define_attribute {p:mem_dqs[0]} {PAP_IO_LOC} {K17}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 587)] | Port mem_dqs[0] has been placed at location K17, whose type is share pin.
+
+define_attribute {p:mem_dqs_n[0]} {PAP_IO_LOC} {K18}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 596)] | Port mem_dqs_n[0] has been placed at location K18, whose type is share pin.
+
+define_attribute {p:mem_dq[8]} {PAP_IO_LOC} {N17}
+	C: ConstraintEditor-2002: [C:/Users/VIDEO/Desktop/53_eth_ddr_lcd/prj/eth_ddr_lcd.fdc(line number: 612)] | Port mem_dq[8] has been placed at location N17, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

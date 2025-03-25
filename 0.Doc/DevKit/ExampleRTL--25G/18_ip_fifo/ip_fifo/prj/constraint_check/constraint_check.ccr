@@ -1,0 +1,45 @@
+##### Written on 2023/10/16 15:57:26 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL25G-6MBG324
+
+Top Module : 
+	ip_fifo
+
+Constraint File(s) : 
+	E:/PDS/ip_fifo/prj/ip_fifo.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 0 critical warning(s), 6 warning(s), out of 11 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+W: ConstraintEditor-4019: Port Bus 'fifo_rd_data' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port Bus 'fifo_wr_data' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'fifo_empty' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'fifo_full' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'fifo_rd_en' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'fifo_wr_en' unspecified I/O constraint.
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

@@ -1,0 +1,1 @@
+.rtl_screen -top_module {led} -include_path {<D:/Desktop/25G/led/prj>} -design_files {<D:/Desktop/25G/led/rtl/led.v|work>}

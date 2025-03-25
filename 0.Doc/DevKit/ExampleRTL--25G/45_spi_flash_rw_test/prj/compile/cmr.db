@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table id="compile_source_files" title="Design Files Read" column_number="2">
+        <column_headers>
+            <data>File Name</data>
+            <data>File Type</data>
+        </column_headers>
+        <row>
+            <data>D:/ywd1/dm/44_spi_flash_rw_test/rtl/flash_rw.v</data>
+            <data>Verilog</data>
+        </row>
+        <row>
+            <data>D:/ywd1/dm/44_spi_flash_rw_test/rtl/flash_rw_test.v</data>
+            <data>Verilog</data>
+        </row>
+        <row>
+            <data>D:/ywd1/dm/44_spi_flash_rw_test/rtl/spi_drive.v</data>
+            <data>Verilog</data>
+        </row>
+        <row>
+            <data>D:/ywd1/dm/44_spi_flash_rw_test/rtl/led_alarm.v</data>
+            <data>Verilog</data>
+        </row>
+        <row>
+            <data>D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.idf</data>
+            <data>IP</data>
+        </row>
+    </table>
+    <table id="compile_runtime" title="Compile Runtime &amp; Memory" column_number="7">
+        <column_headers>
+            <data>Cpu Time</data>
+            <data>Process Cpu Time</data>
+            <data>Real Time</data>
+            <data>Peak Memory (MB)</data>
+            <data>Operation System</data>
+            <data>CPU</data>
+            <data>RAM(GB)</data>
+        </column_headers>
+        <row>
+            <data>0h:0m:1s</data>
+            <data>0h:0m:1s</data>
+            <data>0h:0m:5s</data>
+            <data>138</data>
+            <data>WINDOWS 10 x86_64</data>
+            <data>Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz</data>
+            <data>8</data>
+        </row>
+    </table>
+    <table id="compile_messages" title="Compile Messages" column_number="1">
+        <column_headers/>
+        <row>
+            <data message="4">Enable Verilog2k features and keywords</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0001: Analyzing file D:/ywd1/dm/44_spi_flash_rw_test/rtl/flash_rw.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [D:/ywd1/dm/44_spi_flash_rw_test/rtl/flash_rw.v(line number: 23)] Analyzing module flash_rw (library work)</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0001: Analyzing file D:/ywd1/dm/44_spi_flash_rw_test/rtl/flash_rw_test.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [D:/ywd1/dm/44_spi_flash_rw_test/rtl/flash_rw_test.v(line number: 23)] Analyzing module flash_rw_test (library work)</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0001: Analyzing file D:/ywd1/dm/44_spi_flash_rw_test/rtl/spi_drive.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [D:/ywd1/dm/44_spi_flash_rw_test/rtl/spi_drive.v(line number: 23)] Analyzing module spi_drive (library work)</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0001: Analyzing file D:/ywd1/dm/44_spi_flash_rw_test/rtl/led_alarm.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [D:/ywd1/dm/44_spi_flash_rw_test/rtl/led_alarm.v(line number: 24)] Analyzing module led_alarm (library work)</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0001: Analyzing file D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 20)] Analyzing module pll_spi (library work)</data>
+        </row>
+        <row>
+            <data message="4">Module &quot;flash_rw_test&quot; is set as top module.</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [D:/ywd1/dm/44_spi_flash_rw_test/rtl/flash_rw_test.v(line number: 23)] Elaborating module flash_rw_test</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [D:/ywd1/dm/44_spi_flash_rw_test/rtl/flash_rw_test.v(line number: 54)] Elaborating instance u_pll_spi</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 20)] Elaborating module pll_spi</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 230)] Elaborating instance u_pll_e3</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 117)] Net clkfb in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 120)] Net pfden in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 121)] Net clkout0_gate in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 122)] Net clkout0_2pad_gate in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 123)] Net clkout1_gate in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 124)] Net clkout2_gate in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 125)] Net clkout3_gate in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 126)] Net clkout4_gate in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 127)] Net clkout5_gate in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 128)] Net dyn_idiv in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 129)] Net dyn_odiv0 in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 130)] Net dyn_odiv1 in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 131)] Net dyn_odiv2 in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 132)] Net dyn_odiv3 in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 133)] Net dyn_odiv4 in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 134)] Net dyn_fdiv in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 135)] Net dyn_duty0 in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 136)] Net dyn_duty1 in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 137)] Net dyn_duty2 in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 138)] Net dyn_duty3 in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/44_spi_flash_rw_test/prj/ipcore/pll_spi/pll_spi.v(line number: 139)] Net dyn_duty4 in pll_spi(original module pll_spi) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [D:/ywd1/dm/44_spi_flash_rw_test/rtl/flash_rw_test.v(line number: 60)] Elaborating instance u_spi_drive</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [D:/ywd1/dm/44_spi_flash_rw_test/rtl/spi_drive.v(line number: 23)] Elaborating module spi_drive</data>
+        </row>
+        <row>
+            <data message="4">Module instance {flash_rw_test/u_spi_drive} parameter value:
+    IDLE = 4'b0000
+    WEL = 4'b0001
+    S_ERA = 4'b0010
+    C_ERA = 4'b0011
+    READ = 4'b0100
+    WRITE = 4'b0101
+    R_STA_REG = 4'b0110
+    WEL_CMD = 8'b00000110
+    S_ERA_CMD = 8'b00100000
+    C_ERA_CMD = 8'b11000111
+    READ_CMD = 8'b00000011
+    WRITE_CMD = 8'b00000010
+    R_STA_REG_CMD = 8'b00000101</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [D:/ywd1/dm/44_spi_flash_rw_test/rtl/flash_rw_test.v(line number: 79)] Elaborating instance u_flash_rw</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [D:/ywd1/dm/44_spi_flash_rw_test/rtl/flash_rw.v(line number: 23)] Elaborating module flash_rw</data>
+        </row>
+        <row>
+            <data message="4">Module instance {flash_rw_test/u_flash_rw} parameter value:
+    WEL_CMD = 16'b0000000000000110
+    S_ERA_CMD = 16'b0000000000100000
+    C_ERA_CMD = 16'b0000000011000111
+    READ_CMD = 16'b0000000000000011
+    WRITE_CMD = 16'b0000000000000010
+    R_STA_REG_CMD = 8'b00000101</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [D:/ywd1/dm/44_spi_flash_rw_test/rtl/flash_rw_test.v(line number: 95)] Elaborating instance u_led_alarm</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [D:/ywd1/dm/44_spi_flash_rw_test/rtl/led_alarm.v(line number: 24)] Elaborating module led_alarm</data>
+        </row>
+        <row>
+            <data message="4">Module instance {flash_rw_test/u_led_alarm} parameter value:
+    L_TIME = 25'b1011111010111100001000000</data>
+        </row>
+        <row>
+            <data message="5">Sdm-2014: [D:/ywd1/dm/44_spi_flash_rw_test/rtl/flash_rw.v(line number: 31)] Feedback mux created for signal 'spi_start'. It is possible a async set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value. </data>
+        </row>
+        <row>
+            <data message="5">Sdm-2004: [D:/ywd1/dm/44_spi_flash_rw_test/rtl/flash_rw.v(line number: 32)] Latch is generated for signal spi_cmd, possible missing assignment in an if or case statement.</data>
+        </row>
+        <row>
+            <data message="4">FSM current_state_fsm[3:0] inferred.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N962 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N974_1 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N890 (bmsREDAND).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N968_1 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N430 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N527 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N602 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N739 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N424 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N1355_1 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+    </table>
+    <general_container id="compile_settings">
+        <table_container>
+            <table id="compile_settings" title="Compile Settings" column_number="2">
+                <column_headers>
+                    <data>Name</data>
+                    <data>Value</data>
+                </column_headers>
+                <row>
+                    <data>Part</data>
+                    <data>PGL25G-6MBG324</data>
+                </row>
+                <row>
+                    <data>Top Module</data>
+                    <data>flash_rw_test</data>
+                </row>
+            </table>
+        </table_container>
+        <general_container align="3">
+            <table_container>
+                <data>Verilog</data>
+                <table id="" title="" column_number="2">
+                    <column_headers>
+                        <data>Name</data>
+                        <data>Value</data>
+                    </column_headers>
+                    <row>
+                        <data>SystemVerilog</data>
+                        <data>false</data>
+                    </row>
+                    <row>
+                        <data>Allow Duplicate Modules</data>
+                        <data>false</data>
+                    </row>
+                    <row>
+                        <data>Multiple File Compilation Unit</data>
+                        <data>true</data>
+                    </row>
+                    <row>
+                        <data>Include Path Order: 
+ (Relative to Verilog File)</data>
+                        <data>D:/ywd1/dm/44_spi_flash_rw_test/prj	</data>
+                    </row>
+                    <row>
+                        <data>Parameters/Generics</data>
+                        <data></data>
+                    </row>
+                    <row>
+                        <data>Compiler Directives</data>
+                        <data></data>
+                    </row>
+                    <row>
+                        <data>Loop Limit</data>
+                        <data>2000</data>
+                    </row>
+                </table>
+            </table_container>
+            <table_container>
+                <data>Options</data>
+                <table id="" title="" column_number="2">
+                    <column_headers>
+                        <data>Name</data>
+                        <data>Value</data>
+                    </column_headers>
+                    <row>
+                        <data>FSM Compiler</data>
+                        <data>auto</data>
+                    </row>
+                </table>
+            </table_container>
+        </general_container>
+    </general_container>
+</tables>

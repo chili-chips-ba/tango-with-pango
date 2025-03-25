@@ -1,0 +1,1 @@
+.rtl_screen -top_module {decoder3_8} -include_path {<D:/Desktop/25G/4_decoder3_8/prj>} -design_files {<D:/Desktop/25G/4_decoder3_8/rtl/decoder3_8.v|work>}

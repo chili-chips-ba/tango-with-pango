@@ -1,0 +1,228 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/prj/sim/behav
+T_opt
+!s110 1696744561
+VGfIKf`XL?zW>AmH9S`LDI1
+04 22 4 work tb_top_hdmi_block_move fast 0
+04 7 4 usim GTP_GRS fast 0
+=1-047c1648650d-65224471-121-4b7c
+o-quiet -auto_acc_if_foreign -work work -L work -L usim -L adc -L ddrc -L ddrphy -L hsst_e2 -L iolhr_dft -L ipal_e1 -L pciegen2 +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vasyn_rst_syn
+Z2 !s110 1696744559
+!i10b 1
+!s100 EOOCgTnZalXCJkaCUU5382
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IZ>VFS`H6jz?WV^0m:z<0T2
+R0
+w1662023934
+8E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/asyn_rst_syn.v
+FE:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/asyn_rst_syn.v
+!i122 0
+L0 23 29
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z6 !s108 1696744559.000000
+Z7 !s107 E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/sim/tb_top_hdmi_block_move.v|E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/prj/ipcore/clk_wiz_0/clk_wiz_0.v|E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/video_driver.v|E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/video_display.v|E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/top_hdmi_block_move.v|E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/serializer_10_to_1.v|E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/dvi_transmitter_top.v|E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/dvi_encoder.v|E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/asyn_rst_syn.v|
+Z8 !s90 -reportprogress|300|-work|work|E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/asyn_rst_syn.v|E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/dvi_encoder.v|E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/dvi_transmitter_top.v|E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/serializer_10_to_1.v|E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/top_hdmi_block_move.v|E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/video_display.v|E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/video_driver.v|E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/prj/ipcore/clk_wiz_0/clk_wiz_0.v|E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/sim/tb_top_hdmi_block_move.v|
+!i113 0
+Z9 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vclk_wiz_0
+R2
+!i10b 1
+!s100 kGR_<YgZ;AhfK>5j1Okz02
+R3
+IJoFAS?9UQ84n0K@dd9VXc3
+R0
+w1696587370
+8E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/prj/ipcore/clk_wiz_0/clk_wiz_0.v
+FE:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/prj/ipcore/clk_wiz_0/clk_wiz_0.v
+!i122 0
+L0 18 263
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vdvi_encoder
+R2
+!i10b 1
+!s100 CXOen;k;7So;ine24YMkZ2
+R3
+IR?GMB[Cd3BYK23_OVW;h>2
+R0
+w1662023961
+8E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/dvi_encoder.v
+FE:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/dvi_encoder.v
+!i122 0
+L0 21 134
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vdvi_transmitter_top
+R2
+!i10b 1
+!s100 7U:kljJ@6jz[ZI]3FDOgT0
+R3
+I30?o<iKD[lYOUSYPbAb8C0
+R0
+w1694598276
+8E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/dvi_transmitter_top.v
+FE:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/dvi_transmitter_top.v
+!i122 0
+L0 24 111
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vserializer_10_to_1
+R2
+!i10b 1
+!s100 MG]X>9XGR[ame4Y1o:?1m3
+R3
+I=aNjcXim6Q1l1AO_gaN`I0
+R0
+w1694598371
+8E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/serializer_10_to_1.v
+FE:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/serializer_10_to_1.v
+!i122 0
+L0 25 113
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vtb_top_hdmi_block_move
+R2
+!i10b 1
+!s100 LY]Od;3hEk>nALJ6nW3mR2
+R3
+IfS<aUWVgXJk5^8A<[kimH0
+R0
+w1696744381
+8E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/sim/tb_top_hdmi_block_move.v
+FE:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/sim/tb_top_hdmi_block_move.v
+!i122 0
+L0 23 37
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vtop_hdmi_block_move
+R2
+!i10b 1
+!s100 R=95;GHIn8Vl^Ncoz?KDC1
+R3
+I9P2TIOVgeT6Q:EahPkmWV3
+R0
+w1696588899
+8E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/top_hdmi_block_move.v
+FE:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/top_hdmi_block_move.v
+!i122 0
+L0 29 77
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vvideo_display
+R2
+!i10b 1
+!s100 JfQCjYoPfRajf8GF8Z4cX0
+R3
+I=TG>DT?WlVc=MWR^U5@801
+R0
+w1688696989
+8E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/video_display.v
+FE:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/video_display.v
+!i122 0
+L0 29 114
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vvideo_driver
+R2
+!i10b 1
+!s100 hebZL[A=W^]R7_QhI1?>=3
+R3
+I7g>E:Y4m4Mh=nXf4UGaN70
+R0
+w1693551431
+8E:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/video_driver.v
+FE:/Document/FPGA/PGL/PGL50G/Test program/hdmi_block_move/rtl/video_driver.v
+!i122 0
+L0 24 124
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1

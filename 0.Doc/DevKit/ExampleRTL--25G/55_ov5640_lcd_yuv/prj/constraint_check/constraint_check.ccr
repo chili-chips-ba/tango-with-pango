@@ -1,0 +1,129 @@
+##### Written on 2023/10/13 11:29:34 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL25G-6MBG324
+
+Top Module : 
+	ov5640_lcd_yuv
+
+Constraint File(s) : 
+	D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 30 critical warning(s), 0 warning(s), out of 675 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:mem_dq[8]} {PAP_IO_LOC} {N17}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 176)] | Port mem_dq[8] has been placed at location N17, whose type is share pin.
+
+define_attribute {p:mem_dq[7]} {PAP_IO_LOC} {J18}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 184)] | Port mem_dq[7] has been placed at location J18, whose type is share pin.
+
+define_attribute {p:mem_dq[6]} {PAP_IO_LOC} {J16}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 192)] | Port mem_dq[6] has been placed at location J16, whose type is share pin.
+
+define_attribute {p:mem_dq[3]} {PAP_IO_LOC} {L18}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 216)] | Port mem_dq[3] has been placed at location L18, whose type is share pin.
+
+define_attribute {p:mem_dq[2]} {PAP_IO_LOC} {L17}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 224)] | Port mem_dq[2] has been placed at location L17, whose type is share pin.
+
+define_attribute {p:mem_dq[1]} {PAP_IO_LOC} {M18}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 232)] | Port mem_dq[1] has been placed at location M18, whose type is share pin.
+
+define_attribute {p:mem_dq[0]} {PAP_IO_LOC} {M16}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 240)] | Port mem_dq[0] has been placed at location M16, whose type is share pin.
+
+define_attribute {p:mem_dqs[0]} {PAP_IO_LOC} {K17}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 255)] | Port mem_dqs[0] has been placed at location K17, whose type is share pin.
+
+define_attribute {p:mem_dqs_n[0]} {PAP_IO_LOC} {K18}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 269)] | Port mem_dqs_n[0] has been placed at location K18, whose type is share pin.
+
+define_attribute {p:mem_a[14]} {PAP_IO_LOC} {C18}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 276)] | Port mem_a[14] has been placed at location C18, whose type is share pin.
+
+define_attribute {p:mem_a[13]} {PAP_IO_LOC} {C17}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 283)] | Port mem_a[13] has been placed at location C17, whose type is share pin.
+
+define_attribute {p:mem_a[12]} {PAP_IO_LOC} {D18}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 290)] | Port mem_a[12] has been placed at location D18, whose type is share pin.
+
+define_attribute {p:mem_a[11]} {PAP_IO_LOC} {G14}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 297)] | Port mem_a[11] has been placed at location G14, whose type is share pin.
+
+define_attribute {p:mem_a[10]} {PAP_IO_LOC} {E16}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 304)] | Port mem_a[10] has been placed at location E16, whose type is share pin.
+
+define_attribute {p:mem_a[9]} {PAP_IO_LOC} {G13}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 311)] | Port mem_a[9] has been placed at location G13, whose type is share pin.
+
+define_attribute {p:mem_a[8]} {PAP_IO_LOC} {H12}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 318)] | Port mem_a[8] has been placed at location H12, whose type is share pin.
+
+define_attribute {p:mem_a[7]} {PAP_IO_LOC} {F17}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 325)] | Port mem_a[7] has been placed at location F17, whose type is share pin.
+
+define_attribute {p:mem_a[4]} {PAP_IO_LOC} {E18}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 346)] | Port mem_a[4] has been placed at location E18, whose type is share pin.
+
+define_attribute {p:mem_a[2]} {PAP_IO_LOC} {F18}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 360)] | Port mem_a[2] has been placed at location F18, whose type is share pin.
+
+define_attribute {p:mem_a[1]} {PAP_IO_LOC} {H16}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 367)] | Port mem_a[1] has been placed at location H16, whose type is share pin.
+
+define_attribute {p:mem_a[0]} {PAP_IO_LOC} {H15}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 374)] | Port mem_a[0] has been placed at location H15, whose type is share pin.
+
+define_attribute {p:mem_ba[2]} {PAP_IO_LOC} {K13}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 381)] | Port mem_ba[2] has been placed at location K13, whose type is share pin.
+
+define_attribute {p:mem_ba[1]} {PAP_IO_LOC} {H14}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 388)] | Port mem_ba[1] has been placed at location H14, whose type is share pin.
+
+define_attribute {p:mem_ba[0]} {PAP_IO_LOC} {H13}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 395)] | Port mem_ba[0] has been placed at location H13, whose type is share pin.
+
+define_attribute {p:mem_ck} {PAP_IO_LOC} {G16}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 423)] | Port mem_ck has been placed at location G16, whose type is share pin.
+
+define_attribute {p:mem_ck_n} {PAP_IO_LOC} {G18}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 430)] | Port mem_ck_n has been placed at location G18, whose type is share pin.
+
+define_attribute {p:mem_cke} {PAP_IO_LOC} {D17}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 437)] | Port mem_cke has been placed at location D17, whose type is share pin.
+
+define_attribute {p:mem_rst_n} {PAP_IO_LOC} {F14}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 458)] | Port mem_rst_n has been placed at location F14, whose type is share pin.
+
+define_attribute {p:mem_we_n} {PAP_IO_LOC} {K12}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 465)] | Port mem_we_n has been placed at location K12, whose type is share pin.
+
+define_attribute {p:mem_cs_n} {PAP_IO_LOC} {F15}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/ov5640_lcd_yuv/prj/source/ov5640_lcd_pin.fdc(line number: 472)] | Port mem_cs_n has been placed at location F15, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

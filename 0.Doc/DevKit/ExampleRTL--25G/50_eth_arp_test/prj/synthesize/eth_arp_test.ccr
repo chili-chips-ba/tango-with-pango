@@ -1,0 +1,76 @@
+##### Written on 2023/07/17 13:40:38 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL25G-6MBG324
+
+Top Module : 
+	eth_arp_test
+
+Constraint File(s) : 
+	E:/ziguang_pro_yanzheng/PGL_25G/43_eth_arp_test/prj/eth_arp_test.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 6 critical warning(s), 6 warning(s), out of 96 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+
+
+define_attribute {p:eth_txd[1]} {PAP_IO_LOC} {E13}
+
+	C: ConstraintEditor-2002: [E:/ziguang_pro_yanzheng/PGL_25G/43_eth_arp_test/prj/eth_arp_test.fdc(line number: 20)] | Port eth_txd[1] has been placed at location E13, whose type is share pin.
+
+define_attribute {p:eth_txd[0]} {PAP_IO_LOC} {F13}
+
+	C: ConstraintEditor-2002: [E:/ziguang_pro_yanzheng/PGL_25G/43_eth_arp_test/prj/eth_arp_test.fdc(line number: 27)] | Port eth_txd[0] has been placed at location F13, whose type is share pin.
+
+define_attribute {p:eth_rxd[3]} {PAP_IO_LOC} {C14}
+
+	C: ConstraintEditor-2002: [E:/ziguang_pro_yanzheng/PGL_25G/43_eth_arp_test/prj/eth_arp_test.fdc(line number: 34)] | Port eth_rxd[3] has been placed at location C14, whose type is share pin.
+
+define_attribute {p:eth_rxd[2]} {PAP_IO_LOC} {D14}
+
+	C: ConstraintEditor-2002: [E:/ziguang_pro_yanzheng/PGL_25G/43_eth_arp_test/prj/eth_arp_test.fdc(line number: 39)] | Port eth_rxd[2] has been placed at location D14, whose type is share pin.
+
+define_attribute {p:eth_rxd[1]} {PAP_IO_LOC} {A16}
+
+	C: ConstraintEditor-2002: [E:/ziguang_pro_yanzheng/PGL_25G/43_eth_arp_test/prj/eth_arp_test.fdc(line number: 44)] | Port eth_rxd[1] has been placed at location A16, whose type is share pin.
+
+define_attribute {p:eth_rxd[0]} {PAP_IO_LOC} {B16}
+
+	C: ConstraintEditor-2002: [E:/ziguang_pro_yanzheng/PGL_25G/43_eth_arp_test/prj/eth_arp_test.fdc(line number: 49)] | Port eth_rxd[0] has been placed at location B16, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+
+
+
+
+
+
+
+W: ConstraintEditor-4019: Port 'gmii_rx_dv_D1' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'gmii_rxd_D1[0]' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'gmii_rxd_D1[1]' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'gmii_rxd_D1[2]' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'gmii_rxd_D1[3]' unspecified I/O constraint.
+W: ConstraintEditor-4019: Port 'pll_lock' unspecified I/O constraint.
+
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+
+
+
+

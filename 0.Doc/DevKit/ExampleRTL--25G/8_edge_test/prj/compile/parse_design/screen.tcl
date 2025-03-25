@@ -1,0 +1,1 @@
+.rtl_screen -top_module {edge_test} -include_path {<D:/Desktop/25G/8_edge_test/prj>} -design_files {<D:/Desktop/25G/8_edge_test/rtl/edge_test.v|work>}

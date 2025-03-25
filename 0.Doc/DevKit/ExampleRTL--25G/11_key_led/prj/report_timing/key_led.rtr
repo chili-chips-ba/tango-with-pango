@@ -1,0 +1,1395 @@
+
+----------------------------------------------------------------------------------------------------
+| Tool Version : Fabric Compiler (version 2022.2-SP4.2 <build 132111>)
+| Date         : Fri Oct 13 10:38:19 2023
+| Design       : key_led
+| Device       : PGL25G
+| Speed Grade  : -6
+| Package      : MBG324
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+| Timing Models: Production
+| Tcl Command  : report_timing 
+----------------------------------------------------------------------------------------------------
+
+Timing analysis mode : multi corner
+
+ Clock Summary:                                                                                       
+******************************************************************************************************
+                                                                         Clock   Non-clock            
+ Clock                    Period       Waveform            Type          Loads       Loads  Sources   
+------------------------------------------------------------------------------------------------------
+ key_led|sys_clk          20.0000      {0.0000 10.0000}    Declared         19           0  {sys_clk} 
+======================================================================================================
+
+ Clock Groups:                                                                                      
+****************************************************************************************************
+ Clock Group                   Group Type                 Clocks                                    
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+ Performance Summary:                                                                               
+****************************************************************************************************
+                              Requested       Estimated      Requested      Estimated               
+ Clock                        Frequency       Frequency      Period         Period             Slack
+----------------------------------------------------------------------------------------------------
+ key_led|sys_clk            50.0000 MHz    205.7613 MHz        20.0000         4.8600         15.140
+====================================================================================================
+
+Design Summary : All Constraints Met.
+
+Setup Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ key_led|sys_clk        key_led|sys_clk             15.140       0.000              0             78
+====================================================================================================
+
+Hold Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ key_led|sys_clk        key_led|sys_clk              0.344       0.000              0             78
+====================================================================================================
+
+Recovery Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Removal Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Minimum Pulse Width Summary(Slow Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ key_led|sys_clk                                     9.380       0.000              0             19
+====================================================================================================
+
+Setup Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ key_led|sys_clk        key_led|sys_clk             16.470       0.000              0             78
+====================================================================================================
+
+Hold Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ key_led|sys_clk        key_led|sys_clk              0.271       0.000              0             78
+====================================================================================================
+
+Recovery Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Removal Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Minimum Pulse Width Summary(Fast Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ key_led|sys_clk                                     9.504       0.000              0             19
+====================================================================================================
+
+Slow Corner
+****************************************************************************************************
+====================================================================================================
+
+Startpoint  : cnt[2]/opit_0_inv_A2Q21/CLK
+Endpoint    : cnt[24]/opit_0_inv_A2Q21/Cin
+Path Group  : key_led|sys_clk
+Path Type   : max (slow corner)
+Path Class  : sequential timing path
+Clock Skew  :    -0.057  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  3.591
+  Launch Clock Delay      :  4.480
+  Clock Pessimism Removal :  0.832
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    1.254       1.298 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.298         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.076       1.374 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        1.032       2.406         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       2.406 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       2.074       4.480         ntclkbufg_0      
+ CLMA_138_40/CLK                                                           r       cnt[2]/opit_0_inv_A2Q21/CLK
+
+ CLMA_138_40/Q1                    tco                   0.291       4.771 r       cnt[2]/opit_0_inv_A2Q21/Q1
+                                   net (fanout=3)        0.396       5.167         cnt[2]           
+ CLMA_138_36/Y1                    td                    0.466       5.633 f       N3_mux5_5/gateop_perm/Z
+                                   net (fanout=1)        0.565       6.198         _N788            
+ CLMS_138_57/Y3                    td                    0.210       6.408 r       N3_mux10/gateop_perm/Z
+                                   net (fanout=1)        0.120       6.528         _N21             
+ CLMS_138_57/Y2                    td                    0.341       6.869 f       N3_mux17/gateop_perm/Z
+                                   net (fanout=1)        0.440       7.309         _N35             
+ CLMA_138_36/Y3                    td                    0.287       7.596 r       N3_mux24/gateop_perm/Z
+                                   net (fanout=25)       0.413       8.009         N3               
+                                   td                    0.477       8.486 f       cnt[2]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.486         _N56             
+ CLMA_138_40/COUT                  td                    0.058       8.544 r       cnt[4]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.544         _N58             
+                                   td                    0.058       8.602 r       cnt[6]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.602         _N60             
+ CLMA_138_44/COUT                  td                    0.058       8.660 r       cnt[8]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.660         _N62             
+                                   td                    0.058       8.718 r       cnt[10]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.718         _N64             
+ CLMA_138_48/COUT                  td                    0.058       8.776 r       cnt[12]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.776         _N66             
+                                   td                    0.058       8.834 r       cnt[14]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.834         _N68             
+ CLMA_138_52/COUT                  td                    0.058       8.892 r       cnt[16]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.892         _N70             
+                                   td                    0.058       8.950 r       cnt[18]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.950         _N72             
+ CLMA_138_56/COUT                  td                    0.058       9.008 r       cnt[20]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       9.008         _N74             
+                                   td                    0.058       9.066 r       cnt[22]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       9.066         _N76             
+                                                                           r       cnt[24]/opit_0_inv_A2Q21/Cin
+
+ Data arrival time                                                   9.066         Logic Levels: 9  
+                                                                                   Logic: 2.652ns(57.828%), Route: 1.934ns(42.172%)
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                        20.000      20.000 r                        
+ V9                                                      0.000      20.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044      20.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.913      20.957 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000      20.957         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.048      21.005 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.878      21.883         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000      21.883 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       1.708      23.591         ntclkbufg_0      
+ CLMA_138_60/CLK                                                           r       cnt[24]/opit_0_inv_A2Q21/CLK
+ clock pessimism                                         0.832      24.423                          
+ clock uncertainty                                      -0.050      24.373                          
+
+ Setup time                                             -0.167      24.206                          
+
+ Data required time                                                 24.206                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                 24.206                          
+ Data arrival time                                                   9.066                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                        15.140                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : cnt[2]/opit_0_inv_A2Q21/CLK
+Endpoint    : cnt[22]/opit_0_inv_A2Q21/Cin
+Path Group  : key_led|sys_clk
+Path Type   : max (slow corner)
+Path Class  : sequential timing path
+Clock Skew  :    -0.057  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  3.591
+  Launch Clock Delay      :  4.480
+  Clock Pessimism Removal :  0.832
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    1.254       1.298 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.298         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.076       1.374 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        1.032       2.406         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       2.406 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       2.074       4.480         ntclkbufg_0      
+ CLMA_138_40/CLK                                                           r       cnt[2]/opit_0_inv_A2Q21/CLK
+
+ CLMA_138_40/Q1                    tco                   0.291       4.771 r       cnt[2]/opit_0_inv_A2Q21/Q1
+                                   net (fanout=3)        0.396       5.167         cnt[2]           
+ CLMA_138_36/Y1                    td                    0.466       5.633 f       N3_mux5_5/gateop_perm/Z
+                                   net (fanout=1)        0.565       6.198         _N788            
+ CLMS_138_57/Y3                    td                    0.210       6.408 r       N3_mux10/gateop_perm/Z
+                                   net (fanout=1)        0.120       6.528         _N21             
+ CLMS_138_57/Y2                    td                    0.341       6.869 f       N3_mux17/gateop_perm/Z
+                                   net (fanout=1)        0.440       7.309         _N35             
+ CLMA_138_36/Y3                    td                    0.287       7.596 r       N3_mux24/gateop_perm/Z
+                                   net (fanout=25)       0.413       8.009         N3               
+                                   td                    0.477       8.486 f       cnt[2]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.486         _N56             
+ CLMA_138_40/COUT                  td                    0.058       8.544 r       cnt[4]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.544         _N58             
+                                   td                    0.058       8.602 r       cnt[6]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.602         _N60             
+ CLMA_138_44/COUT                  td                    0.058       8.660 r       cnt[8]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.660         _N62             
+                                   td                    0.058       8.718 r       cnt[10]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.718         _N64             
+ CLMA_138_48/COUT                  td                    0.058       8.776 r       cnt[12]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.776         _N66             
+                                   td                    0.058       8.834 r       cnt[14]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.834         _N68             
+ CLMA_138_52/COUT                  td                    0.058       8.892 r       cnt[16]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.892         _N70             
+                                   td                    0.058       8.950 r       cnt[18]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.950         _N72             
+ CLMA_138_56/COUT                  td                    0.058       9.008 r       cnt[20]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       9.008         _N74             
+ CLMA_138_60/CIN                                                           r       cnt[22]/opit_0_inv_A2Q21/Cin
+
+ Data arrival time                                                   9.008         Logic Levels: 9  
+                                                                                   Logic: 2.594ns(57.288%), Route: 1.934ns(42.712%)
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                        20.000      20.000 r                        
+ V9                                                      0.000      20.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044      20.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.913      20.957 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000      20.957         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.048      21.005 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.878      21.883         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000      21.883 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       1.708      23.591         ntclkbufg_0      
+ CLMA_138_60/CLK                                                           r       cnt[22]/opit_0_inv_A2Q21/CLK
+ clock pessimism                                         0.832      24.423                          
+ clock uncertainty                                      -0.050      24.373                          
+
+ Setup time                                             -0.170      24.203                          
+
+ Data required time                                                 24.203                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                 24.203                          
+ Data arrival time                                                   9.008                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                        15.195                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : cnt[2]/opit_0_inv_A2Q21/CLK
+Endpoint    : cnt[20]/opit_0_inv_A2Q21/Cin
+Path Group  : key_led|sys_clk
+Path Type   : max (slow corner)
+Path Class  : sequential timing path
+Clock Skew  :    -0.052  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  3.596
+  Launch Clock Delay      :  4.480
+  Clock Pessimism Removal :  0.832
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    1.254       1.298 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.298         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.076       1.374 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        1.032       2.406         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       2.406 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       2.074       4.480         ntclkbufg_0      
+ CLMA_138_40/CLK                                                           r       cnt[2]/opit_0_inv_A2Q21/CLK
+
+ CLMA_138_40/Q1                    tco                   0.291       4.771 r       cnt[2]/opit_0_inv_A2Q21/Q1
+                                   net (fanout=3)        0.396       5.167         cnt[2]           
+ CLMA_138_36/Y1                    td                    0.466       5.633 f       N3_mux5_5/gateop_perm/Z
+                                   net (fanout=1)        0.565       6.198         _N788            
+ CLMS_138_57/Y3                    td                    0.210       6.408 r       N3_mux10/gateop_perm/Z
+                                   net (fanout=1)        0.120       6.528         _N21             
+ CLMS_138_57/Y2                    td                    0.341       6.869 f       N3_mux17/gateop_perm/Z
+                                   net (fanout=1)        0.440       7.309         _N35             
+ CLMA_138_36/Y3                    td                    0.287       7.596 r       N3_mux24/gateop_perm/Z
+                                   net (fanout=25)       0.413       8.009         N3               
+                                   td                    0.477       8.486 f       cnt[2]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.486         _N56             
+ CLMA_138_40/COUT                  td                    0.058       8.544 r       cnt[4]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.544         _N58             
+                                   td                    0.058       8.602 r       cnt[6]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.602         _N60             
+ CLMA_138_44/COUT                  td                    0.058       8.660 r       cnt[8]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.660         _N62             
+                                   td                    0.058       8.718 r       cnt[10]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.718         _N64             
+ CLMA_138_48/COUT                  td                    0.058       8.776 r       cnt[12]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.776         _N66             
+                                   td                    0.058       8.834 r       cnt[14]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.834         _N68             
+ CLMA_138_52/COUT                  td                    0.058       8.892 r       cnt[16]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.892         _N70             
+                                   td                    0.058       8.950 r       cnt[18]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       8.950         _N72             
+                                                                           r       cnt[20]/opit_0_inv_A2Q21/Cin
+
+ Data arrival time                                                   8.950         Logic Levels: 8  
+                                                                                   Logic: 2.536ns(56.734%), Route: 1.934ns(43.266%)
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                        20.000      20.000 r                        
+ V9                                                      0.000      20.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044      20.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.913      20.957 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000      20.957         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.048      21.005 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.878      21.883         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000      21.883 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       1.713      23.596         ntclkbufg_0      
+ CLMA_138_56/CLK                                                           r       cnt[20]/opit_0_inv_A2Q21/CLK
+ clock pessimism                                         0.832      24.428                          
+ clock uncertainty                                      -0.050      24.378                          
+
+ Setup time                                             -0.167      24.211                          
+
+ Data required time                                                 24.211                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                 24.211                          
+ Data arrival time                                                   8.950                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                        15.261                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : led_flag[0]/opit_0_inv_L5Q_perm/CLK
+Endpoint    : led_flag[1]/opit_0_inv_L5Q_perm/L4
+Path Group  : key_led|sys_clk
+Path Type   : min (slow corner)
+Path Class  : sequential timing path
+Clock Skew  :    0.001  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  4.475
+  Launch Clock Delay      :  3.613
+  Clock Pessimism Removal :  -0.861
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.913       0.957 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       0.957         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.048       1.005 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.878       1.883         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       1.883 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       1.730       3.613         ntclkbufg_0      
+ CLMS_138_45/CLK                                                           r       led_flag[0]/opit_0_inv_L5Q_perm/CLK
+
+ CLMS_138_45/Q0                    tco                   0.222       3.835 f       led_flag[0]/opit_0_inv_L5Q_perm/Q
+                                   net (fanout=7)        0.088       3.923         led_flag[0]      
+ CLMS_138_45/B4                                                            f       led_flag[1]/opit_0_inv_L5Q_perm/L4
+
+ Data arrival time                                                   3.923         Logic Levels: 0  
+                                                                                   Logic: 0.222ns(71.613%), Route: 0.088ns(28.387%)
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    1.254       1.298 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.298         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.076       1.374 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        1.032       2.406         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       2.406 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       2.069       4.475         ntclkbufg_0      
+ CLMS_138_45/CLK                                                           r       led_flag[1]/opit_0_inv_L5Q_perm/CLK
+ clock pessimism                                        -0.861       3.614                          
+ clock uncertainty                                       0.000       3.614                          
+
+ Hold time                                              -0.035       3.579                          
+
+ Data required time                                                  3.579                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                  3.579                          
+ Data arrival time                                                   3.923                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                         0.344                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : cnt[10]/opit_0_inv_A2Q21/CLK
+Endpoint    : cnt[10]/opit_0_inv_A2Q21/I01
+Path Group  : key_led|sys_clk
+Path Type   : min (slow corner)
+Path Class  : sequential timing path
+Clock Skew  :    0.000  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  4.469
+  Launch Clock Delay      :  3.607
+  Clock Pessimism Removal :  -0.862
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.913       0.957 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       0.957         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.048       1.005 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.878       1.883         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       1.883 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       1.724       3.607         ntclkbufg_0      
+ CLMA_138_48/CLK                                                           r       cnt[10]/opit_0_inv_A2Q21/CLK
+
+ CLMA_138_48/Q0                    tco                   0.222       3.829 f       cnt[10]/opit_0_inv_A2Q21/Q0
+                                   net (fanout=2)        0.085       3.914         cnt[9]           
+ CLMA_138_48/A1                                                            f       cnt[10]/opit_0_inv_A2Q21/I01
+
+ Data arrival time                                                   3.914         Logic Levels: 0  
+                                                                                   Logic: 0.222ns(72.313%), Route: 0.085ns(27.687%)
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    1.254       1.298 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.298         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.076       1.374 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        1.032       2.406         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       2.406 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       2.063       4.469         ntclkbufg_0      
+ CLMA_138_48/CLK                                                           r       cnt[10]/opit_0_inv_A2Q21/CLK
+ clock pessimism                                        -0.862       3.607                          
+ clock uncertainty                                       0.000       3.607                          
+
+ Hold time                                              -0.121       3.486                          
+
+ Data required time                                                  3.486                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                  3.486                          
+ Data arrival time                                                   3.914                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                         0.428                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : cnt[6]/opit_0_inv_A2Q21/CLK
+Endpoint    : cnt[6]/opit_0_inv_A2Q21/I01
+Path Group  : key_led|sys_clk
+Path Type   : min (slow corner)
+Path Class  : sequential timing path
+Clock Skew  :    0.000  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  4.475
+  Launch Clock Delay      :  3.613
+  Clock Pessimism Removal :  -0.862
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.913       0.957 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       0.957         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.048       1.005 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.878       1.883         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       1.883 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       1.730       3.613         ntclkbufg_0      
+ CLMA_138_44/CLK                                                           r       cnt[6]/opit_0_inv_A2Q21/CLK
+
+ CLMA_138_44/Q0                    tco                   0.222       3.835 f       cnt[6]/opit_0_inv_A2Q21/Q0
+                                   net (fanout=3)        0.086       3.921         cnt[5]           
+ CLMA_138_44/A1                                                            f       cnt[6]/opit_0_inv_A2Q21/I01
+
+ Data arrival time                                                   3.921         Logic Levels: 0  
+                                                                                   Logic: 0.222ns(72.078%), Route: 0.086ns(27.922%)
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    1.254       1.298 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.298         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.076       1.374 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        1.032       2.406         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       2.406 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       2.069       4.475         ntclkbufg_0      
+ CLMA_138_44/CLK                                                           r       cnt[6]/opit_0_inv_A2Q21/CLK
+ clock pessimism                                        -0.862       3.613                          
+ clock uncertainty                                       0.000       3.613                          
+
+ Hold time                                              -0.121       3.492                          
+
+ Data required time                                                  3.492                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                  3.492                          
+ Data arrival time                                                   3.921                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                         0.429                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : led[2]/opit_0_inv_L5Q_perm/CLK
+Endpoint    : led[2] (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    1.254       1.298 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.298         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.076       1.374 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        1.032       2.406         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       2.406 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       2.067       4.473         ntclkbufg_0      
+ CLMA_146_40/CLK                                                           r       led[2]/opit_0_inv_L5Q_perm/CLK
+
+ CLMA_146_40/Q1                    tco                   0.289       4.762 f       led[2]/opit_0_inv_L5Q_perm/Q
+                                   net (fanout=1)        1.508       6.270         nt_led[2]        
+ IOL_243_10/DO                     td                    0.139       6.409 f       led_obuf[2]/opit_1/O
+                                   net (fanout=1)        0.000       6.409         led_obuf[2]/ntO  
+ IOBS_244_9/PAD                    td                    3.153       9.562 f       led_obuf[2]/opit_0/O
+                                   net (fanout=1)        0.041       9.603         led[2]           
+ P15                                                                       f       led[2] (port)    
+
+ Data arrival time                                                   9.603         Logic Levels: 2  
+                                                                                   Logic: 3.581ns(69.805%), Route: 1.549ns(30.195%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : led[0]/opit_0_inv_MUX4TO1Q/CLK
+Endpoint    : led[0] (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    1.254       1.298 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.298         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.076       1.374 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        1.032       2.406         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       2.406 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       2.067       4.473         ntclkbufg_0      
+ CLMA_146_40/CLK                                                           r       led[0]/opit_0_inv_MUX4TO1Q/CLK
+
+ CLMA_146_40/Q0                    tco                   0.287       4.760 f       led[0]/opit_0_inv_MUX4TO1Q/Q
+                                   net (fanout=1)        1.397       6.157         nt_led[0]        
+ IOL_243_42/DO                     td                    0.139       6.296 f       led_obuf[0]/opit_1/O
+                                   net (fanout=1)        0.000       6.296         led_obuf[0]/ntO  
+ IOBS_244_41/PAD                   td                    3.153       9.449 f       led_obuf[0]/opit_0/O
+                                   net (fanout=1)        0.064       9.513         led[0]           
+ M14                                                                       f       led[0] (port)    
+
+ Data arrival time                                                   9.513         Logic Levels: 2  
+                                                                                   Logic: 3.579ns(71.012%), Route: 1.461ns(28.988%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : led[3]/opit_0_inv_L5Q_perm/CLK
+Endpoint    : led[3] (port)
+Path Group  : **default**
+Path Type   : max (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    1.254       1.298 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.298         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.076       1.374 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        1.032       2.406         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       2.406 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       2.057       4.463         ntclkbufg_0      
+ CLMA_158_40/CLK                                                           r       led[3]/opit_0_inv_L5Q_perm/CLK
+
+ CLMA_158_40/Q1                    tco                   0.289       4.752 f       led[3]/opit_0_inv_L5Q_perm/Q
+                                   net (fanout=1)        1.346       6.098         nt_led[3]        
+ IOL_243_9/DO                      td                    0.139       6.237 f       led_obuf[3]/opit_1/O
+                                   net (fanout=1)        0.000       6.237         led_obuf[3]/ntO  
+ IOBS_244_8/PAD                    td                    3.153       9.390 f       led_obuf[3]/opit_0/O
+                                   net (fanout=1)        0.049       9.439         led[3]           
+ P16                                                                       f       led[3] (port)    
+
+ Data arrival time                                                   9.439         Logic Levels: 2  
+                                                                                   Logic: 3.581ns(71.965%), Route: 1.395ns(28.035%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key[2] (port)
+Endpoint    : led[0]/opit_0_inv_MUX4TO1Q/S1
+Path Group  : **default**
+Path Type   : min (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ R7                                                      0.000       0.000 r       key[2] (port)    
+                                   net (fanout=1)        0.044       0.044         key[2]           
+ IOBD_89_0/DIN                     td                    0.913       0.957 r       key_ibuf[2]/opit_0/O
+                                   net (fanout=1)        0.000       0.957         key_ibuf[2]/ntD  
+ IOL_91_6/RX_DATA_DD               td                    0.082       1.039 r       key_ibuf[2]/opit_1/OUT
+                                   net (fanout=4)        1.178       2.217         nt_key[2]        
+ CLMA_146_40/A4                                                            r       led[0]/opit_0_inv_MUX4TO1Q/S1
+
+ Data arrival time                                                   2.217         Logic Levels: 2  
+                                                                                   Logic: 0.995ns(44.880%), Route: 1.222ns(55.120%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key[3] (port)
+Endpoint    : led[0]/opit_0_inv_MUX4TO1Q/CE
+Path Group  : **default**
+Path Type   : min (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ T7                                                      0.000       0.000 r       key[3] (port)    
+                                   net (fanout=1)        0.032       0.032         key[3]           
+ IOBS_88_0/DIN                     td                    0.913       0.945 r       key_ibuf[3]/opit_0/O
+                                   net (fanout=1)        0.000       0.945         key_ibuf[3]/ntD  
+ IOL_91_5/RX_DATA_DD               td                    0.082       1.027 r       key_ibuf[3]/opit_1/OUT
+                                   net (fanout=6)        1.014       2.041         nt_key[3]        
+ CLMA_138_36/Y2                    td                    0.155       2.196 f       N111_4/gateop_perm/Z
+                                   net (fanout=4)        0.350       2.546         N111             
+ CLMA_146_40/CE                                                            f       led[0]/opit_0_inv_MUX4TO1Q/CE
+
+ Data arrival time                                                   2.546         Logic Levels: 3  
+                                                                                   Logic: 1.150ns(45.169%), Route: 1.396ns(54.831%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key[3] (port)
+Endpoint    : led[2]/opit_0_inv_L5Q_perm/CE
+Path Group  : **default**
+Path Type   : min (slow corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ T7                                                      0.000       0.000 r       key[3] (port)    
+                                   net (fanout=1)        0.032       0.032         key[3]           
+ IOBS_88_0/DIN                     td                    0.913       0.945 r       key_ibuf[3]/opit_0/O
+                                   net (fanout=1)        0.000       0.945         key_ibuf[3]/ntD  
+ IOL_91_5/RX_DATA_DD               td                    0.082       1.027 r       key_ibuf[3]/opit_1/OUT
+                                   net (fanout=6)        1.014       2.041         nt_key[3]        
+ CLMA_138_36/Y2                    td                    0.155       2.196 f       N111_4/gateop_perm/Z
+                                   net (fanout=4)        0.350       2.546         N111             
+ CLMA_146_40/CE                                                            f       led[2]/opit_0_inv_L5Q_perm/CE
+
+ Data arrival time                                                   2.546         Logic Levels: 3  
+                                                                                   Logic: 1.150ns(45.169%), Route: 1.396ns(54.831%)
+====================================================================================================
+
+{key_led|sys_clk} Minimum Pulse Width :
+****************************************************************************************************
+ Slack       Actual Width    Require Width   Type              Location                Pin          
+----------------------------------------------------------------------------------------------------
+ 9.380       10.000          0.620           Low Pulse Width   CLMS_138_45/CLK         led_flag[0]/opit_0_inv_L5Q_perm/CLK
+ 9.380       10.000          0.620           High Pulse Width  CLMS_138_45/CLK         led_flag[0]/opit_0_inv_L5Q_perm/CLK
+ 9.380       10.000          0.620           Low Pulse Width   CLMS_138_45/CLK         led_flag[1]/opit_0_inv_L5Q_perm/CLK
+====================================================================================================
+
+====================================================================================================
+Fast Corner
+****************************************************************************************************
+====================================================================================================
+
+Startpoint  : cnt[2]/opit_0_inv_A2Q21/CLK
+Endpoint    : cnt[24]/opit_0_inv_A2Q21/Cin
+Path Group  : key_led|sys_clk
+Path Type   : max (fast corner)
+Path Class  : sequential timing path
+Clock Skew  :    -0.037  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  2.248
+  Launch Clock Delay      :  2.683
+  Clock Pessimism Removal :  0.398
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.968       1.012 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.012         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.058       1.070 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.510       1.580         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       1.580 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       1.103       2.683         ntclkbufg_0      
+ CLMA_138_40/CLK                                                           r       cnt[2]/opit_0_inv_A2Q21/CLK
+
+ CLMA_138_40/Q1                    tco                   0.223       2.906 f       cnt[2]/opit_0_inv_A2Q21/Q1
+                                   net (fanout=3)        0.250       3.156         cnt[2]           
+ CLMA_138_36/Y1                    td                    0.359       3.515 f       N3_mux5_5/gateop_perm/Z
+                                   net (fanout=1)        0.386       3.901         _N788            
+ CLMS_138_57/Y3                    td                    0.162       4.063 r       N3_mux10/gateop_perm/Z
+                                   net (fanout=1)        0.072       4.135         _N21             
+ CLMS_138_57/Y2                    td                    0.264       4.399 f       N3_mux17/gateop_perm/Z
+                                   net (fanout=1)        0.304       4.703         _N35             
+ CLMA_138_36/Y3                    td                    0.222       4.925 f       N3_mux24/gateop_perm/Z
+                                   net (fanout=25)       0.265       5.190         N3               
+                                   td                    0.368       5.558 f       cnt[2]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.558         _N56             
+ CLMA_138_40/COUT                  td                    0.044       5.602 r       cnt[4]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.602         _N58             
+                                   td                    0.044       5.646 r       cnt[6]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.646         _N60             
+ CLMA_138_44/COUT                  td                    0.044       5.690 r       cnt[8]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.690         _N62             
+                                   td                    0.044       5.734 r       cnt[10]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.734         _N64             
+ CLMA_138_48/COUT                  td                    0.044       5.778 r       cnt[12]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.778         _N66             
+                                   td                    0.044       5.822 r       cnt[14]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.822         _N68             
+ CLMA_138_52/COUT                  td                    0.044       5.866 r       cnt[16]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.866         _N70             
+                                   td                    0.044       5.910 r       cnt[18]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.910         _N72             
+ CLMA_138_56/COUT                  td                    0.044       5.954 r       cnt[20]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.954         _N74             
+                                   td                    0.044       5.998 r       cnt[22]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.998         _N76             
+                                                                           r       cnt[24]/opit_0_inv_A2Q21/Cin
+
+ Data arrival time                                                   5.998         Logic Levels: 9  
+                                                                                   Logic: 2.038ns(61.478%), Route: 1.277ns(38.522%)
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                        20.000      20.000 r                        
+ V9                                                      0.000      20.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044      20.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.734      20.778 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000      20.778         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.038      20.816 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.470      21.286         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000      21.286 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       0.962      22.248         ntclkbufg_0      
+ CLMA_138_60/CLK                                                           r       cnt[24]/opit_0_inv_A2Q21/CLK
+ clock pessimism                                         0.398      22.646                          
+ clock uncertainty                                      -0.050      22.596                          
+
+ Setup time                                             -0.128      22.468                          
+
+ Data required time                                                 22.468                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                 22.468                          
+ Data arrival time                                                   5.998                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                        16.470                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : cnt[2]/opit_0_inv_A2Q21/CLK
+Endpoint    : cnt[22]/opit_0_inv_A2Q21/Cin
+Path Group  : key_led|sys_clk
+Path Type   : max (fast corner)
+Path Class  : sequential timing path
+Clock Skew  :    -0.037  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  2.248
+  Launch Clock Delay      :  2.683
+  Clock Pessimism Removal :  0.398
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.968       1.012 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.012         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.058       1.070 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.510       1.580         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       1.580 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       1.103       2.683         ntclkbufg_0      
+ CLMA_138_40/CLK                                                           r       cnt[2]/opit_0_inv_A2Q21/CLK
+
+ CLMA_138_40/Q1                    tco                   0.223       2.906 f       cnt[2]/opit_0_inv_A2Q21/Q1
+                                   net (fanout=3)        0.250       3.156         cnt[2]           
+ CLMA_138_36/Y1                    td                    0.359       3.515 f       N3_mux5_5/gateop_perm/Z
+                                   net (fanout=1)        0.386       3.901         _N788            
+ CLMS_138_57/Y3                    td                    0.162       4.063 r       N3_mux10/gateop_perm/Z
+                                   net (fanout=1)        0.072       4.135         _N21             
+ CLMS_138_57/Y2                    td                    0.264       4.399 f       N3_mux17/gateop_perm/Z
+                                   net (fanout=1)        0.304       4.703         _N35             
+ CLMA_138_36/Y3                    td                    0.222       4.925 f       N3_mux24/gateop_perm/Z
+                                   net (fanout=25)       0.265       5.190         N3               
+                                   td                    0.368       5.558 f       cnt[2]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.558         _N56             
+ CLMA_138_40/COUT                  td                    0.044       5.602 r       cnt[4]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.602         _N58             
+                                   td                    0.044       5.646 r       cnt[6]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.646         _N60             
+ CLMA_138_44/COUT                  td                    0.044       5.690 r       cnt[8]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.690         _N62             
+                                   td                    0.044       5.734 r       cnt[10]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.734         _N64             
+ CLMA_138_48/COUT                  td                    0.044       5.778 r       cnt[12]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.778         _N66             
+                                   td                    0.044       5.822 r       cnt[14]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.822         _N68             
+ CLMA_138_52/COUT                  td                    0.044       5.866 r       cnt[16]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.866         _N70             
+                                   td                    0.044       5.910 r       cnt[18]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.910         _N72             
+ CLMA_138_56/COUT                  td                    0.044       5.954 r       cnt[20]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.954         _N74             
+ CLMA_138_60/CIN                                                           r       cnt[22]/opit_0_inv_A2Q21/Cin
+
+ Data arrival time                                                   5.954         Logic Levels: 9  
+                                                                                   Logic: 1.994ns(60.960%), Route: 1.277ns(39.040%)
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                        20.000      20.000 r                        
+ V9                                                      0.000      20.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044      20.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.734      20.778 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000      20.778         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.038      20.816 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.470      21.286         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000      21.286 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       0.962      22.248         ntclkbufg_0      
+ CLMA_138_60/CLK                                                           r       cnt[22]/opit_0_inv_A2Q21/CLK
+ clock pessimism                                         0.398      22.646                          
+ clock uncertainty                                      -0.050      22.596                          
+
+ Setup time                                             -0.132      22.464                          
+
+ Data required time                                                 22.464                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                 22.464                          
+ Data arrival time                                                   5.954                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                        16.510                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : cnt[2]/opit_0_inv_A2Q21/CLK
+Endpoint    : cnt[20]/opit_0_inv_A2Q21/Cin
+Path Group  : key_led|sys_clk
+Path Type   : max (fast corner)
+Path Class  : sequential timing path
+Clock Skew  :    -0.033  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  2.252
+  Launch Clock Delay      :  2.683
+  Clock Pessimism Removal :  0.398
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.968       1.012 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.012         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.058       1.070 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.510       1.580         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       1.580 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       1.103       2.683         ntclkbufg_0      
+ CLMA_138_40/CLK                                                           r       cnt[2]/opit_0_inv_A2Q21/CLK
+
+ CLMA_138_40/Q1                    tco                   0.223       2.906 f       cnt[2]/opit_0_inv_A2Q21/Q1
+                                   net (fanout=3)        0.250       3.156         cnt[2]           
+ CLMA_138_36/Y1                    td                    0.359       3.515 f       N3_mux5_5/gateop_perm/Z
+                                   net (fanout=1)        0.386       3.901         _N788            
+ CLMS_138_57/Y3                    td                    0.162       4.063 r       N3_mux10/gateop_perm/Z
+                                   net (fanout=1)        0.072       4.135         _N21             
+ CLMS_138_57/Y2                    td                    0.264       4.399 f       N3_mux17/gateop_perm/Z
+                                   net (fanout=1)        0.304       4.703         _N35             
+ CLMA_138_36/Y3                    td                    0.222       4.925 f       N3_mux24/gateop_perm/Z
+                                   net (fanout=25)       0.265       5.190         N3               
+                                   td                    0.368       5.558 f       cnt[2]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.558         _N56             
+ CLMA_138_40/COUT                  td                    0.044       5.602 r       cnt[4]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.602         _N58             
+                                   td                    0.044       5.646 r       cnt[6]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.646         _N60             
+ CLMA_138_44/COUT                  td                    0.044       5.690 r       cnt[8]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.690         _N62             
+                                   td                    0.044       5.734 r       cnt[10]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.734         _N64             
+ CLMA_138_48/COUT                  td                    0.044       5.778 r       cnt[12]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.778         _N66             
+                                   td                    0.044       5.822 r       cnt[14]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.822         _N68             
+ CLMA_138_52/COUT                  td                    0.044       5.866 r       cnt[16]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.866         _N70             
+                                   td                    0.044       5.910 r       cnt[18]/opit_0_inv_A2Q21/Cout
+                                   net (fanout=1)        0.000       5.910         _N72             
+                                                                           r       cnt[20]/opit_0_inv_A2Q21/Cin
+
+ Data arrival time                                                   5.910         Logic Levels: 8  
+                                                                                   Logic: 1.950ns(60.428%), Route: 1.277ns(39.572%)
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                        20.000      20.000 r                        
+ V9                                                      0.000      20.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044      20.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.734      20.778 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000      20.778         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.038      20.816 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.470      21.286         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000      21.286 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       0.966      22.252         ntclkbufg_0      
+ CLMA_138_56/CLK                                                           r       cnt[20]/opit_0_inv_A2Q21/CLK
+ clock pessimism                                         0.398      22.650                          
+ clock uncertainty                                      -0.050      22.600                          
+
+ Setup time                                             -0.128      22.472                          
+
+ Data required time                                                 22.472                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                 22.472                          
+ Data arrival time                                                   5.910                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                        16.562                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : led_flag[0]/opit_0_inv_L5Q_perm/CLK
+Endpoint    : led_flag[1]/opit_0_inv_L5Q_perm/L4
+Path Group  : key_led|sys_clk
+Path Type   : min (fast corner)
+Path Class  : sequential timing path
+Clock Skew  :    0.000  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  2.678
+  Launch Clock Delay      :  2.265
+  Clock Pessimism Removal :  -0.413
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.734       0.778 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       0.778         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.038       0.816 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.470       1.286         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       1.286 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       0.979       2.265         ntclkbufg_0      
+ CLMS_138_45/CLK                                                           r       led_flag[0]/opit_0_inv_L5Q_perm/CLK
+
+ CLMS_138_45/Q0                    tco                   0.179       2.444 f       led_flag[0]/opit_0_inv_L5Q_perm/Q
+                                   net (fanout=7)        0.063       2.507         led_flag[0]      
+ CLMS_138_45/B4                                                            f       led_flag[1]/opit_0_inv_L5Q_perm/L4
+
+ Data arrival time                                                   2.507         Logic Levels: 0  
+                                                                                   Logic: 0.179ns(73.967%), Route: 0.063ns(26.033%)
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.968       1.012 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.012         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.058       1.070 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.510       1.580         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       1.580 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       1.098       2.678         ntclkbufg_0      
+ CLMS_138_45/CLK                                                           r       led_flag[1]/opit_0_inv_L5Q_perm/CLK
+ clock pessimism                                        -0.413       2.265                          
+ clock uncertainty                                       0.000       2.265                          
+
+ Hold time                                              -0.029       2.236                          
+
+ Data required time                                                  2.236                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                  2.236                          
+ Data arrival time                                                   2.507                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                         0.271                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : cnt[22]/opit_0_inv_A2Q21/CLK
+Endpoint    : cnt[22]/opit_0_inv_A2Q21/I01
+Path Group  : key_led|sys_clk
+Path Type   : min (fast corner)
+Path Class  : sequential timing path
+Clock Skew  :    0.000  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  2.661
+  Launch Clock Delay      :  2.248
+  Clock Pessimism Removal :  -0.413
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.734       0.778 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       0.778         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.038       0.816 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.470       1.286         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       1.286 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       0.962       2.248         ntclkbufg_0      
+ CLMA_138_60/CLK                                                           r       cnt[22]/opit_0_inv_A2Q21/CLK
+
+ CLMA_138_60/Q0                    tco                   0.182       2.430 r       cnt[22]/opit_0_inv_A2Q21/Q0
+                                   net (fanout=3)        0.060       2.490         cnt[21]          
+ CLMA_138_60/A1                                                            r       cnt[22]/opit_0_inv_A2Q21/I01
+
+ Data arrival time                                                   2.490         Logic Levels: 0  
+                                                                                   Logic: 0.182ns(75.207%), Route: 0.060ns(24.793%)
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.968       1.012 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.012         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.058       1.070 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.510       1.580         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       1.580 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       1.081       2.661         ntclkbufg_0      
+ CLMA_138_60/CLK                                                           r       cnt[22]/opit_0_inv_A2Q21/CLK
+ clock pessimism                                        -0.413       2.248                          
+ clock uncertainty                                       0.000       2.248                          
+
+ Hold time                                              -0.093       2.155                          
+
+ Data required time                                                  2.155                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                  2.155                          
+ Data arrival time                                                   2.490                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                         0.335                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : cnt[2]/opit_0_inv_A2Q21/CLK
+Endpoint    : cnt[2]/opit_0_inv_A2Q21/I01
+Path Group  : key_led|sys_clk
+Path Type   : min (fast corner)
+Path Class  : sequential timing path
+Clock Skew  :    0.000  (Capture Clock Delay - Launch Clock Delay + Clock Pessimism Removal)
+  Capture Clock Delay     :  2.683
+  Launch Clock Delay      :  2.269
+  Clock Pessimism Removal :  -0.414
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.734       0.778 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       0.778         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.038       0.816 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.470       1.286         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       1.286 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       0.983       2.269         ntclkbufg_0      
+ CLMA_138_40/CLK                                                           r       cnt[2]/opit_0_inv_A2Q21/CLK
+
+ CLMA_138_40/Q0                    tco                   0.182       2.451 r       cnt[2]/opit_0_inv_A2Q21/Q0
+                                   net (fanout=4)        0.062       2.513         cnt[1]           
+ CLMA_138_40/A1                                                            r       cnt[2]/opit_0_inv_A2Q21/I01
+
+ Data arrival time                                                   2.513         Logic Levels: 0  
+                                                                                   Logic: 0.182ns(74.590%), Route: 0.062ns(25.410%)
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.968       1.012 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.012         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.058       1.070 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.510       1.580         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       1.580 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       1.103       2.683         ntclkbufg_0      
+ CLMA_138_40/CLK                                                           r       cnt[2]/opit_0_inv_A2Q21/CLK
+ clock pessimism                                        -0.414       2.269                          
+ clock uncertainty                                       0.000       2.269                          
+
+ Hold time                                              -0.093       2.176                          
+
+ Data required time                                                  2.176                          
+----------------------------------------------------------------------------------------------------
+ Data required time                                                  2.176                          
+ Data arrival time                                                   2.513                          
+----------------------------------------------------------------------------------------------------
+ Slack (MET)                                                         0.337                          
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : led[2]/opit_0_inv_L5Q_perm/CLK
+Endpoint    : led[2] (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.968       1.012 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.012         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.058       1.070 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.510       1.580         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       1.580 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       1.096       2.676         ntclkbufg_0      
+ CLMA_146_40/CLK                                                           r       led[2]/opit_0_inv_L5Q_perm/CLK
+
+ CLMA_146_40/Q1                    tco                   0.223       2.899 f       led[2]/opit_0_inv_L5Q_perm/Q
+                                   net (fanout=1)        1.051       3.950         nt_led[2]        
+ IOL_243_10/DO                     td                    0.106       4.056 f       led_obuf[2]/opit_1/O
+                                   net (fanout=1)        0.000       4.056         led_obuf[2]/ntO  
+ IOBS_244_9/PAD                    td                    2.433       6.489 f       led_obuf[2]/opit_0/O
+                                   net (fanout=1)        0.041       6.530         led[2]           
+ P15                                                                       f       led[2] (port)    
+
+ Data arrival time                                                   6.530         Logic Levels: 2  
+                                                                                   Logic: 2.762ns(71.666%), Route: 1.092ns(28.334%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : led[0]/opit_0_inv_MUX4TO1Q/CLK
+Endpoint    : led[0] (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.968       1.012 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.012         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.058       1.070 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.510       1.580         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       1.580 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       1.096       2.676         ntclkbufg_0      
+ CLMA_146_40/CLK                                                           r       led[0]/opit_0_inv_MUX4TO1Q/CLK
+
+ CLMA_146_40/Q0                    tco                   0.221       2.897 f       led[0]/opit_0_inv_MUX4TO1Q/Q
+                                   net (fanout=1)        0.976       3.873         nt_led[0]        
+ IOL_243_42/DO                     td                    0.106       3.979 f       led_obuf[0]/opit_1/O
+                                   net (fanout=1)        0.000       3.979         led_obuf[0]/ntO  
+ IOBS_244_41/PAD                   td                    2.433       6.412 f       led_obuf[0]/opit_0/O
+                                   net (fanout=1)        0.064       6.476         led[0]           
+ M14                                                                       f       led[0] (port)    
+
+ Data arrival time                                                   6.476         Logic Levels: 2  
+                                                                                   Logic: 2.760ns(72.632%), Route: 1.040ns(27.368%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : led[3]/opit_0_inv_L5Q_perm/CLK
+Endpoint    : led[3] (port)
+Path Group  : **default**
+Path Type   : max (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+ Clock key_led|sys_clk (rising edge)
+                                                         0.000       0.000 r                        
+ V9                                                      0.000       0.000 r       sys_clk (port)   
+                                   net (fanout=1)        0.044       0.044         sys_clk          
+ IOBS_128_0/DIN                    td                    0.968       1.012 r       sys_clk_ibuf/opit_0/O
+                                   net (fanout=1)        0.000       1.012         sys_clk_ibuf/ntD 
+ IOL_131_5/INCK                    td                    0.058       1.070 r       sys_clk_ibuf/opit_1/INCK
+                                   net (fanout=1)        0.510       1.580         _N0              
+ USCM_56_112/CLK_USCM              td                    0.000       1.580 r       clkbufg_0/gopclkbufg/CLKOUT
+                                   net (fanout=19)       1.086       2.666         ntclkbufg_0      
+ CLMA_158_40/CLK                                                           r       led[3]/opit_0_inv_L5Q_perm/CLK
+
+ CLMA_158_40/Q1                    tco                   0.223       2.889 f       led[3]/opit_0_inv_L5Q_perm/Q
+                                   net (fanout=1)        0.932       3.821         nt_led[3]        
+ IOL_243_9/DO                      td                    0.106       3.927 f       led_obuf[3]/opit_1/O
+                                   net (fanout=1)        0.000       3.927         led_obuf[3]/ntO  
+ IOBS_244_8/PAD                    td                    2.433       6.360 f       led_obuf[3]/opit_0/O
+                                   net (fanout=1)        0.049       6.409         led[3]           
+ P16                                                                       f       led[3] (port)    
+
+ Data arrival time                                                   6.409         Logic Levels: 2  
+                                                                                   Logic: 2.762ns(73.791%), Route: 0.981ns(26.209%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key[2] (port)
+Endpoint    : led[0]/opit_0_inv_MUX4TO1Q/S1
+Path Group  : **default**
+Path Type   : min (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ R7                                                      0.000       0.000 r       key[2] (port)    
+                                   net (fanout=1)        0.044       0.044         key[2]           
+ IOBD_89_0/DIN                     td                    0.734       0.778 r       key_ibuf[2]/opit_0/O
+                                   net (fanout=1)        0.000       0.778         key_ibuf[2]/ntD  
+ IOL_91_6/RX_DATA_DD               td                    0.066       0.844 r       key_ibuf[2]/opit_1/OUT
+                                   net (fanout=4)        0.743       1.587         nt_key[2]        
+ CLMA_146_40/A4                                                            r       led[0]/opit_0_inv_MUX4TO1Q/S1
+
+ Data arrival time                                                   1.587         Logic Levels: 2  
+                                                                                   Logic: 0.800ns(50.410%), Route: 0.787ns(49.590%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key[3] (port)
+Endpoint    : led[0]/opit_0_inv_MUX4TO1Q/CE
+Path Group  : **default**
+Path Type   : min (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ T7                                                      0.000       0.000 r       key[3] (port)    
+                                   net (fanout=1)        0.032       0.032         key[3]           
+ IOBS_88_0/DIN                     td                    0.734       0.766 r       key_ibuf[3]/opit_0/O
+                                   net (fanout=1)        0.000       0.766         key_ibuf[3]/ntD  
+ IOL_91_5/RX_DATA_DD               td                    0.066       0.832 r       key_ibuf[3]/opit_1/OUT
+                                   net (fanout=6)        0.633       1.465         nt_key[3]        
+ CLMA_138_36/Y2                    td                    0.130       1.595 r       N111_4/gateop_perm/Z
+                                   net (fanout=4)        0.226       1.821         N111             
+ CLMA_146_40/CE                                                            r       led[0]/opit_0_inv_MUX4TO1Q/CE
+
+ Data arrival time                                                   1.821         Logic Levels: 3  
+                                                                                   Logic: 0.930ns(51.071%), Route: 0.891ns(48.929%)
+====================================================================================================
+
+====================================================================================================
+
+Startpoint  : key[3] (port)
+Endpoint    : led[2]/opit_0_inv_L5Q_perm/CE
+Path Group  : **default**
+Path Type   : min (fast corner)
+Path Class  : combinational timing path
+
+ Location                          Delay Type             Incr        Path         Logical Resource 
+----------------------------------------------------------------------------------------------------
+
+
+ T7                                                      0.000       0.000 r       key[3] (port)    
+                                   net (fanout=1)        0.032       0.032         key[3]           
+ IOBS_88_0/DIN                     td                    0.734       0.766 r       key_ibuf[3]/opit_0/O
+                                   net (fanout=1)        0.000       0.766         key_ibuf[3]/ntD  
+ IOL_91_5/RX_DATA_DD               td                    0.066       0.832 r       key_ibuf[3]/opit_1/OUT
+                                   net (fanout=6)        0.633       1.465         nt_key[3]        
+ CLMA_138_36/Y2                    td                    0.130       1.595 r       N111_4/gateop_perm/Z
+                                   net (fanout=4)        0.226       1.821         N111             
+ CLMA_146_40/CE                                                            r       led[2]/opit_0_inv_L5Q_perm/CE
+
+ Data arrival time                                                   1.821         Logic Levels: 3  
+                                                                                   Logic: 0.930ns(51.071%), Route: 0.891ns(48.929%)
+====================================================================================================
+
+{key_led|sys_clk} Minimum Pulse Width :
+****************************************************************************************************
+ Slack       Actual Width    Require Width   Type              Location                Pin          
+----------------------------------------------------------------------------------------------------
+ 9.504       10.000          0.496           Low Pulse Width   CLMS_138_45/CLK         led_flag[0]/opit_0_inv_L5Q_perm/CLK
+ 9.504       10.000          0.496           High Pulse Width  CLMS_138_45/CLK         led_flag[0]/opit_0_inv_L5Q_perm/CLK
+ 9.504       10.000          0.496           Low Pulse Width   CLMS_138_45/CLK         led_flag[1]/opit_0_inv_L5Q_perm/CLK
+====================================================================================================
+
+====================================================================================================
+
+Inputs and Outputs :
++---------------------------------------------------------------------------------------------------+
+| Type       | File Name                                                                           
++---------------------------------------------------------------------------------------------------+
+| Input      | D:/ywd/dps4/ccccccccccc/pm/25G/25G/11_key_led/prj/place_route/key_led_pnr.adf       
+| Output     | D:/ywd/dps4/ccccccccccc/pm/25G/25G/11_key_led/prj/report_timing/key_led_rtp.adf     
+|            | D:/ywd/dps4/ccccccccccc/pm/25G/25G/11_key_led/prj/report_timing/key_led.rtr         
+|            | D:/ywd/dps4/ccccccccccc/pm/25G/25G/11_key_led/prj/report_timing/rtr.db              
++---------------------------------------------------------------------------------------------------+
+
+
+Flow Command: report_timing 
+Peak memory: 812 MB
+Total CPU time to report_timing completion : 0h:0m:6s
+Process Total CPU time to report_timing completion : 0h:0m:6s
+Total real time to report_timing completion : 0h:0m:8s

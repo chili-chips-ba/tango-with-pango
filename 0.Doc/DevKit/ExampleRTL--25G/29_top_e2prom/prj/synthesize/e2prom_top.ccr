@@ -1,0 +1,54 @@
+##### Written on 2022/10/18 10:00:35 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL22G-6MBG324
+
+Top Module : 
+	e2prom_top
+
+Constraint File(s) : 
+	C:/Users/Admin/Desktop/Pango/4_top_e2prom/prj/top_e2prom.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 2 critical warning(s), 0 warning(s), out of 32 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+
+
+define_attribute {p:iic_sda} {PAP_IO_LOC} {E1}
+
+	C: ConstraintEditor-2002: [C:/Users/Admin/Desktop/Pango/4_top_e2prom/prj/top_e2prom.fdc(line number: 15)] | Port iic_sda has been placed at location E1, whose type is share pin.
+
+define_attribute {p:iic_scl} {PAP_IO_LOC} {E2}
+
+	C: ConstraintEditor-2002: [C:/Users/Admin/Desktop/Pango/4_top_e2prom/prj/top_e2prom.fdc(line number: 22)] | Port iic_scl has been placed at location E2, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+
+
+
+
+
+
+
+
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+
+
+
+

@@ -1,0 +1,45 @@
+##### Written on 2023/09/30 19:29:05 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL25G-6MBG324
+
+Top Module : 
+	rs485_key_led
+
+Constraint File(s) : 
+	E:/PDS/rs485_key_led/prj/rs485_key_led.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 2 critical warning(s), 0 warning(s), out of 47 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:key[1]} {PAP_IO_LOC} {P6}
+	C: ConstraintEditor-2002: [E:/PDS/rs485_key_led/prj/rs485_key_led.fdc(line number: 17)] | Port key[1] has been placed at location P6, whose type is share pin.
+
+define_attribute {p:key[0]} {PAP_IO_LOC} {N5}
+	C: ConstraintEditor-2002: [E:/PDS/rs485_key_led/prj/rs485_key_led.fdc(line number: 22)] | Port key[0] has been placed at location N5, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table id="compile_source_files" title="Design Files Read" column_number="2">
+        <column_headers>
+            <data>File Name</data>
+            <data>File Type</data>
+        </column_headers>
+        <row>
+            <data>D:/ywd1/dm/sd_rw-25g/rtl/data_gen.v</data>
+            <data>Verilog</data>
+        </row>
+        <row>
+            <data>D:/ywd1/dm/sd_rw-25g/rtl/led_alarm.v</data>
+            <data>Verilog</data>
+        </row>
+        <row>
+            <data>D:/ywd1/dm/sd_rw-25g/rtl/sd_ctrl_top.v</data>
+            <data>Verilog</data>
+        </row>
+        <row>
+            <data>D:/ywd1/dm/sd_rw-25g/rtl/sd_init.v</data>
+            <data>Verilog</data>
+        </row>
+        <row>
+            <data>D:/ywd1/dm/sd_rw-25g/rtl/sd_read.v</data>
+            <data>Verilog</data>
+        </row>
+        <row>
+            <data>D:/ywd1/dm/sd_rw-25g/rtl/sd_write.v</data>
+            <data>Verilog</data>
+        </row>
+        <row>
+            <data>D:/ywd1/dm/sd_rw-25g/rtl/top_sd_rw.v</data>
+            <data>Verilog</data>
+        </row>
+        <row>
+            <data>D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.idf</data>
+            <data>IP</data>
+        </row>
+    </table>
+    <table id="compile_runtime" title="Compile Runtime &amp; Memory" column_number="7">
+        <column_headers>
+            <data>Cpu Time</data>
+            <data>Process Cpu Time</data>
+            <data>Real Time</data>
+            <data>Peak Memory (MB)</data>
+            <data>Operation System</data>
+            <data>CPU</data>
+            <data>RAM(GB)</data>
+        </column_headers>
+        <row>
+            <data>0h:0m:1s</data>
+            <data>0h:0m:1s</data>
+            <data>0h:0m:6s</data>
+            <data>139</data>
+            <data>WINDOWS 10 x86_64</data>
+            <data>Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz</data>
+            <data>8</data>
+        </row>
+    </table>
+    <table id="compile_messages" title="Compile Messages" column_number="1">
+        <column_headers/>
+        <row>
+            <data message="4">Enable Verilog2k features and keywords</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0001: Analyzing file D:/ywd1/dm/sd_rw-25g/rtl/data_gen.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [D:/ywd1/dm/sd_rw-25g/rtl/data_gen.v(line number: 24)] Analyzing module data_gen (library work)</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0001: Analyzing file D:/ywd1/dm/sd_rw-25g/rtl/led_alarm.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [D:/ywd1/dm/sd_rw-25g/rtl/led_alarm.v(line number: 24)] Analyzing module led_alarm (library work)</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0001: Analyzing file D:/ywd1/dm/sd_rw-25g/rtl/sd_ctrl_top.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [D:/ywd1/dm/sd_rw-25g/rtl/sd_ctrl_top.v(line number: 24)] Analyzing module sd_ctrl_top (library work)</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0001: Analyzing file D:/ywd1/dm/sd_rw-25g/rtl/sd_init.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [D:/ywd1/dm/sd_rw-25g/rtl/sd_init.v(line number: 23)] Analyzing module sd_init (library work)</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0001: Analyzing file D:/ywd1/dm/sd_rw-25g/rtl/sd_read.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [D:/ywd1/dm/sd_rw-25g/rtl/sd_read.v(line number: 24)] Analyzing module sd_read (library work)</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0001: Analyzing file D:/ywd1/dm/sd_rw-25g/rtl/sd_write.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [D:/ywd1/dm/sd_rw-25g/rtl/sd_write.v(line number: 25)] Analyzing module sd_write (library work)</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0001: Analyzing file D:/ywd1/dm/sd_rw-25g/rtl/top_sd_rw.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [D:/ywd1/dm/sd_rw-25g/rtl/top_sd_rw.v(line number: 24)] Analyzing module top_sd_rw (library work)</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0001: Analyzing file D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 18)] Analyzing module pll_clk (library work)</data>
+        </row>
+        <row>
+            <data message="4">Module &quot;top_sd_rw&quot; is set as top module.</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [D:/ywd1/dm/sd_rw-25g/rtl/top_sd_rw.v(line number: 24)] Elaborating module top_sd_rw</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [D:/ywd1/dm/sd_rw-25g/rtl/top_sd_rw.v(line number: 62)] Elaborating instance u_pll_clk</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 18)] Elaborating module pll_clk</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 230)] Elaborating instance u_pll_e3</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 119)] Net clkfb in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 122)] Net pfden in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 123)] Net clkout0_gate in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 124)] Net clkout0_2pad_gate in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 125)] Net clkout1_gate in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 126)] Net clkout2_gate in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 127)] Net clkout3_gate in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 128)] Net clkout4_gate in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 129)] Net clkout5_gate in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 130)] Net dyn_idiv in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 131)] Net dyn_odiv0 in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 132)] Net dyn_odiv1 in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 133)] Net dyn_odiv2 in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 134)] Net dyn_odiv3 in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 135)] Net dyn_odiv4 in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 136)] Net dyn_fdiv in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 137)] Net dyn_duty0 in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 138)] Net dyn_duty1 in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 139)] Net dyn_duty2 in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 140)] Net dyn_duty3 in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [D:/ywd1/dm/sd_rw-25g/prj/ipcore/pll_clk/pll_clk.v(line number: 141)] Net dyn_duty4 in pll_clk(original module pll_clk) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [D:/ywd1/dm/sd_rw-25g/rtl/top_sd_rw.v(line number: 71)] Elaborating instance u_data_gen</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [D:/ywd1/dm/sd_rw-25g/rtl/data_gen.v(line number: 24)] Elaborating module data_gen</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [D:/ywd1/dm/sd_rw-25g/rtl/top_sd_rw.v(line number: 88)] Elaborating instance u_sd_ctrl_top</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [D:/ywd1/dm/sd_rw-25g/rtl/sd_ctrl_top.v(line number: 24)] Elaborating module sd_ctrl_top</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [D:/ywd1/dm/sd_rw-25g/rtl/sd_ctrl_top.v(line number: 87)] Elaborating instance u_sd_init</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [D:/ywd1/dm/sd_rw-25g/rtl/sd_init.v(line number: 23)] Elaborating module sd_init</data>
+        </row>
+        <row>
+            <data message="4">Module instance {top_sd_rw/u_sd_ctrl_top/u_sd_init} parameter value:
+    CMD0 = 48'b010000000000000000000000000000000000000010010101
+    CMD8 = 48'b010010000000000000000000000000011010101010000111
+    CMD55 = 48'b011101110000000000000000000000000000000011111111
+    ACMD41 = 48'b011010010100000000000000000000000000000011111111
+    DIV_FREQ = 32'b00000000000000000000000011001000
+    POWER_ON_NUM = 32'b00000000000000000001001110001000
+    OVER_TIME_NUM = 32'b00000000000000000110000110101000
+    st_idle = 7'b0000001
+    st_send_cmd0 = 7'b0000010
+    st_wait_cmd0 = 7'b0000100
+    st_send_cmd8 = 7'b0001000
+    st_send_cmd55 = 7'b0010000
+    st_send_acmd41 = 7'b0100000
+    st_init_done = 7'b1000000</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [D:/ywd1/dm/sd_rw-25g/rtl/sd_ctrl_top.v(line number: 100)] Elaborating instance u_sd_write</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [D:/ywd1/dm/sd_rw-25g/rtl/sd_write.v(line number: 25)] Elaborating module sd_write</data>
+        </row>
+        <row>
+            <data message="4">Module instance {top_sd_rw/u_sd_ctrl_top/u_sd_write} parameter value:
+    HEAD_BYTE = 8'b11111110</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [D:/ywd1/dm/sd_rw-25g/rtl/sd_ctrl_top.v(line number: 117)] Elaborating instance u_sd_read</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [D:/ywd1/dm/sd_rw-25g/rtl/sd_read.v(line number: 24)] Elaborating module sd_read</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [D:/ywd1/dm/sd_rw-25g/rtl/top_sd_rw.v(line number: 117)] Elaborating instance u_led_alarm</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [D:/ywd1/dm/sd_rw-25g/rtl/led_alarm.v(line number: 24)] Elaborating module led_alarm</data>
+        </row>
+        <row>
+            <data message="4">Module instance {top_sd_rw/u_led_alarm} parameter value:
+    L_TIME = 25'b1011111010111100001000000</data>
+        </row>
+        <row>
+            <data message="4">FSM cur_state_fsm[7:0] inferred.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N299 (bmsPMUX).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N208_2 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N161 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N177 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N193 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N320 (bmsPMUX).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N336 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N242 (bmsPMUX).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N266 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N121 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+        <row>
+            <data message="5">Loop was found during constant probe.</data>
+        </row>
+    </table>
+    <general_container id="compile_settings">
+        <table_container>
+            <table id="compile_settings" title="Compile Settings" column_number="2">
+                <column_headers>
+                    <data>Name</data>
+                    <data>Value</data>
+                </column_headers>
+                <row>
+                    <data>Part</data>
+                    <data>PGL25G-6MBG324</data>
+                </row>
+                <row>
+                    <data>Top Module</data>
+                    <data>top_sd_rw</data>
+                </row>
+            </table>
+        </table_container>
+        <general_container align="3">
+            <table_container>
+                <data>Verilog</data>
+                <table id="" title="" column_number="2">
+                    <column_headers>
+                        <data>Name</data>
+                        <data>Value</data>
+                    </column_headers>
+                    <row>
+                        <data>SystemVerilog</data>
+                        <data>false</data>
+                    </row>
+                    <row>
+                        <data>Allow Duplicate Modules</data>
+                        <data>false</data>
+                    </row>
+                    <row>
+                        <data>Multiple File Compilation Unit</data>
+                        <data>true</data>
+                    </row>
+                    <row>
+                        <data>Include Path Order: 
+ (Relative to Verilog File)</data>
+                        <data>D:/ywd1/dm/sd_rw-25g/prj	</data>
+                    </row>
+                    <row>
+                        <data>Parameters/Generics</data>
+                        <data></data>
+                    </row>
+                    <row>
+                        <data>Compiler Directives</data>
+                        <data></data>
+                    </row>
+                    <row>
+                        <data>Loop Limit</data>
+                        <data>2000</data>
+                    </row>
+                </table>
+            </table_container>
+            <table_container>
+                <data>Options</data>
+                <table id="" title="" column_number="2">
+                    <column_headers>
+                        <data>Name</data>
+                        <data>Value</data>
+                    </column_headers>
+                    <row>
+                        <data>FSM Compiler</data>
+                        <data>auto</data>
+                    </row>
+                </table>
+            </table_container>
+        </general_container>
+    </general_container>
+</tables>

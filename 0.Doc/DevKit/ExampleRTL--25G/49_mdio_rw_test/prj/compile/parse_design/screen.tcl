@@ -1,0 +1,1 @@
+.rtl_screen -top_module {mdio_rw_test} -include_path {<C:/Users/Admin/Desktop/25G/1_mdio_rw_test/prj>} -design_files {<C:/Users/Admin/Desktop/25G/1_mdio_rw_test/rtl/mdio_ctrl.v|work><C:/Users/Admin/Desktop/25G/1_mdio_rw_test/rtl/mdio_dri.v|work><C:/Users/Admin/Desktop/25G/1_mdio_rw_test/rtl/mdio_rw_test.v|work>}

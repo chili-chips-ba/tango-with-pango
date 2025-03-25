@@ -1,0 +1,1 @@
+.rtl_screen -top_module {flow_led} -include_path {<D:/Desktop/10_flow_led/prj>} -design_files {<D:/Desktop/10_flow_led/rtl/flow_led.v|work>}

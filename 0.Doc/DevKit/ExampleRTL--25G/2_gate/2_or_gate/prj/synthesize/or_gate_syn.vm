@@ -1,0 +1,54 @@
+//
+// Generated (version 2022.2-SP4.2<build 132111>) at Wed Sep 20 10:18:57 2023
+//
+
+module or_gate
+(
+    input A,
+    input B,
+    output Y
+);
+    wire nt_A;
+    wire nt_B;
+    wire nt_Y;
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="N5", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_PULLUP="TRUE" *)    GTP_INBUF /* A_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        A_ibuf (
+            .O (nt_A),
+            .I (A));
+	// ../../rtl/or_gate.v:20
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="P6", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_PULLUP="TRUE" *)    GTP_INBUF /* B_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        B_ibuf (
+            .O (nt_B),
+            .I (B));
+	// ../../rtl/or_gate.v:21
+
+    GTP_GRS GRS_INST (
+            .GRS_N (1'b1));
+
+    GTP_LUT2 /* N0 */ #(
+            .INIT(4'b1110))
+        N0 (
+            .Z (nt_Y),
+            .I0 (nt_A),
+            .I1 (nt_B));
+	// LUT = (I0)|(I1) ;
+	// ../../rtl/or_gate.v:27
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="M14", PAP_IO_VCCIO="1.5", PAP_IO_STANDARD="LVCMOS15", PAP_IO_DRIVE="8", PAP_IO_PULLUP="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* Y_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        Y_obuf (
+            .O (Y),
+            .I (nt_Y));
+	// ../../rtl/or_gate.v:23
+
+
+endmodule
+

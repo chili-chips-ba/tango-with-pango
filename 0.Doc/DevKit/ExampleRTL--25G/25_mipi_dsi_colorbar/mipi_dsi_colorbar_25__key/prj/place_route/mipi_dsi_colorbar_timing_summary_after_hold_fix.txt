@@ -1,0 +1,228 @@
+Design Summary : Some Constraints Violated.
+
+Setup Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ pixel_clk              pixel_clk                   10.125       0.000              0            238
+ pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                        pixel_clk                   -3.475     -53.397             24             24
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT0_Inferred|u_mipi_phy_io_tx/u_hs_i_io_clk/CLKDIVOUT_Inferred
+                                                    -8.187      -8.187              1              1
+ pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                                                     6.781       0.000              0           1302
+ pixel_clk              pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                                                     2.070       0.000              0             11
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                                                    -8.148     -27.839              4              4
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                                                    94.477       0.000              0            977
+====================================================================================================
+
+Hold Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ pixel_clk              pixel_clk                    0.251       0.000              0            238
+ pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                        pixel_clk                    4.569       0.000              0             24
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT0_Inferred|u_mipi_phy_io_tx/u_hs_i_io_clk/CLKDIVOUT_Inferred
+                                                     3.797       0.000              0              1
+ pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                                                     0.130       0.000              0           1302
+ pixel_clk              pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                                                     0.630       0.000              0             11
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                                                     0.490       0.000              0              4
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                                                     0.198       0.000              0            977
+====================================================================================================
+
+Recovery Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                        pixel_clk                   -3.899    -234.453             66             66
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk                   -2.972    -173.295             66             69
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT0_Inferred
+                                                    -9.441      -9.441              1              1
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT0_Inferred|u_mipi_phy_io_tx/u_hs_i_io_clk/CLKDIVOUT_Inferred
+                                                    -6.983      -6.983              1              1
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred
+                                                    -9.311     -36.692              4              4
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                                                   -13.775   -2431.548            335            335
+ pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                                                    10.474       0.000              0            280
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                                                    96.175       0.000              0            202
+====================================================================================================
+
+Removal Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                        pixel_clk                    5.696       0.000              0             66
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk                    0.824       0.000              0             69
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT0_Inferred
+                                                     5.865       0.000              0              1
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT0_Inferred|u_mipi_phy_io_tx/u_hs_i_io_clk/CLKDIVOUT_Inferred
+                                                     2.992       0.000              0              1
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred
+                                                     5.591       0.000              0              4
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                                                     2.459       0.000              0            335
+ pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                                                     1.507       0.000              0            280
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                                                     0.658       0.000              0            202
+====================================================================================================
+
+Minimum Pulse Width Summary(Slow Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Setup Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ pixel_clk              pixel_clk                   11.687       0.000              0            238
+ pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                        pixel_clk                   -0.687      -2.811             10             24
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT0_Inferred|u_mipi_phy_io_tx/u_hs_i_io_clk/CLKDIVOUT_Inferred
+                                                    -5.841      -5.841              1              1
+ pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                                                    10.890       0.000              0           1302
+ pixel_clk              pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                                                     1.492       0.000              0             11
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                                                    -5.810     -20.094              4              4
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                                                    96.008       0.000              0            977
+====================================================================================================
+
+Hold Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ pixel_clk              pixel_clk                    0.186       0.000              0            238
+ pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                        pixel_clk                    3.275       0.000              0             24
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT0_Inferred|u_mipi_phy_io_tx/u_hs_i_io_clk/CLKDIVOUT_Inferred
+                                                     3.079       0.000              0              1
+ pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                                                     0.113       0.000              0           1302
+ pixel_clk              pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                                                     2.231       0.000              0             11
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                                                     0.940       0.000              0              4
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                                                     0.147       0.000              0            977
+====================================================================================================
+
+Recovery Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                        pixel_clk                   -0.915     -44.552             66             66
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk                    0.429       0.000              0             69
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT0_Inferred
+                                                    -6.491      -6.491              1              1
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT0_Inferred|u_mipi_phy_io_tx/u_hs_i_io_clk/CLKDIVOUT_Inferred
+                                                    -5.098      -5.098              1              1
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred
+                                                    -6.423     -25.249              4              4
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                                                    -9.727   -1765.889            335            335
+ pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                                                    13.534       0.000              0            280
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                                                    97.257       0.000              0            202
+====================================================================================================
+
+Removal Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                        pixel_clk                    4.068       0.000              0             66
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk                    0.716       0.000              0             69
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT0_Inferred
+                                                     3.988       0.000              0              1
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT0_Inferred|u_mipi_phy_io_tx/u_hs_i_io_clk/CLKDIVOUT_Inferred
+                                                     2.477       0.000              0              1
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred
+                                                     3.872       0.000              0              4
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                                                     2.187       0.000              0            335
+ pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                        pixel_clk|u_clock_gen/u_pll_clk_hs/u_pll_e3/CLKOUT5_Inferred|u_mipi_phy_io_tx/u_hs_q_io_clk/CLKDIVOUT_Inferred
+                                                     1.100       0.000              0            280
+ sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                        sys_clk|u_clock_gen/u_pll_clk_pixel/u_pll_e3/CLKOUT1_Inferred
+                                                     0.485       0.000              0            202
+====================================================================================================
+
+Minimum Pulse Width Summary(Fast Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+

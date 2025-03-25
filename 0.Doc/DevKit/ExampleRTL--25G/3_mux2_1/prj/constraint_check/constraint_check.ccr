@@ -1,0 +1,45 @@
+##### Written on 2023/09/20 10:53:52 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL25G-6MBG324
+
+Top Module : 
+	mux2_1
+
+Constraint File(s) : 
+	D:/Desktop/25G/3_mux2_1/prj/mux2_1.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 2 critical warning(s), 0 warning(s), out of 22 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:in1} {PAP_IO_LOC} {N5}
+	C: ConstraintEditor-2002: [D:/Desktop/25G/3_mux2_1/prj/mux2_1.fdc(line number: 9)] | Port in1 has been placed at location N5, whose type is share pin.
+
+define_attribute {p:in2} {PAP_IO_LOC} {P6}
+	C: ConstraintEditor-2002: [D:/Desktop/25G/3_mux2_1/prj/mux2_1.fdc(line number: 14)] | Port in2 has been placed at location P6, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

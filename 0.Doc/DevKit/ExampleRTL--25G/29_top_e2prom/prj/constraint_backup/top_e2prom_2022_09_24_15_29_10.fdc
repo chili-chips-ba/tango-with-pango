@@ -1,0 +1,34 @@
+#sys_clk
+define_attribute {p:sys_clk} {PAP_IO_DIRECTION} {INPUT}
+define_attribute {p:sys_clk} {PAP_IO_LOC} {B5}
+define_attribute {p:sys_clk} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:sys_clk} {PAP_IO_STANDARD} {LVCMOS12}
+define_attribute {p:sys_clk} {PAP_IO_NONE} {TRUE}
+define_attribute {p:sys_rst_n} {PAP_IO_DIRECTION} {INPUT}
+define_attribute {p:sys_rst_n} {PAP_IO_LOC} {G5}
+define_attribute {p:sys_rst_n} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:sys_rst_n} {PAP_IO_STANDARD} {LVCMOS12}
+define_attribute {p:sys_rst_n} {PAP_IO_NONE} {TRUE}
+#iic
+define_attribute {p:iic_sda} {PAP_IO_DIRECTION} {INOUT}
+define_attribute {p:iic_sda} {PAP_IO_LOC} {E1}
+define_attribute {p:iic_sda} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:iic_sda} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:iic_sda} {PAP_IO_DRIVE} {4}
+define_attribute {p:iic_sda} {PAP_IO_NONE} {TRUE}
+define_attribute {p:iic_sda} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:iic_scl} {PAP_IO_DIRECTION} {OUTPUT}
+define_attribute {p:iic_scl} {PAP_IO_LOC} {E2}
+define_attribute {p:iic_scl} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:iic_scl} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:iic_scl} {PAP_IO_DRIVE} {4}
+define_attribute {p:iic_scl} {PAP_IO_NONE} {TRUE}
+define_attribute {p:iic_scl} {PAP_IO_SLEW} {SLOW}
+#led
+define_attribute {p:led} {PAP_IO_DIRECTION} {OUTPUT}
+define_attribute {p:led} {PAP_IO_LOC} {F3}
+define_attribute {p:led} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:led} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:led} {PAP_IO_DRIVE} {4}
+define_attribute {p:led} {PAP_IO_NONE} {TRUE}
+define_attribute {p:led} {PAP_IO_SLEW} {SLOW}

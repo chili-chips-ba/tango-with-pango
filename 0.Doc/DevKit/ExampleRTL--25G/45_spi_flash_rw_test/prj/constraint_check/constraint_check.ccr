@@ -1,0 +1,51 @@
+##### Written on 2023/10/13 14:51:49 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL25G-6MBG324
+
+Top Module : 
+	flash_rw_test
+
+Constraint File(s) : 
+	D:/ywd1/dm/44_spi_flash_rw_test/prj/spi_flash_rw_test.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 4 critical warning(s), 0 warning(s), out of 43 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:spi_clk} {PAP_IO_LOC} {R15}
+	C: ConstraintEditor-2002: [D:/ywd1/dm/44_spi_flash_rw_test/prj/spi_flash_rw_test.fdc(line number: 3)] | Port spi_clk has been placed at location R15, whose type is share pin.
+
+define_attribute {p:spi_cs} {PAP_IO_LOC} {V3}
+	C: ConstraintEditor-2002: [D:/ywd1/dm/44_spi_flash_rw_test/prj/spi_flash_rw_test.fdc(line number: 10)] | Port spi_cs has been placed at location V3, whose type is share pin.
+
+define_attribute {p:spi_mosi} {PAP_IO_LOC} {T13}
+	C: ConstraintEditor-2002: [D:/ywd1/dm/44_spi_flash_rw_test/prj/spi_flash_rw_test.fdc(line number: 17)] | Port spi_mosi has been placed at location T13, whose type is share pin.
+
+define_attribute {p:spi_miso} {PAP_IO_LOC} {R13}
+	C: ConstraintEditor-2002: [D:/ywd1/dm/44_spi_flash_rw_test/prj/spi_flash_rw_test.fdc(line number: 24)] | Port spi_miso has been placed at location R13, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

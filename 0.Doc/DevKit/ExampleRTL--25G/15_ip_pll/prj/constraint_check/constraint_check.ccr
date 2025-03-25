@@ -1,0 +1,42 @@
+##### Written on 2023/09/14 17:44:37 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL25G-6MBG324
+
+Top Module : 
+	ip_pll
+
+Constraint File(s) : 
+	E:/PDS/ip_pll/prj/ip_pll.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 1 critical warning(s), 0 warning(s), out of 39 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:clk_100m} {PAP_IO_LOC} {P12}
+	C: ConstraintEditor-2002: [E:/PDS/ip_pll/prj/ip_pll.fdc(line number: 17)] | Port clk_100m has been placed at location P12, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

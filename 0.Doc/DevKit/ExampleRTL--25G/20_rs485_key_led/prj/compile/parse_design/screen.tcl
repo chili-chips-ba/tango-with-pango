@@ -1,0 +1,1 @@
+.rtl_screen -top_module {rs485_key_led} -include_path {<E:/PDS/rs485_key_led/prj>} -design_files {<E:/PDS/rs485_key_led/rtl/rs485_key_led.v|work><E:/PDS/rs485_key_led/rtl/uart_rx.v|work><E:/PDS/rs485_key_led/rtl/led_ctrl.v|work><E:/PDS/rs485_key_led/rtl/key_trig.v|work><E:/PDS/rs485_key_led/rtl/key_debounce.v|work><E:/PDS/rs485_key_led/rtl/uart_tx.v|work>}

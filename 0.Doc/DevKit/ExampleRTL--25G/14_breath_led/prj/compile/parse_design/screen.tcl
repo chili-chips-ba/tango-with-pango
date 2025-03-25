@@ -1,0 +1,1 @@
+.rtl_screen -top_module {breath_led} -include_path {<D:/ywd/dps4/ccccccccccc/pm/25G/25G/14_breath_led/prj>} -design_files {<D:/ywd/dps4/ccccccccccc/pm/25G/25G/14_breath_led/rtl/berath_led.v|work>}

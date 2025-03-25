@@ -1,0 +1,1 @@
+.rtl_screen -top_module {latch} -include_path {<D:/Desktop/5_latch/prj>} -design_files {<D:/Desktop/5_latch/rtl/latch.v|work>}

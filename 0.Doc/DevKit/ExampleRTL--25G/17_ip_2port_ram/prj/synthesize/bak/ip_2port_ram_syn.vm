@@ -1,0 +1,1003 @@
+//
+// Generated (version 2022.2-SP4.2<build 132111>) at Wed Sep 27 15:46:24 2023
+//
+
+module ipml_sdpram_v1_6_ram_2port
+(
+    input [4:0] rd_addr,
+    input [4:0] wr_addr,
+    input [7:0] wr_data,
+    input rd_clk,
+    input rd_rst,
+    input wr_en,
+    input wr_rst,
+    output [7:0] rd_data
+);
+    wire [17:0] QA_bus;
+    wire [17:0] QB_bus;
+
+    GTP_DRM9K /* \ADDR_LOOP[0].DATA_LOOP[0].U_GTP_DRM9K  */ #(
+            .GRS_EN("FALSE"), 
+            .DATA_WIDTH_A(32), 
+            .DATA_WIDTH_B(32), 
+            .DOA_REG(0), 
+            .DOB_REG(0), 
+            .DOA_REG_CLKINV(0), 
+            .DOB_REG_CLKINV(0), 
+            .RST_TYPE("ASYNC"), 
+            .RAM_MODE("SIMPLE_DUAL_PORT"), 
+            .WRITE_MODE_A("NORMAL_WRITE"), 
+            .WRITE_MODE_B("NORMAL_WRITE"), 
+            .SIM_DEVICE("LOGOS"), 
+            .INIT_00(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_01(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_02(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_03(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_04(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_05(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_06(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_07(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_08(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_09(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_0A(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_0B(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_0C(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_0D(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_0E(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_0F(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_10(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_11(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_12(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_13(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_14(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_15(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_16(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_17(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_18(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_19(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_1A(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_1B(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_1C(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_1D(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_1E(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_1F(288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), 
+            .INIT_FILE("NONE"), 
+            .BLOCK_X(0), 
+            .BLOCK_Y(0), 
+            .RAM_DATA_WIDTH(32), 
+            .RAM_ADDR_WIDTH(8), 
+            .INIT_FORMAT("BIN"))
+        \ADDR_LOOP[0].DATA_LOOP[0].U_GTP_DRM9K  (
+            .DOA ({QA_bus[17], QA_bus[16], QA_bus[15], QA_bus[14], QA_bus[13], QA_bus[12], QA_bus[11], QA_bus[10], QA_bus[9], QA_bus[8], rd_data[7], rd_data[6], rd_data[5], rd_data[4], rd_data[3], rd_data[2], rd_data[1], rd_data[0]}),
+            .DOB (QB_bus),
+            .ADDRA ({1'b0, 1'b0, 1'b0, wr_addr[4], wr_addr[3], wr_addr[2], wr_addr[1], wr_addr[0], 1'b0, 1'b1, 1'b1, 1'b1, 1'b1}),
+            .ADDRB ({1'b0, 1'b0, 1'b0, rd_addr[4], rd_addr[3], rd_addr[2], rd_addr[1], rd_addr[0], 1'b0, 1'b1, 1'b1, 1'b1, 1'b1}),
+            .DIA ({1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, wr_data[7], wr_data[6], wr_data[5], wr_data[4], wr_data[3], wr_data[2], wr_data[1], wr_data[0]}),
+            .DIB ({1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0}),
+            .ADDRA_HOLD (1'b0),
+            .ADDRB_HOLD (1'b0),
+            .CEA (1'b1),
+            .CEB (1'b1),
+            .CLKA (rd_clk),
+            .CLKB (rd_clk),
+            .ORCEA (1'b0),
+            .ORCEB (1'b0),
+            .RSTA (wr_rst),
+            .RSTB (rd_rst),
+            .WEA (wr_en),
+            .WEB (1'b0));
+	// ../ipcore/ram_2port/rtl/ipml_sdpram_v1_6_ram_2port.v:855
+
+
+endmodule
+
+
+module ram_2port
+(
+    input [4:0] rd_addr,
+    input [4:0] wr_addr,
+    input [7:0] wr_data,
+    input rd_clk,
+    input rd_rst,
+    input wr_en,
+    input wr_rst,
+    output [7:0] rd_data
+);
+
+    ipml_sdpram_v1_6_ram_2port U_ipml_sdpram_ram_2port (
+            .rd_data (rd_data),
+            .rd_addr (rd_addr),
+            .wr_addr (wr_addr),
+            .wr_data (wr_data),
+            .rd_clk (rd_clk),
+            .rd_rst (rd_rst),
+            .wr_en (wr_en),
+            .wr_rst (wr_rst));
+	// ../ipcore/ram_2port/ram_2port.v:157
+
+
+endmodule
+
+
+module ram_rd
+(
+    input N1,
+    input clk,
+    input rd_flag,
+    output [4:0] ram_rd_addr,
+    output rd_rst
+);
+    wire [4:0] N13;
+    wire _N16;
+    wire _N24;
+
+    GTP_INV N0 (
+            .Z (rd_rst),
+            .I (rd_flag));
+
+    GTP_LUT2 /* N8_ac1 */ #(
+            .INIT(4'b1000))
+        N8_ac1 (
+            .Z (_N16),
+            .I0 (ram_rd_addr[0]),
+            .I1 (ram_rd_addr[1]));
+	// LUT = I0&I1 ;
+
+    GTP_LUT4 /* N8_ac3 */ #(
+            .INIT(16'b1000000000000000))
+        N8_ac3 (
+            .Z (_N24),
+            .I0 (ram_rd_addr[0]),
+            .I1 (ram_rd_addr[1]),
+            .I2 (ram_rd_addr[2]),
+            .I3 (ram_rd_addr[3]));
+	// LUT = I0&I1&I2&I3 ;
+
+    GTP_LUT2 /* \N13[0]  */ #(
+            .INIT(4'b0010))
+        \N13[0]  (
+            .Z (N13[0]),
+            .I0 (rd_flag),
+            .I1 (ram_rd_addr[0]));
+	// LUT = I0&~I1 ;
+	// ../../rtl/ram_rd.v:39
+
+    GTP_LUT5 /* \N13[1]  */ #(
+            .INIT(32'b00000000001010000010100000101000))
+        \N13[1]  (
+            .Z (N13[1]),
+            .I0 (rd_flag),
+            .I1 (ram_rd_addr[0]),
+            .I2 (ram_rd_addr[1]),
+            .I3 (ram_rd_addr[4]),
+            .I4 (_N24));
+	// LUT = (I0&I1&~I2&~I4)|(I0&~I1&I2&~I4)|(I0&I1&~I2&~I3)|(I0&~I1&I2&~I3) ;
+	// ../../rtl/ram_rd.v:39
+
+    GTP_LUT3 /* \N13[2]  */ #(
+            .INIT(8'b00101000))
+        \N13[2]  (
+            .Z (N13[2]),
+            .I0 (rd_flag),
+            .I1 (ram_rd_addr[2]),
+            .I2 (_N16));
+	// LUT = (I0&I1&~I2)|(I0&~I1&I2) ;
+
+    GTP_LUT4 /* \N13[3]  */ #(
+            .INIT(16'b0010100010100000))
+        \N13[3]  (
+            .Z (N13[3]),
+            .I0 (rd_flag),
+            .I1 (ram_rd_addr[2]),
+            .I2 (ram_rd_addr[3]),
+            .I3 (_N16));
+	// LUT = (I0&I2&~I3)|(I0&~I1&I2)|(I0&I1&~I2&I3) ;
+
+    GTP_LUT5 /* \N13[4]  */ #(
+            .INIT(32'b00101010100000001010101000000000))
+        \N13[4]  (
+            .Z (N13[4]),
+            .I0 (rd_flag),
+            .I1 (ram_rd_addr[2]),
+            .I2 (ram_rd_addr[3]),
+            .I3 (ram_rd_addr[4]),
+            .I4 (_N16));
+	// LUT = (I0&I3&~I4)|(I0&~I2&I3)|(I0&~I1&I3)|(I0&I1&I2&~I3&I4) ;
+	// ../../rtl/ram_rd.v:39
+
+    GTP_DFF_C /* \ram_rd_addr[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \ram_rd_addr[0]  (
+            .Q (ram_rd_addr[0]),
+            .C (N1),
+            .CLK (clk),
+            .D (N13[0]));
+	// ../../rtl/ram_rd.v:39
+
+    GTP_DFF_C /* \ram_rd_addr[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \ram_rd_addr[1]  (
+            .Q (ram_rd_addr[1]),
+            .C (N1),
+            .CLK (clk),
+            .D (N13[1]));
+	// ../../rtl/ram_rd.v:39
+
+    GTP_DFF_C /* \ram_rd_addr[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \ram_rd_addr[2]  (
+            .Q (ram_rd_addr[2]),
+            .C (N1),
+            .CLK (clk),
+            .D (N13[2]));
+	// ../../rtl/ram_rd.v:39
+
+    GTP_DFF_C /* \ram_rd_addr[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \ram_rd_addr[3]  (
+            .Q (ram_rd_addr[3]),
+            .C (N1),
+            .CLK (clk),
+            .D (N13[3]));
+	// ../../rtl/ram_rd.v:39
+
+    GTP_DFF_C /* \ram_rd_addr[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \ram_rd_addr[4]  (
+            .Q (ram_rd_addr[4]),
+            .C (N1),
+            .CLK (clk),
+            .D (N13[4]));
+	// ../../rtl/ram_rd.v:39
+
+
+endmodule
+
+
+module ram_wr
+(
+    input N0,
+    input clk,
+    output [4:0] ram_wr_addr,
+    output [7:0] ram_wr_data,
+    output ram_wr_en,
+    output rd_flag
+);
+    wire N5;
+    wire N27;
+    wire [4:0] N29;
+    wire [7:0] N30;
+    wire _N46;
+    wire _N53;
+    wire _N54;
+    wire _N55;
+    wire _N56;
+    wire _N57;
+    wire _N58;
+    wire _N77;
+
+    GTP_LUT3 /* N4_mux4_4 */ #(
+            .INIT(8'b01111111))
+        N4_mux4_4 (
+            .Z (_N77),
+            .I0 (ram_wr_addr[0]),
+            .I1 (ram_wr_addr[1]),
+            .I2 (ram_wr_addr[2]));
+	// LUT = (~I2)|(~I1)|(~I0) ;
+
+    GTP_LUT4 /* N5 */ #(
+            .INIT(16'b1010101000101010))
+        N5_vname (
+            .Z (N5),
+            .I0 (ram_wr_en),
+            .I1 (ram_wr_addr[3]),
+            .I2 (ram_wr_addr[4]),
+            .I3 (_N77));
+    // defparam N5_vname.orig_name = N5;
+	// LUT = (I0&~I2)|(I0&~I1)|(I0&I3) ;
+	// ../../rtl/ram_wr.v:46
+
+    GTP_LUT3 /* N7_ac2 */ #(
+            .INIT(8'b10000000))
+        N7_ac2 (
+            .Z (_N46),
+            .I0 (ram_wr_addr[0]),
+            .I1 (ram_wr_addr[1]),
+            .I2 (ram_wr_addr[2]));
+	// LUT = I0&I1&I2 ;
+
+    GTP_LUT5CARRY /* N18_1_1 */ #(
+            .INIT(32'b01100000011000000000000000000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N18_1_1 (
+            .COUT (_N53),
+            .Z (N30[1]),
+            .CIN (),
+            .I0 (ram_wr_data[0]),
+            .I1 (ram_wr_data[1]),
+            .I2 (N5),
+            .I3 (),
+            .I4 (1'b1),
+            .ID ());
+	// LUT = (I0&~I1&I2)|(~I0&I1&I2) ;
+	// CARRY = (1'b0) ? CIN : (I4) ;
+	// ../../rtl/ram_wr.v:57
+
+    GTP_LUT5CARRY /* N18_1_2 */ #(
+            .INIT(32'b01110000100000001000100000000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N18_1_2 (
+            .COUT (_N54),
+            .Z (N30[2]),
+            .CIN (_N53),
+            .I0 (ram_wr_data[0]),
+            .I1 (ram_wr_data[1]),
+            .I2 (N5),
+            .I3 (ram_wr_data[2]),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (I0&I1&I2&~I3)|(~I1&I2&I3)|(~I0&I2&I3) ;
+	// CARRY = (I0&I1&I3) ? CIN : (I4) ;
+	// ../../rtl/ram_wr.v:57
+
+    GTP_LUT5CARRY /* N18_1_3 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N18_1_3 (
+            .COUT (_N55),
+            .Z (N30[3]),
+            .CIN (_N54),
+            .I0 (),
+            .I1 (ram_wr_data[3]),
+            .I2 (N5),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/ram_wr.v:57
+
+    GTP_LUT5CARRY /* N18_1_4 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N18_1_4 (
+            .COUT (_N56),
+            .Z (N30[4]),
+            .CIN (_N55),
+            .I0 (),
+            .I1 (ram_wr_data[4]),
+            .I2 (N5),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/ram_wr.v:57
+
+    GTP_LUT5CARRY /* N18_1_5 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N18_1_5 (
+            .COUT (_N57),
+            .Z (N30[5]),
+            .CIN (_N56),
+            .I0 (),
+            .I1 (ram_wr_data[5]),
+            .I2 (N5),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/ram_wr.v:57
+
+    GTP_LUT5CARRY /* N18_1_6 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N18_1_6 (
+            .COUT (_N58),
+            .Z (N30[6]),
+            .CIN (_N57),
+            .I0 (),
+            .I1 (ram_wr_data[6]),
+            .I2 (N5),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/ram_wr.v:57
+
+    GTP_LUT5CARRY /* N18_1_7 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N18_1_7 (
+            .COUT (),
+            .Z (N30[7]),
+            .CIN (_N58),
+            .I0 (),
+            .I1 (ram_wr_data[7]),
+            .I2 (N5),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/ram_wr.v:57
+
+    GTP_LUT5 /* N27_4 */ #(
+            .INIT(32'b00000000000000001000000000000000))
+        N27_4 (
+            .Z (N27),
+            .I0 (ram_wr_addr[0]),
+            .I1 (ram_wr_addr[1]),
+            .I2 (ram_wr_addr[2]),
+            .I3 (ram_wr_addr[3]),
+            .I4 (ram_wr_addr[4]));
+	// LUT = I0&I1&I2&I3&~I4 ;
+
+    GTP_LUT2 /* \N29[0]  */ #(
+            .INIT(4'b0010))
+        \N29[0]  (
+            .Z (N29[0]),
+            .I0 (ram_wr_en),
+            .I1 (ram_wr_addr[0]));
+	// LUT = I0&~I1 ;
+	// ../../rtl/ram_wr.v:43
+
+    GTP_LUT3 /* \N29[1]  */ #(
+            .INIT(8'b01100000))
+        \N29[1]  (
+            .Z (N29[1]),
+            .I0 (ram_wr_addr[0]),
+            .I1 (ram_wr_addr[1]),
+            .I2 (N5));
+	// LUT = (I0&~I1&I2)|(~I0&I1&I2) ;
+	// ../../rtl/ram_wr.v:43
+
+    GTP_LUT4 /* \N29[2]  */ #(
+            .INIT(16'b0111100000000000))
+        \N29[2]  (
+            .Z (N29[2]),
+            .I0 (ram_wr_addr[0]),
+            .I1 (ram_wr_addr[1]),
+            .I2 (ram_wr_addr[2]),
+            .I3 (N5));
+	// LUT = (~I1&I2&I3)|(~I0&I2&I3)|(I0&I1&~I2&I3) ;
+	// ../../rtl/ram_wr.v:43
+
+    GTP_LUT5 /* \N29[3]  */ #(
+            .INIT(32'b01111111100000000000000000000000))
+        \N29[3]  (
+            .Z (N29[3]),
+            .I0 (ram_wr_addr[0]),
+            .I1 (ram_wr_addr[1]),
+            .I2 (ram_wr_addr[2]),
+            .I3 (ram_wr_addr[3]),
+            .I4 (N5));
+	// LUT = (~I2&I3&I4)|(~I1&I3&I4)|(~I0&I3&I4)|(I0&I1&I2&~I3&I4) ;
+	// ../../rtl/ram_wr.v:43
+
+    GTP_LUT4 /* \N29[4]  */ #(
+            .INIT(16'b0110000011000000))
+        \N29[4]  (
+            .Z (N29[4]),
+            .I0 (ram_wr_addr[3]),
+            .I1 (ram_wr_addr[4]),
+            .I2 (N5),
+            .I3 (_N46));
+	// LUT = (I1&I2&~I3)|(~I0&I1&I2)|(I0&~I1&I2&I3) ;
+	// ../../rtl/ram_wr.v:43
+
+    GTP_LUT2 /* \N30[0]_1  */ #(
+            .INIT(4'b0100))
+        \N30[0]_1  (
+            .Z (N30[0]),
+            .I0 (ram_wr_data[0]),
+            .I1 (N5));
+	// LUT = ~I0&I1 ;
+	// ../../rtl/ram_wr.v:53
+
+    GTP_DFF_C /* \ram_wr_addr[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \ram_wr_addr[0]  (
+            .Q (ram_wr_addr[0]),
+            .C (N0),
+            .CLK (clk),
+            .D (N29[0]));
+	// ../../rtl/ram_wr.v:43
+
+    GTP_DFF_C /* \ram_wr_addr[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \ram_wr_addr[1]  (
+            .Q (ram_wr_addr[1]),
+            .C (N0),
+            .CLK (clk),
+            .D (N29[1]));
+	// ../../rtl/ram_wr.v:43
+
+    GTP_DFF_C /* \ram_wr_addr[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \ram_wr_addr[2]  (
+            .Q (ram_wr_addr[2]),
+            .C (N0),
+            .CLK (clk),
+            .D (N29[2]));
+	// ../../rtl/ram_wr.v:43
+
+    GTP_DFF_C /* \ram_wr_addr[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \ram_wr_addr[3]  (
+            .Q (ram_wr_addr[3]),
+            .C (N0),
+            .CLK (clk),
+            .D (N29[3]));
+	// ../../rtl/ram_wr.v:43
+
+    GTP_DFF_C /* \ram_wr_addr[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \ram_wr_addr[4]  (
+            .Q (ram_wr_addr[4]),
+            .C (N0),
+            .CLK (clk),
+            .D (N29[4]));
+	// ../../rtl/ram_wr.v:43
+
+    GTP_DFF_C /* \ram_wr_data[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \ram_wr_data[0]  (
+            .Q (ram_wr_data[0]),
+            .C (N0),
+            .CLK (clk),
+            .D (N30[0]));
+	// ../../rtl/ram_wr.v:53
+
+    GTP_DFF_C /* \ram_wr_data[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \ram_wr_data[1]  (
+            .Q (ram_wr_data[1]),
+            .C (N0),
+            .CLK (clk),
+            .D (N30[1]));
+	// ../../rtl/ram_wr.v:53
+
+    GTP_DFF_C /* \ram_wr_data[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \ram_wr_data[2]  (
+            .Q (ram_wr_data[2]),
+            .C (N0),
+            .CLK (clk),
+            .D (N30[2]));
+	// ../../rtl/ram_wr.v:53
+
+    GTP_DFF_C /* \ram_wr_data[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \ram_wr_data[3]  (
+            .Q (ram_wr_data[3]),
+            .C (N0),
+            .CLK (clk),
+            .D (N30[3]));
+	// ../../rtl/ram_wr.v:53
+
+    GTP_DFF_C /* \ram_wr_data[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \ram_wr_data[4]  (
+            .Q (ram_wr_data[4]),
+            .C (N0),
+            .CLK (clk),
+            .D (N30[4]));
+	// ../../rtl/ram_wr.v:53
+
+    GTP_DFF_C /* \ram_wr_data[5]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \ram_wr_data[5]  (
+            .Q (ram_wr_data[5]),
+            .C (N0),
+            .CLK (clk),
+            .D (N30[5]));
+	// ../../rtl/ram_wr.v:53
+
+    GTP_DFF_C /* \ram_wr_data[6]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \ram_wr_data[6]  (
+            .Q (ram_wr_data[6]),
+            .C (N0),
+            .CLK (clk),
+            .D (N30[6]));
+	// ../../rtl/ram_wr.v:53
+
+    GTP_DFF_C /* \ram_wr_data[7]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \ram_wr_data[7]  (
+            .Q (ram_wr_data[7]),
+            .C (N0),
+            .CLK (clk),
+            .D (N30[7]));
+	// ../../rtl/ram_wr.v:53
+
+    GTP_DFF_C /* ram_wr_en */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        ram_wr_en_vname (
+            .Q (ram_wr_en),
+            .C (N0),
+            .CLK (clk),
+            .D (1'b1));
+    // defparam ram_wr_en_vname.orig_name = ram_wr_en;
+	// ../../rtl/ram_wr.v:35
+
+    GTP_DFF_CE /* rd_flag */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        rd_flag_vname (
+            .Q (rd_flag),
+            .C (N0),
+            .CE (N27),
+            .CLK (clk),
+            .D (1'b1));
+    // defparam rd_flag_vname.orig_name = rd_flag;
+	// ../../rtl/ram_wr.v:63
+
+
+endmodule
+
+
+module ip_2port_ram
+(
+    input sys_clk,
+    input sys_rst_n,
+    output [4:0] ram_rd_addr,
+    output [7:0] ram_rd_data,
+    output [4:0] ram_wr_addr,
+    output [7:0] ram_wr_data,
+    output ram_wr_en
+);
+	// SDC constraint : (object sys_clk) (id 1000) (clock clk) (1 : E:/PDS/ip_2port_ram/prj/ip_2port_ram.fdc)
+    wire N0;
+    wire [4:0] nt_ram_rd_addr;
+    wire [7:0] nt_ram_rd_data;
+    wire [4:0] nt_ram_wr_addr;
+    wire [7:0] nt_ram_wr_data;
+    wire nt_ram_wr_en;
+    wire nt_sys_clk;
+    wire nt_sys_rst_n;
+    wire rd_flag;
+    wire rd_rst;
+
+    GTP_GRS GRS_INST (
+            .GRS_N (1'b1));
+
+    GTP_INV N0_vname (
+            .Z (N0),
+            .I (nt_sys_rst_n));
+    // defparam N0_vname.orig_name = N0;
+
+    GTP_OUTBUF /* \ram_rd_addr_obuf[0]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_rd_addr_obuf[0]  (
+            .O (ram_rd_addr[0]),
+            .I (nt_ram_rd_addr[0]));
+	// ../../rtl/ip_2port_ram.v:28
+
+    GTP_OUTBUF /* \ram_rd_addr_obuf[1]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_rd_addr_obuf[1]  (
+            .O (ram_rd_addr[1]),
+            .I (nt_ram_rd_addr[1]));
+	// ../../rtl/ip_2port_ram.v:28
+
+    GTP_OUTBUF /* \ram_rd_addr_obuf[2]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_rd_addr_obuf[2]  (
+            .O (ram_rd_addr[2]),
+            .I (nt_ram_rd_addr[2]));
+	// ../../rtl/ip_2port_ram.v:28
+
+    GTP_OUTBUF /* \ram_rd_addr_obuf[3]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_rd_addr_obuf[3]  (
+            .O (ram_rd_addr[3]),
+            .I (nt_ram_rd_addr[3]));
+	// ../../rtl/ip_2port_ram.v:28
+
+    GTP_OUTBUF /* \ram_rd_addr_obuf[4]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_rd_addr_obuf[4]  (
+            .O (ram_rd_addr[4]),
+            .I (nt_ram_rd_addr[4]));
+	// ../../rtl/ip_2port_ram.v:28
+
+    GTP_OUTBUF /* \ram_rd_data_obuf[0]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_rd_data_obuf[0]  (
+            .O (ram_rd_data[0]),
+            .I (nt_ram_rd_data[0]));
+	// ../../rtl/ip_2port_ram.v:29
+
+    GTP_OUTBUF /* \ram_rd_data_obuf[1]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_rd_data_obuf[1]  (
+            .O (ram_rd_data[1]),
+            .I (nt_ram_rd_data[1]));
+	// ../../rtl/ip_2port_ram.v:29
+
+    GTP_OUTBUF /* \ram_rd_data_obuf[2]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_rd_data_obuf[2]  (
+            .O (ram_rd_data[2]),
+            .I (nt_ram_rd_data[2]));
+	// ../../rtl/ip_2port_ram.v:29
+
+    GTP_OUTBUF /* \ram_rd_data_obuf[3]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_rd_data_obuf[3]  (
+            .O (ram_rd_data[3]),
+            .I (nt_ram_rd_data[3]));
+	// ../../rtl/ip_2port_ram.v:29
+
+    GTP_OUTBUF /* \ram_rd_data_obuf[4]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_rd_data_obuf[4]  (
+            .O (ram_rd_data[4]),
+            .I (nt_ram_rd_data[4]));
+	// ../../rtl/ip_2port_ram.v:29
+
+    GTP_OUTBUF /* \ram_rd_data_obuf[5]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_rd_data_obuf[5]  (
+            .O (ram_rd_data[5]),
+            .I (nt_ram_rd_data[5]));
+	// ../../rtl/ip_2port_ram.v:29
+
+    GTP_OUTBUF /* \ram_rd_data_obuf[6]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_rd_data_obuf[6]  (
+            .O (ram_rd_data[6]),
+            .I (nt_ram_rd_data[6]));
+	// ../../rtl/ip_2port_ram.v:29
+
+    GTP_OUTBUF /* \ram_rd_data_obuf[7]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_rd_data_obuf[7]  (
+            .O (ram_rd_data[7]),
+            .I (nt_ram_rd_data[7]));
+	// ../../rtl/ip_2port_ram.v:29
+
+    GTP_OUTBUF /* \ram_wr_addr_obuf[0]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_wr_addr_obuf[0]  (
+            .O (ram_wr_addr[0]),
+            .I (nt_ram_wr_addr[0]));
+	// ../../rtl/ip_2port_ram.v:26
+
+    GTP_OUTBUF /* \ram_wr_addr_obuf[1]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_wr_addr_obuf[1]  (
+            .O (ram_wr_addr[1]),
+            .I (nt_ram_wr_addr[1]));
+	// ../../rtl/ip_2port_ram.v:26
+
+    GTP_OUTBUF /* \ram_wr_addr_obuf[2]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_wr_addr_obuf[2]  (
+            .O (ram_wr_addr[2]),
+            .I (nt_ram_wr_addr[2]));
+	// ../../rtl/ip_2port_ram.v:26
+
+    GTP_OUTBUF /* \ram_wr_addr_obuf[3]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_wr_addr_obuf[3]  (
+            .O (ram_wr_addr[3]),
+            .I (nt_ram_wr_addr[3]));
+	// ../../rtl/ip_2port_ram.v:26
+
+    GTP_OUTBUF /* \ram_wr_addr_obuf[4]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_wr_addr_obuf[4]  (
+            .O (ram_wr_addr[4]),
+            .I (nt_ram_wr_addr[4]));
+	// ../../rtl/ip_2port_ram.v:26
+
+    GTP_OUTBUF /* \ram_wr_data_obuf[0]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_wr_data_obuf[0]  (
+            .O (ram_wr_data[0]),
+            .I (nt_ram_wr_data[0]));
+	// ../../rtl/ip_2port_ram.v:27
+
+    GTP_OUTBUF /* \ram_wr_data_obuf[1]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_wr_data_obuf[1]  (
+            .O (ram_wr_data[1]),
+            .I (nt_ram_wr_data[1]));
+	// ../../rtl/ip_2port_ram.v:27
+
+    GTP_OUTBUF /* \ram_wr_data_obuf[2]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_wr_data_obuf[2]  (
+            .O (ram_wr_data[2]),
+            .I (nt_ram_wr_data[2]));
+	// ../../rtl/ip_2port_ram.v:27
+
+    GTP_OUTBUF /* \ram_wr_data_obuf[3]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_wr_data_obuf[3]  (
+            .O (ram_wr_data[3]),
+            .I (nt_ram_wr_data[3]));
+	// ../../rtl/ip_2port_ram.v:27
+
+    GTP_OUTBUF /* \ram_wr_data_obuf[4]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_wr_data_obuf[4]  (
+            .O (ram_wr_data[4]),
+            .I (nt_ram_wr_data[4]));
+	// ../../rtl/ip_2port_ram.v:27
+
+    GTP_OUTBUF /* \ram_wr_data_obuf[5]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_wr_data_obuf[5]  (
+            .O (ram_wr_data[5]),
+            .I (nt_ram_wr_data[5]));
+	// ../../rtl/ip_2port_ram.v:27
+
+    GTP_OUTBUF /* \ram_wr_data_obuf[6]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_wr_data_obuf[6]  (
+            .O (ram_wr_data[6]),
+            .I (nt_ram_wr_data[6]));
+	// ../../rtl/ip_2port_ram.v:27
+
+    GTP_OUTBUF /* \ram_wr_data_obuf[7]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \ram_wr_data_obuf[7]  (
+            .O (ram_wr_data[7]),
+            .I (nt_ram_wr_data[7]));
+	// ../../rtl/ip_2port_ram.v:27
+
+    GTP_OUTBUF /* ram_wr_en_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        ram_wr_en_obuf (
+            .O (ram_wr_en),
+            .I (nt_ram_wr_en));
+	// ../../rtl/ip_2port_ram.v:25
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="V9", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* sys_clk_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        sys_clk_ibuf (
+            .O (nt_sys_clk),
+            .I (sys_clk));
+	// ../../rtl/ip_2port_ram.v:20
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="C4", PAP_IO_VCCIO="1.8", PAP_IO_STANDARD="LVCMOS18", PAP_IO_NONE="TRUE" *)    GTP_INBUF /* sys_rst_n_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        sys_rst_n_ibuf (
+            .O (nt_sys_rst_n),
+            .I (sys_rst_n));
+	// ../../rtl/ip_2port_ram.v:21
+
+    ram_2port u_ram_2port (
+            .rd_data (nt_ram_rd_data),
+            .rd_addr (nt_ram_rd_addr),
+            .wr_addr (nt_ram_wr_addr),
+            .wr_data (nt_ram_wr_data),
+            .rd_clk (nt_sys_clk),
+            .rd_rst (rd_rst),
+            .wr_en (nt_ram_wr_en),
+            .wr_rst (N0));
+	// ../../rtl/ip_2port_ram.v:40
+
+    ram_rd u_ram_rd (
+            .ram_rd_addr (nt_ram_rd_addr),
+            .rd_rst (rd_rst),
+            .N1 (N0),
+            .clk (nt_sys_clk),
+            .rd_flag (rd_flag));
+	// ../../rtl/ip_2port_ram.v:63
+
+    ram_wr u_ram_wr (
+            .ram_wr_addr (nt_ram_wr_addr),
+            .ram_wr_data (nt_ram_wr_data),
+            .ram_wr_en (nt_ram_wr_en),
+            .rd_flag (rd_flag),
+            .N0 (N0),
+            .clk (nt_sys_clk));
+	// ../../rtl/ip_2port_ram.v:53
+
+
+endmodule
+

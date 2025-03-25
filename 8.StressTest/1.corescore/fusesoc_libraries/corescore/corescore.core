@@ -1,0 +1,138 @@
+CAPI=2: null
+filesets:
+  agilex5_dk-a5e065bb32aes1:
+    files:
+    - data/agilex5_dk-a5e065bb32aes1.tcl:
+        file_type: tclSource
+    - data/intel_agilex7.sdc:
+        file_type: SDC
+    - rtl/corescore_intel_agilex7.v:
+        file_type: verilogSource
+  alhambra_II:
+    depend:
+    - fusesoc:utils:generators
+    files:
+    - rtl/corescore_alhambra_II.v:
+        file_type: verilogSource
+    - data/alhambra_II.pcf:
+        file_type: PCF
+  base:
+    depend:
+    - =::serv:1.0.2
+    - =::serving:1.0.2
+    - verilog-axis
+    file_type: verilogSource
+    files:
+    - rtl/wb2axis.v
+    - rtl/base.v
+  cc_gatemate:
+    files:
+    - data/cc_gatemate.ccf:
+        file_type: CCF
+    - rtl/cc_gatemate_clock_gen.v:
+        file_type: verilogSource
+    - rtl/corescore_gatemate.v:
+        file_type: verilogSource
+  emitter_serv:
+    depend:
+    - =::servant:1.0.2-r1
+    file_type: verilogSource
+    files:
+    - sw/emitter.hex:
+        copyto: emitter.hex
+        file_type: user
+    - rtl/axis2wb.v
+    - rtl/emitter_mux.v
+    - rtl/emitter.v
+  emitter_uart:
+    files:
+    - rtl/emitter_uart.v:
+        file_type: verilogSource
+  yosys_gowin:
+    files:
+    - rtl/corescore_gowin_yosys.v:
+        file_type: verilogSource
+    - rtl/gw2a18_clk_gen.v:
+        file_type: verilogSource
+generate:
+  corescorecore:
+    generator: corescorecore
+    parameters:
+      count: 10
+generators:
+  corescorecore:
+    command: sw/corescorecore_gen.py
+    interpreter: python3
+name: ::corescore:0
+parameters:
+  uart_baudrate:
+    datatype: int
+    description: Treat q output as an UART with the specified baudrate (0 or omitted
+      parameter disables UART decoding)
+    paramtype: plusarg
+  vcd:
+    datatype: bool
+    paramtype: plusarg
+scripts:
+  libero_post:
+    cmd:
+    - python3
+    - -c
+    - print(open('post-instructions.txt','r').read())
+targets:
+  cc_gatemate:
+    default_tool: gatemate
+    description: CologneChip CCGM1A1 with 10 cores
+    filesets:
+    - base
+    - emitter_uart
+    - cc_gatemate
+    generate:
+    - corescorecore:
+        count: 56
+    tools:
+      gatemate:
+        device: CCGM1A1
+        p_r_options:
+        - -cCP
+        - --verbose
+        - -tm 1
+        yosys_synth_options:
+        - -nomx8
+    toplevel: corescore_gatemate
+  gowin_yosys:
+    default_tool: yosys
+    description: Gowin FPGA with Yosys
+    filesets:
+    - base
+    - emitter_uart
+    - yosys_gowin
+    generate:
+    - corescorecore:
+        count: 49
+    tools:
+      yosys:
+        arch: gowin
+    toplevel: corescore_gowin_yosys
+  sim:
+    default_tool: verilator
+    description: Verilator testbench with 10 cores + SERV emitter
+    filesets:
+    - base
+    - emitter_uart
+    - cc_gatemate
+    - tb
+    generate:
+    - corescorecore:
+        count: 10
+    parameters:
+    - uart_baudrate=57600
+    - vcd=true
+    tools:
+      verilator:
+        verilator_options:
+        - --trace-fst
+        - -Wno-fatal
+        - --timing
+        - --timescale-override 1ps/1ps
+    toplevel: tb

@@ -1,0 +1,1 @@
+.rtl_screen -top_module {ip_2port_ram} -include_path {<E:/PDS/ip_2port_ram/prj>} -design_files {<E:/PDS/ip_2port_ram/rtl/ip_2port_ram.v|work><E:/PDS/ip_2port_ram/rtl/ram_wr.v|work><E:/PDS/ip_2port_ram/rtl/ram_rd.v|work><E:/PDS/ip_2port_ram/prj/ipcore/ram_2port/rtl/ipml_sdpram_v1_6_ram_2port.v|work><E:/PDS/ip_2port_ram/prj/ipcore/ram_2port/ram_2port.v|work>}

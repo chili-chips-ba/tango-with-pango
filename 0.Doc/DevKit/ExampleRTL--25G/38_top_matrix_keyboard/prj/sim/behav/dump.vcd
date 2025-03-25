@@ -1,0 +1,842 @@
+$date
+	Sun Oct 08 15:26:07 2023
+$end
+$version
+	ModelSim Version 2020.4
+$end
+$timescale
+	1ps
+$end
+
+$scope module tb_top_matrix_keyboard $end
+$var reg 1 ! sys_clk $end
+$var reg 1 " sys_rst_n $end
+$var reg 4 # key_row [3:0] $end
+$var reg 8 $ swi [7:0] $end
+$var wire 1 % key_col [3] $end
+$var wire 1 & key_col [2] $end
+$var wire 1 ' key_col [1] $end
+$var wire 1 ( key_col [0] $end
+$var wire 1 ) sel_t [3] $end
+$var wire 1 * sel_t [2] $end
+$var wire 1 + sel_t [1] $end
+$var wire 1 , sel_t [0] $end
+$var wire 1 - seg_led_t [7] $end
+$var wire 1 . seg_led_t [6] $end
+$var wire 1 / seg_led_t [5] $end
+$var wire 1 0 seg_led_t [4] $end
+$var wire 1 1 seg_led_t [3] $end
+$var wire 1 2 seg_led_t [2] $end
+$var wire 1 3 seg_led_t [1] $end
+$var wire 1 4 seg_led_t [0] $end
+$var wire 1 5 led [7] $end
+$var wire 1 6 led [6] $end
+$var wire 1 7 led [5] $end
+$var wire 1 8 led [4] $end
+$var wire 1 9 led [3] $end
+$var wire 1 : led [2] $end
+$var wire 1 ; led [1] $end
+$var wire 1 < led [0] $end
+
+$scope module u_top_matrix_keyboard $end
+$var wire 1 = sys_clk $end
+$var wire 1 > sys_rst_n $end
+$var wire 1 ? key_row [3] $end
+$var wire 1 @ key_row [2] $end
+$var wire 1 A key_row [1] $end
+$var wire 1 B key_row [0] $end
+$var wire 1 C swi [7] $end
+$var wire 1 D swi [6] $end
+$var wire 1 E swi [5] $end
+$var wire 1 F swi [4] $end
+$var wire 1 G swi [3] $end
+$var wire 1 H swi [2] $end
+$var wire 1 I swi [1] $end
+$var wire 1 J swi [0] $end
+$var wire 1 % key_col [3] $end
+$var wire 1 & key_col [2] $end
+$var wire 1 ' key_col [1] $end
+$var wire 1 ( key_col [0] $end
+$var wire 1 ) sel_t [3] $end
+$var wire 1 * sel_t [2] $end
+$var wire 1 + sel_t [1] $end
+$var wire 1 , sel_t [0] $end
+$var wire 1 - seg_led_t [7] $end
+$var wire 1 . seg_led_t [6] $end
+$var wire 1 / seg_led_t [5] $end
+$var wire 1 0 seg_led_t [4] $end
+$var wire 1 1 seg_led_t [3] $end
+$var wire 1 2 seg_led_t [2] $end
+$var wire 1 3 seg_led_t [1] $end
+$var wire 1 4 seg_led_t [0] $end
+$var wire 1 5 led [7] $end
+$var wire 1 6 led [6] $end
+$var wire 1 7 led [5] $end
+$var wire 1 8 led [4] $end
+$var wire 1 9 led [3] $end
+$var wire 1 : led [2] $end
+$var wire 1 ; led [1] $end
+$var wire 1 < led [0] $end
+$var wire 1 K key_value [4] $end
+$var wire 1 L key_value [3] $end
+$var wire 1 M key_value [2] $end
+$var wire 1 N key_value [1] $end
+$var wire 1 O key_value [0] $end
+$var wire 1 P key_flag $end
+
+$scope module u_key_4x4 $end
+$var wire 1 = sys_clk $end
+$var wire 1 > sys_rst_n $end
+$var wire 1 ? key_row [3] $end
+$var wire 1 @ key_row [2] $end
+$var wire 1 A key_row [1] $end
+$var wire 1 B key_row [0] $end
+$var reg 4 Q key_col [3:0] $end
+$var reg 5 R key_value [4:0] $end
+$var reg 1 S key_flag $end
+$var reg 3 T state [2:0] $end
+$var reg 4 U key_col_reg [3:0] $end
+$var reg 4 V key_row_reg [3:0] $end
+$var reg 32 W delay_cnt [31:0] $end
+$var reg 4 X key_reg_row [3:0] $end
+$var reg 1 Y key_flag_row $end
+$var reg 1 Z del_en $end
+$var reg 4 [ del_cnt [3:0] $end
+$upscope $end
+
+$scope module u_seg_led $end
+$var wire 1 = clk $end
+$var wire 1 > rst_n $end
+$var wire 1 K key_value [4] $end
+$var wire 1 L key_value [3] $end
+$var wire 1 M key_value [2] $end
+$var wire 1 N key_value [1] $end
+$var wire 1 O key_value [0] $end
+$var wire 1 P key_flag $end
+$var wire 1 ) sel_t [3] $end
+$var wire 1 * sel_t [2] $end
+$var wire 1 + sel_t [1] $end
+$var wire 1 , sel_t [0] $end
+$var wire 1 - seg_led_t [7] $end
+$var wire 1 . seg_led_t [6] $end
+$var wire 1 / seg_led_t [5] $end
+$var wire 1 0 seg_led_t [4] $end
+$var wire 1 1 seg_led_t [3] $end
+$var wire 1 2 seg_led_t [2] $end
+$var wire 1 3 seg_led_t [1] $end
+$var wire 1 4 seg_led_t [0] $end
+$var reg 4 \ sel [3:0] $end
+$var reg 8 ] seg_led [7:0] $end
+$upscope $end
+
+$scope module u_swi_led $end
+$var wire 1 = clk $end
+$var wire 1 > rst_n $end
+$var wire 1 C swi [7] $end
+$var wire 1 D swi [6] $end
+$var wire 1 E swi [5] $end
+$var wire 1 F swi [4] $end
+$var wire 1 G swi [3] $end
+$var wire 1 H swi [2] $end
+$var wire 1 I swi [1] $end
+$var wire 1 J swi [0] $end
+$var reg 8 ^ led [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+
+$scope module GTP_GRS $end
+$var wire 1 _ GRS_N $end
+$var wire 1 ` i2c0_scl_i $end
+$var wire 1 a i2c0_scl_o $end
+$var wire 1 b i2c0_sda_i $end
+$var wire 1 c i2c0_sda_o $end
+$var wire 1 d irq_i2c0 $end
+$var wire 1 e i2c1_scl_i $end
+$var wire 1 f i2c1_scl_o $end
+$var wire 1 g i2c1_sda_i $end
+$var wire 1 h i2c1_sda_o $end
+$var wire 1 i irq_i2c1 $end
+$var wire 1 j clk_pctl $end
+$var wire 1 k rstn_pctl $end
+$var wire 1 l spi_wakeup_pctl $end
+$var wire 1 m i2c0_wakeup_pctl $end
+$var wire 1 n i2c1_wakeup_pctl $end
+$var wire 1 o spi_ss_i_n $end
+$var wire 1 p spi_ss_o_n [7] $end
+$var wire 1 q spi_ss_o_n [6] $end
+$var wire 1 r spi_ss_o_n [5] $end
+$var wire 1 s spi_ss_o_n [4] $end
+$var wire 1 t spi_ss_o_n [3] $end
+$var wire 1 u spi_ss_o_n [2] $end
+$var wire 1 v spi_ss_o_n [1] $end
+$var wire 1 w spi_ss_o_n [0] $end
+$var wire 1 x spi_sck_oe_n $end
+$var wire 1 y spi_sck_i $end
+$var wire 1 z spi_sck_o $end
+$var wire 1 { spi_mosi_oe_n $end
+$var wire 1 | spi_mosi_i $end
+$var wire 1 } spi_mosi_o $end
+$var wire 1 ~ spi_miso_oe_n $end
+$var wire 1 !! spi_miso_i $end
+$var wire 1 "! spi_miso_o $end
+$var wire 1 #! irq_spi $end
+$var wire 1 $! timer_rstn $end
+$var wire 1 %! timer_clk $end
+$var wire 1 &! timer_stamp $end
+$var wire 1 '! timer_pwm $end
+$var wire 1 (! irq_timer $end
+$var wire 1 )! pll0_prdata [7] $end
+$var wire 1 *! pll0_prdata [6] $end
+$var wire 1 +! pll0_prdata [5] $end
+$var wire 1 ,! pll0_prdata [4] $end
+$var wire 1 -! pll0_prdata [3] $end
+$var wire 1 .! pll0_prdata [2] $end
+$var wire 1 /! pll0_prdata [1] $end
+$var wire 1 0! pll0_prdata [0] $end
+$var wire 1 1! pll0_pready $end
+$var wire 1 2! pll1_prdata [7] $end
+$var wire 1 3! pll1_prdata [6] $end
+$var wire 1 4! pll1_prdata [5] $end
+$var wire 1 5! pll1_prdata [4] $end
+$var wire 1 6! pll1_prdata [3] $end
+$var wire 1 7! pll1_prdata [2] $end
+$var wire 1 8! pll1_prdata [1] $end
+$var wire 1 9! pll1_prdata [0] $end
+$var wire 1 :! pll1_pready $end
+$var wire 1 ;! GRSNET $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0"
+b1111 #
+b0 $
+b0 Q
+b10000 R
+0S
+b0 T
+b0 U
+b0 V
+b0 W
+b1 X
+0Y
+0Z
+b0 [
+b1111 \
+b11111111 ]
+b0 ^
+0(
+0'
+0&
+0%
+0,
+0+
+0*
+0)
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0<
+0;
+0:
+09
+08
+07
+06
+05
+0O
+0N
+0M
+0L
+1K
+0P
+z`
+za
+zb
+zc
+zd
+ze
+zf
+zg
+zh
+zi
+zj
+zk
+zl
+zm
+zn
+zo
+zw
+zv
+zu
+zt
+zs
+zr
+zq
+zp
+zx
+zy
+zz
+z{
+z|
+z}
+z~
+z!!
+z"!
+z#!
+z$!
+z%!
+z&!
+z'!
+z(!
+z0!
+z/!
+z.!
+z-!
+z,!
+z+!
+z*!
+z)!
+z1!
+z9!
+z8!
+z7!
+z6!
+z5!
+z4!
+z3!
+z2!
+z:!
+z;!
+0J
+0I
+0H
+0G
+0F
+0E
+0D
+0C
+1B
+1A
+1@
+1?
+0>
+1=
+z_
+$end
+#10000
+0!
+0=
+#20000
+1!
+1=
+#30000
+0!
+0=
+#40000
+1!
+1=
+1"
+b1 $
+1J
+1>
+#50000
+0!
+0=
+#60000
+1!
+1=
+b1 [
+b1111 X
+b1000 W
+b1 ^
+1<
+#70000
+0!
+0=
+#80000
+1!
+1=
+b1101 #
+b10 [
+b111 W
+0A
+#90000
+0!
+0=
+#100000
+1!
+1=
+b11111101 $
+b11 [
+b1101 X
+b1000 W
+1H
+1G
+1F
+1E
+1D
+1C
+#110000
+0!
+0=
+#120000
+1!
+1=
+b0 [
+1Z
+b11111101 ^
+b111 W
+1:
+19
+18
+17
+16
+15
+#130000
+0!
+0=
+#140000
+1!
+1=
+b1 [
+0Z
+b110 W
+#150000
+0!
+0=
+#160000
+1!
+1=
+b11111011 $
+b10 [
+b101 W
+1I
+0H
+#170000
+0!
+0=
+#180000
+1!
+1=
+b11 [
+b11111011 ^
+b100 W
+1;
+0:
+#190000
+0!
+0=
+#200000
+1!
+1=
+b0 [
+1Z
+b11 W
+#210000
+0!
+0=
+#220000
+1!
+1=
+b1 [
+0Z
+b10 W
+#230000
+0!
+0=
+#240000
+1!
+1=
+b10 [
+b1 W
+#250000
+0!
+0=
+#260000
+1!
+1=
+b11 [
+b0 W
+1Y
+#270000
+0!
+0=
+#280000
+1!
+1=
+b0 [
+1Z
+#290000
+0!
+0=
+#300000
+1!
+1=
+b1111 #
+b1 [
+0Z
+0Y
+b1 T
+b1110 Q
+1'
+1&
+1%
+1A
+#310000
+0!
+0=
+#320000
+1!
+1=
+b10 [
+b1111 X
+b1000 W
+#330000
+0!
+0=
+#340000
+1!
+1=
+b11 [
+b111 W
+#350000
+0!
+0=
+#360000
+1!
+1=
+b0 [
+1Z
+b110 W
+#370000
+0!
+0=
+#380000
+1!
+1=
+b1 [
+0Z
+b101 W
+b10 T
+b1101 Q
+1(
+0'
+#390000
+0!
+0=
+#400000
+1!
+1=
+b10 [
+b100 W
+#410000
+0!
+0=
+#420000
+1!
+1=
+b11 [
+b11 W
+#430000
+0!
+0=
+#440000
+1!
+1=
+b0 [
+1Z
+b10 W
+#450000
+0!
+0=
+#460000
+1!
+1=
+b1101 #
+b1 [
+0Z
+b1 W
+b11 T
+b1011 Q
+1'
+0&
+0A
+#470000
+0!
+0=
+#480000
+1!
+1=
+b10 [
+b1101 X
+b1000 W
+1Y
+#490000
+0!
+0=
+#500000
+1!
+1=
+b11 [
+b111 W
+#510000
+0!
+0=
+#520000
+1!
+1=
+b0 [
+1Z
+b110 W
+#530000
+0!
+0=
+#540000
+1!
+1=
+b1 [
+0Z
+b101 W
+0Y
+b101 T
+#550000
+0!
+0=
+#560000
+1!
+1=
+b10 [
+b100 W
+#570000
+0!
+0=
+#580000
+1!
+1=
+b11 [
+b11 W
+#590000
+0!
+0=
+#600000
+1!
+1=
+b0 [
+1Z
+b10 W
+#610000
+0!
+0=
+#620000
+1!
+1=
+b1111 #
+b1 [
+0Z
+b1 W
+b1011 U
+b1101 V
+1S
+1A
+1P
+#630000
+0!
+0=
+#640000
+1!
+1=
+b10 [
+b0 \
+b110 R
+b1111 X
+b1000 W
+1Y
+1N
+1M
+0K
+1,
+1+
+1*
+1)
+#650000
+0!
+0=
+#660000
+1!
+1=
+b11 [
+b10 ]
+b111 W
+14
+12
+11
+10
+1/
+1.
+1-
+#670000
+0!
+0=
+#680000
+1!
+1=
+b0 [
+1Z
+b110 W
+#690000
+0!
+0=
+#700000
+1!
+1=
+b1 [
+0Z
+b101 W
+0Y
+b0 T
+#710000
+0!
+0=
+#720000
+1!
+1=
+b10 [
+b100 W
+#730000
+0!
+0=
+#740000
+1!
+1=
+b11 [
+b11 W
+#750000
+0!
+0=
+#760000
+1!
+1=
+b0 [
+1Z
+b10 W
+#770000
+0!
+0=
+#780000
+1!
+1=
+b1 [
+0Z
+b1 W
+b0 Q
+0S
+0(
+0'
+0%
+0P
+#790000
+0!
+0=
+#800000
+1!
+1=
+b10 [
+b1111 \
+b11111111 ]
+b0 W
+1Y
+04
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+#810000
+0!
+0=
+#820000
+1!
+1=
+b11 [
+#830000
+0!
+0=
+#840000
+1!
+1=
+b0 [
+1Z
+#850000
+0!
+0=
+#860000
+1!
+1=
+b1 [
+0Z
+0Y
+#870000
+0!
+0=
+#880000
+1!
+1=
+b10 [
+#890000
+0!
+0=
+#900000
+1!
+1=
+b11 [
+#910000
+0!
+0=
+#920000
+1!
+1=
+b0 [
+1Z
+#930000
+0!
+0=
+#940000
+1!
+1=
+b1 [
+0Z
+#950000
+0!
+0=
+#960000
+1!
+1=
+b10 [
+#970000
+0!
+0=
+#980000
+1!
+1=
+b11 [
+#990000
+0!
+0=
+#1000000
+1!
+1=
+b0 [
+1Z

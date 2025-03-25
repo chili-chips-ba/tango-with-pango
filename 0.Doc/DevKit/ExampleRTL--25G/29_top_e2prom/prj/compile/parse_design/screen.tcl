@@ -1,0 +1,1 @@
+.rtl_screen -top_module {top_e2prom} -include_path {<D:/ywd/dmdps1/23_top_e2prom/prj>} -design_files {<D:/ywd/dmdps1/23_top_e2prom/rtl/i2c_dri.v|work><D:/ywd/dmdps1/23_top_e2prom/rtl/e2prom_rw.v|work><D:/ywd/dmdps1/23_top_e2prom/rtl/rw_result_led.v|work><D:/ywd/dmdps1/23_top_e2prom/rtl/top_e2prom.v|work>}

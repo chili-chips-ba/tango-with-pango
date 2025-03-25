@@ -1,0 +1,276 @@
+Design Summary : Some Constraints Violated.
+
+Setup Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                                                     4.383       0.000              0            569
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                                                     1.662       0.000              0             51
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT1_Inferred
+                                                     4.607       0.000              0              2
+ eth_rxc|u_eth_top/u_gmii_to_rgmii/u_rgmii_rx/U_pll_phase_shift/u_pll_e3/CLKOUT0_Inferred
+                        eth_rxc|u_eth_top/u_gmii_to_rgmii/u_rgmii_rx/U_pll_phase_shift/u_pll_e3/CLKOUT0_Inferred
+                                                     0.902       0.000              0           4929
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        eth_rxc|u_eth_top/u_gmii_to_rgmii/u_rgmii_rx/U_pll_phase_shift/u_pll_e3/CLKOUT0_Inferred
+                                                   -13.787    -130.465             43             45
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        eth_rxc|u_eth_top/u_gmii_to_rgmii/u_rgmii_rx/U_pll_phase_shift/u_pll_e3/CLKOUT0_Inferred
+                                                    -2.444     -24.890             11             11
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred
+                                                     1.698       0.000              0             48
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                                                     2.509       0.000              0          12667
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                                                     1.904       0.000              0             26
+ eth_rxc|u_eth_top/u_gmii_to_rgmii/u_rgmii_rx/U_pll_phase_shift/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                                                    -6.156     -61.312             11             11
+====================================================================================================
+
+Hold Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                                                     0.267       0.000              0            569
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                                                     1.749       0.000              0             51
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT1_Inferred
+                                                     0.275       0.000              0              2
+ eth_rxc|u_eth_top/u_gmii_to_rgmii/u_rgmii_rx/U_pll_phase_shift/u_pll_e3/CLKOUT0_Inferred
+                        eth_rxc|u_eth_top/u_gmii_to_rgmii/u_rgmii_rx/U_pll_phase_shift/u_pll_e3/CLKOUT0_Inferred
+                                                     0.250       0.000              0           4929
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        eth_rxc|u_eth_top/u_gmii_to_rgmii/u_rgmii_rx/U_pll_phase_shift/u_pll_e3/CLKOUT0_Inferred
+                                                     0.443       0.000              0             45
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        eth_rxc|u_eth_top/u_gmii_to_rgmii/u_rgmii_rx/U_pll_phase_shift/u_pll_e3/CLKOUT0_Inferred
+                                                     1.449       0.000              0             11
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred
+                                                     0.444       0.000              0             48
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                                                     0.251       0.000              0          12667
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                                                     0.266       0.000              0             26
+ eth_rxc|u_eth_top/u_gmii_to_rgmii/u_rgmii_rx/U_pll_phase_shift/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                                                     0.399       0.000              0             11
+====================================================================================================
+
+Recovery Summary(Slow Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                                                     3.824       0.000              0             78
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                                                     9.087       0.000              0             62
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT1_Inferred
+                                                     4.710       0.000              0              1
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred
+                                                    -8.843     -40.159              5              5
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred
+                                                    -2.034      -8.871              5              5
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                                                     5.974       0.000              0           1784
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                                                     1.440       0.000              0           1455
+====================================================================================================
+
+Removal Summary(Slow Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                                                     2.614       0.000              0             78
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                                                     0.665       0.000              0             62
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT1_Inferred
+                                                     2.211       0.000              0              1
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred
+                                                     4.489       0.000              0              5
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred
+                                                     2.584       0.000              0              5
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                                                     0.535       0.000              0           1784
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                                                    -3.603     -62.925             20           1455
+====================================================================================================
+
+Minimum Pulse Width Summary(Slow Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+
+Setup Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                                                     9.189       0.000              0            569
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                                                     4.777       0.000              0             51
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT1_Inferred
+                                                     6.172       0.000              0              2
+ eth_rxc|u_eth_top/u_gmii_to_rgmii/u_rgmii_rx/U_pll_phase_shift/u_pll_e3/CLKOUT0_Inferred
+                        eth_rxc|u_eth_top/u_gmii_to_rgmii/u_rgmii_rx/U_pll_phase_shift/u_pll_e3/CLKOUT0_Inferred
+                                                     2.902       0.000              0           4929
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        eth_rxc|u_eth_top/u_gmii_to_rgmii/u_rgmii_rx/U_pll_phase_shift/u_pll_e3/CLKOUT0_Inferred
+                                                    -8.024     -53.868             16             45
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        eth_rxc|u_eth_top/u_gmii_to_rgmii/u_rgmii_rx/U_pll_phase_shift/u_pll_e3/CLKOUT0_Inferred
+                                                    -0.266      -1.464             11             11
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred
+                                                     1.836       0.000              0             48
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                                                     4.809       0.000              0          12667
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                                                     4.146       0.000              0             26
+ eth_rxc|u_eth_top/u_gmii_to_rgmii/u_rgmii_rx/U_pll_phase_shift/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                                                    -3.851     -38.980             11             11
+====================================================================================================
+
+Hold Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                                                     0.251       0.000              0            569
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                                                     1.006       0.000              0             51
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT1_Inferred
+                                                     0.578       0.000              0              2
+ eth_rxc|u_eth_top/u_gmii_to_rgmii/u_rgmii_rx/U_pll_phase_shift/u_pll_e3/CLKOUT0_Inferred
+                        eth_rxc|u_eth_top/u_gmii_to_rgmii/u_rgmii_rx/U_pll_phase_shift/u_pll_e3/CLKOUT0_Inferred
+                                                     0.250       0.000              0           4929
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        eth_rxc|u_eth_top/u_gmii_to_rgmii/u_rgmii_rx/U_pll_phase_shift/u_pll_e3/CLKOUT0_Inferred
+                                                     0.268       0.000              0             45
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        eth_rxc|u_eth_top/u_gmii_to_rgmii/u_rgmii_rx/U_pll_phase_shift/u_pll_e3/CLKOUT0_Inferred
+                                                     0.648       0.000              0             11
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred
+                                                     0.380       0.000              0             48
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                                                     0.250       0.000              0          12667
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                                                     0.701       0.000              0             26
+ eth_rxc|u_eth_top/u_gmii_to_rgmii/u_rgmii_rx/U_pll_phase_shift/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                                                     0.978       0.000              0             11
+====================================================================================================
+
+Recovery Summary(Fast Corner):
+****************************************************************************************************
+                                                                          TNS Failing      TNS Total
+ Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                                                     6.269       0.000              0             78
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                                                    12.441       0.000              0             62
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT1_Inferred
+                                                     6.131       0.000              0              1
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred
+                                                    -5.547     -25.133              5              5
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred
+                                                    -0.202      -0.320              3              5
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                                                     7.201       0.000              0           1784
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                                                     3.788       0.000              0           1455
+====================================================================================================
+
+Removal Summary(Fast Corner):
+****************************************************************************************************
+                                                                          THS Failing      THS Total
+ Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                                                     1.632       0.000              0             78
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                                                     0.503       0.000              0             62
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT1_Inferred
+                                                     1.877       0.000              0              1
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred
+                                                     2.860       0.000              0              5
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred
+                                                     1.430       0.000              0              5
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                                                     0.423       0.000              0           1784
+ sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred
+                        sys_clk|u_clk_wiz_0/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/u_ipsxb_ddrphy_pll/u_pll_e3/CLKOUT0_Inferred|u_ddr3_ctrl_top/u_ddr3_ip/I_GTP_CLKDIV/CLKDIVOUT_Inferred
+                                                    -1.827     -30.488             20           1455
+====================================================================================================
+
+Minimum Pulse Width Summary(Fast Corner):
+****************************************************************************************************
+                                                                         WPWS Failing     WPWS Total
+ Clock                                            WPWS(ns)    TPWS(ns)      Endpoints      Endpoints
+----------------------------------------------------------------------------------------------------
+====================================================================================================
+

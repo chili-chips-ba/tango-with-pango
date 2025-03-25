@@ -1,0 +1,45 @@
+##### Written on 2023/09/25 10:08:50 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL25G-6MBG324
+
+Top Module : 
+	flow_led
+
+Constraint File(s) : 
+	D:/Desktop/10_flow_led/prj/flow_led.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 2 critical warning(s), 0 warning(s), out of 39 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:led[3]} {PAP_IO_LOC} {P16}
+	C: ConstraintEditor-2002: [D:/Desktop/10_flow_led/prj/flow_led.fdc(line number: 28)] | Port led[3] has been placed at location P16, whose type is share pin.
+
+define_attribute {p:led[2]} {PAP_IO_LOC} {P15}
+	C: ConstraintEditor-2002: [D:/Desktop/10_flow_led/prj/flow_led.fdc(line number: 35)] | Port led[2] has been placed at location P15, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

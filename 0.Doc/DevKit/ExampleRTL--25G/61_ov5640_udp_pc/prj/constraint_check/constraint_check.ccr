@@ -1,0 +1,57 @@
+##### Written on 2023/09/22 16:55:21 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL25G-6MBG324
+
+Top Module : 
+	ov5640_udp_pc
+
+Constraint File(s) : 
+	C:/Users/Admin/Desktop/25G/6_ov5640_udp_pc/prj/ov5640_udp_pc.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 6 critical warning(s), 0 warning(s), out of 177 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:eth_txd[1]} {PAP_IO_LOC} {E13}
+	C: ConstraintEditor-2002: [C:/Users/Admin/Desktop/25G/6_ov5640_udp_pc/prj/ov5640_udp_pc.fdc(line number: 112)] | Port eth_txd[1] has been placed at location E13, whose type is share pin.
+
+define_attribute {p:eth_txd[0]} {PAP_IO_LOC} {F13}
+	C: ConstraintEditor-2002: [C:/Users/Admin/Desktop/25G/6_ov5640_udp_pc/prj/ov5640_udp_pc.fdc(line number: 119)] | Port eth_txd[0] has been placed at location F13, whose type is share pin.
+
+define_attribute {p:eth_rxd[3]} {PAP_IO_LOC} {C14}
+	C: ConstraintEditor-2002: [C:/Users/Admin/Desktop/25G/6_ov5640_udp_pc/prj/ov5640_udp_pc.fdc(line number: 126)] | Port eth_rxd[3] has been placed at location C14, whose type is share pin.
+
+define_attribute {p:eth_rxd[2]} {PAP_IO_LOC} {D14}
+	C: ConstraintEditor-2002: [C:/Users/Admin/Desktop/25G/6_ov5640_udp_pc/prj/ov5640_udp_pc.fdc(line number: 131)] | Port eth_rxd[2] has been placed at location D14, whose type is share pin.
+
+define_attribute {p:eth_rxd[1]} {PAP_IO_LOC} {A16}
+	C: ConstraintEditor-2002: [C:/Users/Admin/Desktop/25G/6_ov5640_udp_pc/prj/ov5640_udp_pc.fdc(line number: 136)] | Port eth_rxd[1] has been placed at location A16, whose type is share pin.
+
+define_attribute {p:eth_rxd[0]} {PAP_IO_LOC} {B16}
+	C: ConstraintEditor-2002: [C:/Users/Admin/Desktop/25G/6_ov5640_udp_pc/prj/ov5640_udp_pc.fdc(line number: 141)] | Port eth_rxd[0] has been placed at location B16, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

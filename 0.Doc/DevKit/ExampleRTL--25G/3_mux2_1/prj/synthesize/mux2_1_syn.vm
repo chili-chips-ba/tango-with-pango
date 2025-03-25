@@ -1,0 +1,65 @@
+//
+// Generated (version 2022.2-SP4.2<build 132111>) at Wed Sep 20 10:53:52 2023
+//
+
+module mux2_1
+(
+    input in1,
+    input in2,
+    input sel,
+    output out
+);
+    wire nt_in1;
+    wire nt_in2;
+    wire nt_out;
+    wire nt_sel;
+
+    GTP_GRS GRS_INST (
+            .GRS_N (1'b1));
+
+    GTP_LUT3 /* N2_1 */ #(
+            .INIT(8'b10101100))
+        N2_1 (
+            .Z (nt_out),
+            .I0 (nt_in1),
+            .I1 (nt_in2),
+            .I2 (nt_sel));
+	// LUT = (I1&~I2)|(I0&I2) ;
+	// ../../rtl/mux2_1.v:33
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="N5", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_PULLUP="TRUE" *)    GTP_INBUF /* in1_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        in1_ibuf (
+            .O (nt_in1),
+            .I (in1));
+	// ../../rtl/mux2_1.v:20
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="P6", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_PULLUP="TRUE" *)    GTP_INBUF /* in2_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        in2_ibuf (
+            .O (nt_in2),
+            .I (in2));
+	// ../../rtl/mux2_1.v:21
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="M14", PAP_IO_VCCIO="1.5", PAP_IO_STANDARD="LVCMOS15", PAP_IO_DRIVE="8", PAP_IO_PULLUP="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* out_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        out_obuf (
+            .O (out),
+            .I (nt_out));
+	// ../../rtl/mux2_1.v:24
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="C4", PAP_IO_VCCIO="1.8", PAP_IO_STANDARD="LVCMOS18", PAP_IO_PULLUP="TRUE" *)    GTP_INBUF /* sel_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        sel_ibuf (
+            .O (nt_sel),
+            .I (sel));
+	// ../../rtl/mux2_1.v:22
+
+
+endmodule
+

@@ -1,0 +1,1 @@
+.rtl_screen -top_module {divider_4} -include_path {<D:/Desktop/25G/9_even_div/prj>} -design_files {<D:/Desktop/25G/9_even_div/rtl/divider_4.v|work>}

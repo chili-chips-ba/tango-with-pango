@@ -1,0 +1,45 @@
+##### Written on 2023/10/13 13:56:26 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL25G-6MBG324
+
+Top Module : 
+	top_key_beep
+
+Constraint File(s) : 
+	D:/ywd/dps4/ccccccccccc/pm/25G/25G/12_top_key_beep/prj/top_key_beep.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 2 critical warning(s), 0 warning(s), out of 22 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:beep} {PAP_IO_LOC} {V5}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/12_top_key_beep/prj/top_key_beep.fdc(line number: 2)] | Port beep has been placed at location V5, whose type is share pin.
+
+define_attribute {p:key} {PAP_IO_LOC} {N5}
+	C: ConstraintEditor-2002: [D:/ywd/dps4/ccccccccccc/pm/25G/25G/12_top_key_beep/prj/top_key_beep.fdc(line number: 9)] | Port key has been placed at location N5, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

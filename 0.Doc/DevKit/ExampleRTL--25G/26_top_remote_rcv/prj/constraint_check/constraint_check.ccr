@@ -1,0 +1,42 @@
+##### Written on 2023/10/07 16:40:12 ###############################
+
+
+##### INFO ##################################################
+
+Current device : 
+	PGL25G-6MBG324
+
+Top Module : 
+	top_remote_rcvr
+
+Constraint File(s) : 
+	D:/ywd1/dm/top_remote_rcv/prj/top_remote_rcv.fdc
+
+##### SUMMARY ######################################################
+
+Found 0 error(s), 1 critical warning(s), 0 warning(s), out of 232 constraint(s)
+
+
+Inapplicable constraints(except overwritten constraints):
+********************************************
+
+define_attribute {p:remote_in} {PAP_IO_LOC} {U5}
+	C: ConstraintEditor-2002: [D:/ywd1/dm/top_remote_rcv/prj/top_remote_rcv.fdc(line number: 219)] | Port remote_in has been placed at location U5, whose type is share pin.
+
+
+Constraints with issues:
+********************************************
+
+
+Issues without commands:
+********************************************
+
+
+Unconstrained ports:
+********************************************
+
+
+Constraints with matching wildcard expressions:
+********************************************
+
+

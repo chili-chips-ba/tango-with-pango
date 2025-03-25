@@ -1,0 +1,1266 @@
+//
+// Generated (version 2022.2-SP4.2<build 132111>) at Fri Oct 13 14:01:27 2023
+//
+
+module breath_led
+(
+    input sys_clk,
+    input sys_rst_n,
+    output led
+);
+	// SDC constraint : (object sys_clk) (id 1000) (clock sys_clk) (1 : D:/ywd/dps4/ccccccccccc/pm/25G/25G/14_breath_led/prj/breath_led.fdc)
+    wire N0;
+    wire [6:0] N6;
+    wire N14;
+    wire [9:0] N21;
+    wire [9:0] N45;
+    wire [10:0] \N63.co ;
+    wire N64;
+    wire [10:0] \N67.co ;
+    wire N68;
+    wire N70;
+    wire N80;
+    wire N83_inv;
+    wire N88_inv;
+    wire [6:0] N97;
+    wire [9:0] N100;
+    wire [9:0] N103;
+    wire _N1;
+    wire _N2;
+    wire _N3;
+    wire _N4;
+    wire _N5;
+    wire _N6;
+    wire _N7;
+    wire _N8;
+    wire _N11;
+    wire _N12;
+    wire _N13;
+    wire _N14;
+    wire _N15;
+    wire _N18;
+    wire _N19;
+    wire _N20;
+    wire _N21;
+    wire _N22;
+    wire _N23;
+    wire _N24;
+    wire _N25;
+    wire _N52;
+    wire _N53;
+    wire _N59;
+    wire _N60;
+    wire _N67;
+    wire _N68;
+    wire _N75;
+    wire [9:0] cnt_2ms;
+    wire \cnt_2ms[0]_inv ;
+    wire [9:0] cnt_2s;
+    wire \cnt_2s[0]_inv ;
+    wire [6:0] cnt_2us;
+    wire \cnt_2us[0]_inv ;
+    wire inc_dec_flag;
+    wire nt_led;
+    wire nt_sys_clk;
+    wire nt_sys_rst_n;
+
+    GTP_GRS GRS_INST (
+            .GRS_N (1'b1));
+
+    GTP_INV N0_vname (
+            .Z (N0),
+            .I (nt_sys_rst_n));
+    // defparam N0_vname.orig_name = N0;
+
+    GTP_LUT5CARRY /* N6_0_1 */ #(
+            .INIT(32'b01100110011001100000000000000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N6_0_1 (
+            .COUT (_N11),
+            .Z (N6[1]),
+            .CIN (),
+            .I0 (cnt_2us[0]),
+            .I1 (cnt_2us[1]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b1),
+            .ID ());
+	// LUT = I1^I0 ;
+	// CARRY = (1'b0) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:48
+
+    GTP_LUT5CARRY /* N6_0_2 */ #(
+            .INIT(32'b01111000011110001000000010000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N6_0_2 (
+            .COUT (_N12),
+            .Z (N6[2]),
+            .CIN (_N11),
+            .I0 (cnt_2us[0]),
+            .I1 (cnt_2us[1]),
+            .I2 (cnt_2us[2]),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (I0&I1&~I2)|(~I1&I2)|(~I0&I2) ;
+	// CARRY = (I0&I1&I2) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:48
+
+    GTP_LUT5CARRY /* N6_0_3 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N6_0_3 (
+            .COUT (_N13),
+            .Z (N6[3]),
+            .CIN (_N12),
+            .I0 (),
+            .I1 (cnt_2us[3]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:48
+
+    GTP_LUT5CARRY /* N6_0_4 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N6_0_4 (
+            .COUT (_N14),
+            .Z (N6[4]),
+            .CIN (_N13),
+            .I0 (),
+            .I1 (cnt_2us[4]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:48
+
+    GTP_LUT5CARRY /* N6_0_5 */ #(
+            .INIT(32'b00000110000001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N6_0_5 (
+            .COUT (_N15),
+            .Z (N97[5]),
+            .CIN (_N14),
+            .I0 (),
+            .I1 (cnt_2us[5]),
+            .I2 (N80),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&~I2)|(~CIN&I1&~I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:48
+
+    GTP_LUT5CARRY /* N6_0_6 */ #(
+            .INIT(32'b00000110000001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N6_0_6 (
+            .COUT (),
+            .Z (N97[6]),
+            .CIN (_N15),
+            .I0 (),
+            .I1 (cnt_2us[6]),
+            .I2 (N80),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&~I2)|(~CIN&I1&~I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:48
+
+    GTP_LUT5CARRY /* N21_0_1 */ #(
+            .INIT(32'b01100110011001100000000000000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N21_0_1 (
+            .COUT (_N18),
+            .Z (N21[1]),
+            .CIN (),
+            .I0 (cnt_2ms[0]),
+            .I1 (cnt_2ms[1]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b1),
+            .ID ());
+	// LUT = I1^I0 ;
+	// CARRY = (1'b0) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:58
+
+    GTP_LUT5CARRY /* N21_0_2 */ #(
+            .INIT(32'b01111000011110001000000010000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N21_0_2 (
+            .COUT (_N19),
+            .Z (N21[2]),
+            .CIN (_N18),
+            .I0 (cnt_2ms[0]),
+            .I1 (cnt_2ms[1]),
+            .I2 (cnt_2ms[2]),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (I0&I1&~I2)|(~I1&I2)|(~I0&I2) ;
+	// CARRY = (I0&I1&I2) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:58
+
+    GTP_LUT5CARRY /* N21_0_3 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N21_0_3 (
+            .COUT (_N20),
+            .Z (N21[3]),
+            .CIN (_N19),
+            .I0 (),
+            .I1 (cnt_2ms[3]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:58
+
+    GTP_LUT5CARRY /* N21_0_4 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N21_0_4 (
+            .COUT (_N21),
+            .Z (N21[4]),
+            .CIN (_N20),
+            .I0 (),
+            .I1 (cnt_2ms[4]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:58
+
+    GTP_LUT5CARRY /* N21_0_5 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N21_0_5 (
+            .COUT (_N22),
+            .Z (N100[5]),
+            .CIN (_N21),
+            .I0 (),
+            .I1 (cnt_2ms[5]),
+            .I2 (N83_inv),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:58
+
+    GTP_LUT5CARRY /* N21_0_6 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N21_0_6 (
+            .COUT (_N23),
+            .Z (N100[6]),
+            .CIN (_N22),
+            .I0 (),
+            .I1 (cnt_2ms[6]),
+            .I2 (N83_inv),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:58
+
+    GTP_LUT5CARRY /* N21_0_7 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N21_0_7 (
+            .COUT (_N24),
+            .Z (N100[7]),
+            .CIN (_N23),
+            .I0 (),
+            .I1 (cnt_2ms[7]),
+            .I2 (N83_inv),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:58
+
+    GTP_LUT5CARRY /* N21_0_8 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N21_0_8 (
+            .COUT (_N25),
+            .Z (N100[8]),
+            .CIN (_N24),
+            .I0 (),
+            .I1 (cnt_2ms[8]),
+            .I2 (N83_inv),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:58
+
+    GTP_LUT5CARRY /* N21_0_9 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N21_0_9 (
+            .COUT (),
+            .Z (N100[9]),
+            .CIN (_N25),
+            .I0 (),
+            .I1 (cnt_2ms[9]),
+            .I2 (N83_inv),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:58
+
+    GTP_LUT5 /* N33_0 */ #(
+            .INIT(32'b10000000000000000000000000000000))
+        N33_0 (
+            .Z (N14),
+            .I0 (N80),
+            .I1 (cnt_2ms[0]),
+            .I2 (cnt_2ms[9]),
+            .I3 (_N67),
+            .I4 (_N68));
+	// LUT = I0&I1&I2&I3&I4 ;
+
+    GTP_LUT5CARRY /* N45_0_1 */ #(
+            .INIT(32'b01100110011001100000000000000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N45_0_1 (
+            .COUT (_N1),
+            .Z (N45[1]),
+            .CIN (),
+            .I0 (cnt_2s[0]),
+            .I1 (cnt_2s[1]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b1),
+            .ID ());
+	// LUT = I1^I0 ;
+	// CARRY = (1'b0) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:70
+
+    GTP_LUT5CARRY /* N45_0_2 */ #(
+            .INIT(32'b01111000011110001000000010000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N45_0_2 (
+            .COUT (_N2),
+            .Z (N45[2]),
+            .CIN (_N1),
+            .I0 (cnt_2s[0]),
+            .I1 (cnt_2s[1]),
+            .I2 (cnt_2s[2]),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (I0&I1&~I2)|(~I1&I2)|(~I0&I2) ;
+	// CARRY = (I0&I1&I2) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:70
+
+    GTP_LUT5CARRY /* N45_0_3 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N45_0_3 (
+            .COUT (_N3),
+            .Z (N45[3]),
+            .CIN (_N2),
+            .I0 (),
+            .I1 (cnt_2s[3]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:70
+
+    GTP_LUT5CARRY /* N45_0_4 */ #(
+            .INIT(32'b01100110011001101100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N45_0_4 (
+            .COUT (_N4),
+            .Z (N45[4]),
+            .CIN (_N3),
+            .I0 (),
+            .I1 (cnt_2s[4]),
+            .I2 (),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = I1^CIN ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:70
+
+    GTP_LUT5CARRY /* N45_0_5 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N45_0_5 (
+            .COUT (_N5),
+            .Z (N103[5]),
+            .CIN (_N4),
+            .I0 (),
+            .I1 (cnt_2s[5]),
+            .I2 (N88_inv),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:70
+
+    GTP_LUT5CARRY /* N45_0_6 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N45_0_6 (
+            .COUT (_N6),
+            .Z (N103[6]),
+            .CIN (_N5),
+            .I0 (),
+            .I1 (cnt_2s[6]),
+            .I2 (N88_inv),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:70
+
+    GTP_LUT5CARRY /* N45_0_7 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N45_0_7 (
+            .COUT (_N7),
+            .Z (N103[7]),
+            .CIN (_N6),
+            .I0 (),
+            .I1 (cnt_2s[7]),
+            .I2 (N88_inv),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:70
+
+    GTP_LUT5CARRY /* N45_0_8 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N45_0_8 (
+            .COUT (_N8),
+            .Z (N103[8]),
+            .CIN (_N7),
+            .I0 (),
+            .I1 (cnt_2s[8]),
+            .I2 (N88_inv),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:70
+
+    GTP_LUT5CARRY /* N45_0_9 */ #(
+            .INIT(32'b01100000011000001100110011001100), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("TRUE"), 
+            .I4_TO_CARRY("TRUE"), 
+            .I4_TO_LUT("FALSE"))
+        N45_0_9 (
+            .COUT (),
+            .Z (N103[9]),
+            .CIN (_N8),
+            .I0 (),
+            .I1 (cnt_2s[9]),
+            .I2 (N88_inv),
+            .I3 (),
+            .I4 (1'b0),
+            .ID ());
+	// LUT = (CIN&~I1&I2)|(~CIN&I1&I2) ;
+	// CARRY = (I1) ? CIN : (I4) ;
+	// ../../rtl/berath_led.v:70
+
+    GTP_LUT5CARRY /* \N63.lt_0  */ #(
+            .INIT(32'b11011111000011010000000000000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("FALSE"), 
+            .I4_TO_LUT("FALSE"))
+        \N63.lt_0  (
+            .COUT (\N63.co [0] ),
+            .Z (),
+            .CIN (),
+            .I0 (cnt_2s[0]),
+            .I1 (cnt_2ms[0]),
+            .I2 (cnt_2s[1]),
+            .I3 (cnt_2ms[1]),
+            .I4 (),
+            .ID ());
+	// LUT = (~I2&I3)|(I1&I3)|(~I0&I3)|(I1&~I2)|(~I0&~I2) ;
+	// CARRY = (1'b0) ? CIN : ((~I2&I3)|(I1&I3)|(~I0&I3)|(I1&~I2)|(~I0&~I2)) ;
+	// ../../rtl/berath_led.v:89
+
+    GTP_LUT5CARRY /* \N63.lt_1  */ #(
+            .INIT(32'b11011111000011011001000000001001), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("FALSE"), 
+            .I4_TO_LUT("FALSE"))
+        \N63.lt_1  (
+            .COUT (\N63.co [2] ),
+            .Z (),
+            .CIN (\N63.co [0] ),
+            .I0 (cnt_2s[2]),
+            .I1 (cnt_2ms[2]),
+            .I2 (cnt_2s[3]),
+            .I3 (cnt_2ms[3]),
+            .I4 (),
+            .ID ());
+	// LUT = (~I2&I3)|(I1&I3)|(~I0&I3)|(I1&~I2)|(~I0&~I2) ;
+	// CARRY = ((~I0&~I1&~I2&~I3)|(I0&I1&~I2&~I3)|(~I0&~I1&I2&I3)|(I0&I1&I2&I3)) ? CIN : ((~I2&I3)|(I1&I3)|(~I0&I3)|(I1&~I2)|(~I0&~I2)) ;
+	// ../../rtl/berath_led.v:89
+
+    GTP_LUT5CARRY /* \N63.lt_2  */ #(
+            .INIT(32'b11011111000011011001000000001001), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("FALSE"), 
+            .I4_TO_LUT("FALSE"))
+        \N63.lt_2  (
+            .COUT (\N63.co [4] ),
+            .Z (),
+            .CIN (\N63.co [2] ),
+            .I0 (cnt_2s[4]),
+            .I1 (cnt_2ms[4]),
+            .I2 (cnt_2s[5]),
+            .I3 (cnt_2ms[5]),
+            .I4 (),
+            .ID ());
+	// LUT = (~I2&I3)|(I1&I3)|(~I0&I3)|(I1&~I2)|(~I0&~I2) ;
+	// CARRY = ((~I0&~I1&~I2&~I3)|(I0&I1&~I2&~I3)|(~I0&~I1&I2&I3)|(I0&I1&I2&I3)) ? CIN : ((~I2&I3)|(I1&I3)|(~I0&I3)|(I1&~I2)|(~I0&~I2)) ;
+	// ../../rtl/berath_led.v:89
+
+    GTP_LUT5CARRY /* \N63.lt_3  */ #(
+            .INIT(32'b11011111000011011001000000001001), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("FALSE"), 
+            .I4_TO_LUT("FALSE"))
+        \N63.lt_3  (
+            .COUT (\N63.co [6] ),
+            .Z (),
+            .CIN (\N63.co [4] ),
+            .I0 (cnt_2s[6]),
+            .I1 (cnt_2ms[6]),
+            .I2 (cnt_2s[7]),
+            .I3 (cnt_2ms[7]),
+            .I4 (),
+            .ID ());
+	// LUT = (~I2&I3)|(I1&I3)|(~I0&I3)|(I1&~I2)|(~I0&~I2) ;
+	// CARRY = ((~I0&~I1&~I2&~I3)|(I0&I1&~I2&~I3)|(~I0&~I1&I2&I3)|(I0&I1&I2&I3)) ? CIN : ((~I2&I3)|(I1&I3)|(~I0&I3)|(I1&~I2)|(~I0&~I2)) ;
+	// ../../rtl/berath_led.v:89
+
+    GTP_LUT5CARRY /* \N63.lt_4  */ #(
+            .INIT(32'b11011111000011011001000000001001), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("FALSE"), 
+            .I4_TO_LUT("FALSE"))
+        \N63.lt_4  (
+            .COUT (N64),
+            .Z (),
+            .CIN (\N63.co [6] ),
+            .I0 (cnt_2s[8]),
+            .I1 (cnt_2ms[8]),
+            .I2 (cnt_2s[9]),
+            .I3 (cnt_2ms[9]),
+            .I4 (),
+            .ID ());
+	// LUT = (~I2&I3)|(I1&I3)|(~I0&I3)|(I1&~I2)|(~I0&~I2) ;
+	// CARRY = ((~I0&~I1&~I2&~I3)|(I0&I1&~I2&~I3)|(~I0&~I1&I2&I3)|(I0&I1&I2&I3)) ? CIN : ((~I2&I3)|(I1&I3)|(~I0&I3)|(I1&~I2)|(~I0&~I2)) ;
+	// ../../rtl/berath_led.v:89
+
+    GTP_LUT5CARRY /* \N67.lt_0  */ #(
+            .INIT(32'b11011111000011010000000000000000), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("FALSE"), 
+            .I4_TO_LUT("FALSE"))
+        \N67.lt_0  (
+            .COUT (\N67.co [0] ),
+            .Z (),
+            .CIN (),
+            .I0 (cnt_2ms[0]),
+            .I1 (cnt_2s[0]),
+            .I2 (cnt_2ms[1]),
+            .I3 (cnt_2s[1]),
+            .I4 (),
+            .ID ());
+	// LUT = (~I2&I3)|(I1&I3)|(~I0&I3)|(I1&~I2)|(~I0&~I2) ;
+	// CARRY = (1'b0) ? CIN : ((~I2&I3)|(I1&I3)|(~I0&I3)|(I1&~I2)|(~I0&~I2)) ;
+	// ../../rtl/berath_led.v:89
+
+    GTP_LUT5CARRY /* \N67.lt_1  */ #(
+            .INIT(32'b11011111000011011001000000001001), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("FALSE"), 
+            .I4_TO_LUT("FALSE"))
+        \N67.lt_1  (
+            .COUT (\N67.co [2] ),
+            .Z (),
+            .CIN (\N67.co [0] ),
+            .I0 (cnt_2ms[2]),
+            .I1 (cnt_2s[2]),
+            .I2 (cnt_2ms[3]),
+            .I3 (cnt_2s[3]),
+            .I4 (),
+            .ID ());
+	// LUT = (~I2&I3)|(I1&I3)|(~I0&I3)|(I1&~I2)|(~I0&~I2) ;
+	// CARRY = ((~I0&~I1&~I2&~I3)|(I0&I1&~I2&~I3)|(~I0&~I1&I2&I3)|(I0&I1&I2&I3)) ? CIN : ((~I2&I3)|(I1&I3)|(~I0&I3)|(I1&~I2)|(~I0&~I2)) ;
+	// ../../rtl/berath_led.v:89
+
+    GTP_LUT5CARRY /* \N67.lt_2  */ #(
+            .INIT(32'b11011111000011011001000000001001), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("FALSE"), 
+            .I4_TO_LUT("FALSE"))
+        \N67.lt_2  (
+            .COUT (\N67.co [4] ),
+            .Z (),
+            .CIN (\N67.co [2] ),
+            .I0 (cnt_2ms[4]),
+            .I1 (cnt_2s[4]),
+            .I2 (cnt_2ms[5]),
+            .I3 (cnt_2s[5]),
+            .I4 (),
+            .ID ());
+	// LUT = (~I2&I3)|(I1&I3)|(~I0&I3)|(I1&~I2)|(~I0&~I2) ;
+	// CARRY = ((~I0&~I1&~I2&~I3)|(I0&I1&~I2&~I3)|(~I0&~I1&I2&I3)|(I0&I1&I2&I3)) ? CIN : ((~I2&I3)|(I1&I3)|(~I0&I3)|(I1&~I2)|(~I0&~I2)) ;
+	// ../../rtl/berath_led.v:89
+
+    GTP_LUT5CARRY /* \N67.lt_3  */ #(
+            .INIT(32'b11011111000011011001000000001001), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("FALSE"), 
+            .I4_TO_LUT("FALSE"))
+        \N67.lt_3  (
+            .COUT (\N67.co [6] ),
+            .Z (),
+            .CIN (\N67.co [4] ),
+            .I0 (cnt_2ms[6]),
+            .I1 (cnt_2s[6]),
+            .I2 (cnt_2ms[7]),
+            .I3 (cnt_2s[7]),
+            .I4 (),
+            .ID ());
+	// LUT = (~I2&I3)|(I1&I3)|(~I0&I3)|(I1&~I2)|(~I0&~I2) ;
+	// CARRY = ((~I0&~I1&~I2&~I3)|(I0&I1&~I2&~I3)|(~I0&~I1&I2&I3)|(I0&I1&I2&I3)) ? CIN : ((~I2&I3)|(I1&I3)|(~I0&I3)|(I1&~I2)|(~I0&~I2)) ;
+	// ../../rtl/berath_led.v:89
+
+    GTP_LUT5CARRY /* \N67.lt_4  */ #(
+            .INIT(32'b11011111000011011001000000001001), 
+            .ID_TO_LUT("FALSE"), 
+            .CIN_TO_LUT("FALSE"), 
+            .I4_TO_CARRY("FALSE"), 
+            .I4_TO_LUT("FALSE"))
+        \N67.lt_4  (
+            .COUT (N68),
+            .Z (),
+            .CIN (\N67.co [6] ),
+            .I0 (cnt_2ms[8]),
+            .I1 (cnt_2s[8]),
+            .I2 (cnt_2ms[9]),
+            .I3 (cnt_2s[9]),
+            .I4 (),
+            .ID ());
+	// LUT = (~I2&I3)|(I1&I3)|(~I0&I3)|(I1&~I2)|(~I0&~I2) ;
+	// CARRY = ((~I0&~I1&~I2&~I3)|(I0&I1&~I2&~I3)|(~I0&~I1&I2&I3)|(I0&I1&I2&I3)) ? CIN : ((~I2&I3)|(I1&I3)|(~I0&I3)|(I1&~I2)|(~I0&~I2)) ;
+	// ../../rtl/berath_led.v:89
+
+    GTP_LUT3 /* N70 */ #(
+            .INIT(8'b10101100))
+        N70_vname (
+            .Z (N70),
+            .I0 (N64),
+            .I1 (N68),
+            .I2 (inc_dec_flag));
+    // defparam N70_vname.orig_name = N70;
+	// LUT = (I1&~I2)|(I0&I2) ;
+	// ../../rtl/berath_led.v:89
+
+    GTP_LUT4 /* N80_6 */ #(
+            .INIT(16'b0010000000000000))
+        N80_6 (
+            .Z (_N75),
+            .I0 (cnt_2us[1]),
+            .I1 (cnt_2us[4]),
+            .I2 (cnt_2us[5]),
+            .I3 (cnt_2us[6]));
+	// LUT = I0&~I1&I2&I3 ;
+
+    GTP_LUT4 /* N80_7 */ #(
+            .INIT(16'b0000001000000000))
+        N80_7 (
+            .Z (N80),
+            .I0 (cnt_2us[0]),
+            .I1 (cnt_2us[2]),
+            .I2 (cnt_2us[3]),
+            .I3 (_N75));
+	// LUT = I0&~I1&~I2&I3 ;
+
+    GTP_LUT4 /* N83_7 */ #(
+            .INIT(16'b0000000000001000))
+        N83_7 (
+            .Z (_N67),
+            .I0 (cnt_2ms[1]),
+            .I1 (cnt_2ms[2]),
+            .I2 (cnt_2ms[3]),
+            .I3 (cnt_2ms[4]));
+	// LUT = I0&I1&~I2&~I3 ;
+
+    GTP_LUT4 /* N83_8 */ #(
+            .INIT(16'b1000000000000000))
+        N83_8 (
+            .Z (_N68),
+            .I0 (cnt_2ms[5]),
+            .I1 (cnt_2ms[6]),
+            .I2 (cnt_2ms[7]),
+            .I3 (cnt_2ms[8]));
+	// LUT = I0&I1&I2&I3 ;
+
+    GTP_LUT4 /* N83_inv */ #(
+            .INIT(16'b0111111111111111))
+        N83_inv_vname (
+            .Z (N83_inv),
+            .I0 (cnt_2ms[0]),
+            .I1 (cnt_2ms[9]),
+            .I2 (_N67),
+            .I3 (_N68));
+    // defparam N83_inv_vname.orig_name = N83_inv;
+	// LUT = (~I3)|(~I2)|(~I1)|(~I0) ;
+
+    GTP_LUT2 /* N88_2 */ #(
+            .INIT(4'b0001))
+        N88_2 (
+            .Z (_N53),
+            .I0 (cnt_2s[3]),
+            .I1 (cnt_2s[4]));
+	// LUT = ~I0&~I1 ;
+
+    GTP_LUT4 /* N88_8 */ #(
+            .INIT(16'b1000000000000000))
+        N88_8 (
+            .Z (_N59),
+            .I0 (cnt_2s[5]),
+            .I1 (cnt_2s[6]),
+            .I2 (cnt_2s[7]),
+            .I3 (cnt_2s[8]));
+	// LUT = I0&I1&I2&I3 ;
+
+    GTP_LUT5 /* N88_9 */ #(
+            .INIT(32'b10000000000000000000000000000000))
+        N88_9 (
+            .Z (_N60),
+            .I0 (cnt_2s[0]),
+            .I1 (cnt_2s[1]),
+            .I2 (cnt_2s[2]),
+            .I3 (cnt_2s[9]),
+            .I4 (_N53));
+	// LUT = I0&I1&I2&I3&I4 ;
+
+    GTP_LUT5 /* N88_inv */ #(
+            .INIT(32'b01111111111111111111111111111111))
+        N88_inv_vname (
+            .Z (N88_inv),
+            .I0 (cnt_2s[5]),
+            .I1 (cnt_2s[6]),
+            .I2 (cnt_2s[7]),
+            .I3 (cnt_2s[8]),
+            .I4 (_N60));
+    // defparam N88_inv_vname.orig_name = N88_inv;
+	// LUT = (~I4)|(~I3)|(~I2)|(~I1)|(~I0) ;
+
+    GTP_LUT2 /* \N97[0]  */ #(
+            .INIT(4'b0100))
+        \N97[0]  (
+            .Z (N97[2]),
+            .I0 (N80),
+            .I1 (N6[2]));
+	// LUT = ~I0&I1 ;
+	// ../../rtl/berath_led.v:42
+
+    GTP_LUT2 /* \N100[0]  */ #(
+            .INIT(4'b1000))
+        \N100[0]  (
+            .Z (N100[3]),
+            .I0 (N21[3]),
+            .I1 (N83_inv));
+	// LUT = I0&I1 ;
+	// ../../rtl/berath_led.v:52
+
+    GTP_LUT2 /* \N103[0]  */ #(
+            .INIT(4'b1000))
+        \N103[0]  (
+            .Z (N103[3]),
+            .I0 (N45[3]),
+            .I1 (N88_inv));
+	// LUT = I0&I1 ;
+	// ../../rtl/berath_led.v:64
+
+    GTP_DFF_CE /* \cnt_2ms[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2ms[0]  (
+            .Q (cnt_2ms[0]),
+            .C (N0),
+            .CE (N80),
+            .CLK (nt_sys_clk),
+            .D (\cnt_2ms[0]_inv ));
+	// ../../rtl/berath_led.v:52
+
+    GTP_DFF_CE /* \cnt_2ms[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2ms[1]  (
+            .Q (cnt_2ms[1]),
+            .C (N0),
+            .CE (N80),
+            .CLK (nt_sys_clk),
+            .D (N21[1]));
+	// ../../rtl/berath_led.v:52
+
+    GTP_DFF_CE /* \cnt_2ms[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2ms[2]  (
+            .Q (cnt_2ms[2]),
+            .C (N0),
+            .CE (N80),
+            .CLK (nt_sys_clk),
+            .D (N21[2]));
+	// ../../rtl/berath_led.v:52
+
+    GTP_DFF_CE /* \cnt_2ms[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2ms[3]  (
+            .Q (cnt_2ms[3]),
+            .C (N0),
+            .CE (N80),
+            .CLK (nt_sys_clk),
+            .D (N100[3]));
+	// ../../rtl/berath_led.v:52
+
+    GTP_DFF_CE /* \cnt_2ms[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2ms[4]  (
+            .Q (cnt_2ms[4]),
+            .C (N0),
+            .CE (N80),
+            .CLK (nt_sys_clk),
+            .D (N21[4]));
+	// ../../rtl/berath_led.v:52
+
+    GTP_DFF_CE /* \cnt_2ms[5]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2ms[5]  (
+            .Q (cnt_2ms[5]),
+            .C (N0),
+            .CE (N80),
+            .CLK (nt_sys_clk),
+            .D (N100[5]));
+	// ../../rtl/berath_led.v:52
+
+    GTP_DFF_CE /* \cnt_2ms[6]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2ms[6]  (
+            .Q (cnt_2ms[6]),
+            .C (N0),
+            .CE (N80),
+            .CLK (nt_sys_clk),
+            .D (N100[6]));
+	// ../../rtl/berath_led.v:52
+
+    GTP_DFF_CE /* \cnt_2ms[7]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2ms[7]  (
+            .Q (cnt_2ms[7]),
+            .C (N0),
+            .CE (N80),
+            .CLK (nt_sys_clk),
+            .D (N100[7]));
+	// ../../rtl/berath_led.v:52
+
+    GTP_DFF_CE /* \cnt_2ms[8]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2ms[8]  (
+            .Q (cnt_2ms[8]),
+            .C (N0),
+            .CE (N80),
+            .CLK (nt_sys_clk),
+            .D (N100[8]));
+	// ../../rtl/berath_led.v:52
+
+    GTP_LUT1 /* \cnt_2ms[9:0]_inv  */ #(
+            .INIT(2'b01))
+        \cnt_2ms[9:0]_inv  (
+            .Z (\cnt_2ms[0]_inv ),
+            .I0 (cnt_2ms[0]));
+	// LUT = ~I0 ;
+
+    GTP_DFF_CE /* \cnt_2ms[9]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2ms[9]  (
+            .Q (cnt_2ms[9]),
+            .C (N0),
+            .CE (N80),
+            .CLK (nt_sys_clk),
+            .D (N100[9]));
+	// ../../rtl/berath_led.v:52
+
+    GTP_DFF_CE /* \cnt_2s[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2s[0]  (
+            .Q (cnt_2s[0]),
+            .C (N0),
+            .CE (N14),
+            .CLK (nt_sys_clk),
+            .D (\cnt_2s[0]_inv ));
+	// ../../rtl/berath_led.v:64
+
+    GTP_DFF_CE /* \cnt_2s[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2s[1]  (
+            .Q (cnt_2s[1]),
+            .C (N0),
+            .CE (N14),
+            .CLK (nt_sys_clk),
+            .D (N45[1]));
+	// ../../rtl/berath_led.v:64
+
+    GTP_DFF_CE /* \cnt_2s[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2s[2]  (
+            .Q (cnt_2s[2]),
+            .C (N0),
+            .CE (N14),
+            .CLK (nt_sys_clk),
+            .D (N45[2]));
+	// ../../rtl/berath_led.v:64
+
+    GTP_DFF_CE /* \cnt_2s[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2s[3]  (
+            .Q (cnt_2s[3]),
+            .C (N0),
+            .CE (N14),
+            .CLK (nt_sys_clk),
+            .D (N103[3]));
+	// ../../rtl/berath_led.v:64
+
+    GTP_DFF_CE /* \cnt_2s[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2s[4]  (
+            .Q (cnt_2s[4]),
+            .C (N0),
+            .CE (N14),
+            .CLK (nt_sys_clk),
+            .D (N45[4]));
+	// ../../rtl/berath_led.v:64
+
+    GTP_DFF_CE /* \cnt_2s[5]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2s[5]  (
+            .Q (cnt_2s[5]),
+            .C (N0),
+            .CE (N14),
+            .CLK (nt_sys_clk),
+            .D (N103[5]));
+	// ../../rtl/berath_led.v:64
+
+    GTP_DFF_CE /* \cnt_2s[6]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2s[6]  (
+            .Q (cnt_2s[6]),
+            .C (N0),
+            .CE (N14),
+            .CLK (nt_sys_clk),
+            .D (N103[6]));
+	// ../../rtl/berath_led.v:64
+
+    GTP_DFF_CE /* \cnt_2s[7]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2s[7]  (
+            .Q (cnt_2s[7]),
+            .C (N0),
+            .CE (N14),
+            .CLK (nt_sys_clk),
+            .D (N103[7]));
+	// ../../rtl/berath_led.v:64
+
+    GTP_DFF_CE /* \cnt_2s[8]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2s[8]  (
+            .Q (cnt_2s[8]),
+            .C (N0),
+            .CE (N14),
+            .CLK (nt_sys_clk),
+            .D (N103[8]));
+	// ../../rtl/berath_led.v:64
+
+    GTP_LUT1 /* \cnt_2s[9:0]_inv  */ #(
+            .INIT(2'b01))
+        \cnt_2s[9:0]_inv  (
+            .Z (\cnt_2s[0]_inv ),
+            .I0 (cnt_2s[0]));
+	// LUT = ~I0 ;
+
+    GTP_DFF_CE /* \cnt_2s[9]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2s[9]  (
+            .Q (cnt_2s[9]),
+            .C (N0),
+            .CE (N14),
+            .CLK (nt_sys_clk),
+            .D (N103[9]));
+	// ../../rtl/berath_led.v:64
+
+    GTP_DFF_C /* \cnt_2us[0]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2us[0]  (
+            .Q (cnt_2us[0]),
+            .C (N0),
+            .CLK (nt_sys_clk),
+            .D (\cnt_2us[0]_inv ));
+	// ../../rtl/berath_led.v:42
+
+    GTP_DFF_C /* \cnt_2us[1]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2us[1]  (
+            .Q (cnt_2us[1]),
+            .C (N0),
+            .CLK (nt_sys_clk),
+            .D (N6[1]));
+	// ../../rtl/berath_led.v:42
+
+    GTP_DFF_C /* \cnt_2us[2]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2us[2]  (
+            .Q (cnt_2us[2]),
+            .C (N0),
+            .CLK (nt_sys_clk),
+            .D (N97[2]));
+	// ../../rtl/berath_led.v:42
+
+    GTP_DFF_C /* \cnt_2us[3]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2us[3]  (
+            .Q (cnt_2us[3]),
+            .C (N0),
+            .CLK (nt_sys_clk),
+            .D (N6[3]));
+	// ../../rtl/berath_led.v:42
+
+    GTP_DFF_C /* \cnt_2us[4]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2us[4]  (
+            .Q (cnt_2us[4]),
+            .C (N0),
+            .CLK (nt_sys_clk),
+            .D (N6[4]));
+	// ../../rtl/berath_led.v:42
+
+    GTP_DFF_C /* \cnt_2us[5]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2us[5]  (
+            .Q (cnt_2us[5]),
+            .C (N0),
+            .CLK (nt_sys_clk),
+            .D (N97[5]));
+	// ../../rtl/berath_led.v:42
+
+    GTP_LUT1 /* \cnt_2us[6:0]_inv  */ #(
+            .INIT(2'b01))
+        \cnt_2us[6:0]_inv  (
+            .Z (\cnt_2us[0]_inv ),
+            .I0 (cnt_2us[0]));
+	// LUT = ~I0 ;
+
+    GTP_DFF_C /* \cnt_2us[6]  */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        \cnt_2us[6]  (
+            .Q (cnt_2us[6]),
+            .C (N0),
+            .CLK (nt_sys_clk),
+            .D (N97[6]));
+	// ../../rtl/berath_led.v:42
+
+    GTP_DFF_C /* inc_dec_flag */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        inc_dec_flag_vname (
+            .Q (inc_dec_flag),
+            .C (N0),
+            .CLK (nt_sys_clk),
+            .D (_N52));
+    // defparam inc_dec_flag_vname.orig_name = inc_dec_flag;
+	// ../../rtl/berath_led.v:76
+
+    GTP_LUT4 /* inc_dec_flag_ce_mux */ #(
+            .INIT(16'b0110110011001100))
+        inc_dec_flag_ce_mux (
+            .Z (_N52),
+            .I0 (N14),
+            .I1 (inc_dec_flag),
+            .I2 (_N59),
+            .I3 (_N60));
+	// LUT = (I1&~I3)|(I1&~I2)|(~I0&I1)|(I0&~I1&I2&I3) ;
+
+    GTP_DFF_C /* led */ #(
+            .GRS_EN("TRUE"), 
+            .INIT(1'b0))
+        led_vname (
+            .Q (nt_led),
+            .C (N0),
+            .CLK (nt_sys_clk),
+            .D (N70));
+    // defparam led_vname.orig_name = led;
+	// ../../rtl/berath_led.v:86
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="M14", PAP_IO_VCCIO="1.5", PAP_IO_STANDARD="LVCMOS15", PAP_IO_DRIVE="8", PAP_IO_PULLUP="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* led_obuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        led_obuf (
+            .O (led),
+            .I (nt_led));
+	// ../../rtl/berath_led.v:23
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="V9", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_PULLUP="TRUE" *)    GTP_INBUF /* sys_clk_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        sys_clk_ibuf (
+            .O (nt_sys_clk),
+            .I (sys_clk));
+	// ../../rtl/berath_led.v:20
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="C4", PAP_IO_VCCIO="1.8", PAP_IO_STANDARD="LVCMOS18", PAP_IO_PULLUP="TRUE" *)    GTP_INBUF /* sys_rst_n_ibuf */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        sys_rst_n_ibuf (
+            .O (nt_sys_rst_n),
+            .I (sys_rst_n));
+	// ../../rtl/berath_led.v:21
+
+
+endmodule
+

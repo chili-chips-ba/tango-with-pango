@@ -1,0 +1,114 @@
+//
+// Generated (version 2022.2-SP4.2<build 132111>) at Tue Sep 19 17:35:58 2023
+//
+
+module not_gate
+(
+    input [3:0] A,
+    output [3:0] Y
+);
+    wire [3:0] nt_A;
+    wire [3:0] nt_Y;
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="N5", PAP_IO_VCCIO="1.5", PAP_IO_STANDARD="LVCMOS15", PAP_IO_PULLUP="TRUE" *)    GTP_INBUF /* \A_ibuf[0]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        \A_ibuf[0]  (
+            .O (nt_A[0]),
+            .I (A[0]));
+	// ../../rtl/not_gate.v:20
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="P6", PAP_IO_VCCIO="1.5", PAP_IO_STANDARD="LVCMOS15", PAP_IO_PULLUP="TRUE" *)    GTP_INBUF /* \A_ibuf[1]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        \A_ibuf[1]  (
+            .O (nt_A[1]),
+            .I (A[1]));
+	// ../../rtl/not_gate.v:20
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="R7", PAP_IO_VCCIO="1.5", PAP_IO_STANDARD="LVCMOS15", PAP_IO_PULLUP="TRUE" *)    GTP_INBUF /* \A_ibuf[2]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        \A_ibuf[2]  (
+            .O (nt_A[2]),
+            .I (A[2]));
+	// ../../rtl/not_gate.v:20
+
+(* PAP_IO_DIRECTION="INPUT", PAP_IO_LOC="T7", PAP_IO_VCCIO="1.5", PAP_IO_STANDARD="LVCMOS15", PAP_IO_PULLUP="TRUE" *)    GTP_INBUF /* \A_ibuf[3]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .TERM_DDR("ON"))
+        \A_ibuf[3]  (
+            .O (nt_A[3]),
+            .I (A[3]));
+	// ../../rtl/not_gate.v:20
+
+    GTP_GRS GRS_INST (
+            .GRS_N (1'b1));
+
+    GTP_LUT1 /* \N0[0]  */ #(
+            .INIT(2'b01))
+        \N0[0]  (
+            .Z (nt_Y[0]),
+            .I0 (nt_A[0]));
+	// LUT = ~I0 ;
+
+    GTP_LUT1 /* \N0[1]  */ #(
+            .INIT(2'b01))
+        \N0[1]  (
+            .Z (nt_Y[1]),
+            .I0 (nt_A[1]));
+	// LUT = ~I0 ;
+
+    GTP_LUT1 /* \N0[2]  */ #(
+            .INIT(2'b01))
+        \N0[2]  (
+            .Z (nt_Y[2]),
+            .I0 (nt_A[2]));
+	// LUT = ~I0 ;
+
+    GTP_LUT1 /* \N0[3]  */ #(
+            .INIT(2'b01))
+        \N0[3]  (
+            .Z (nt_Y[3]),
+            .I0 (nt_A[3]));
+	// LUT = ~I0 ;
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="M14", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="8", PAP_IO_PULLUP="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* \Y_obuf[0]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \Y_obuf[0]  (
+            .O (Y[0]),
+            .I (nt_Y[0]));
+	// ../../rtl/not_gate.v:22
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="L14", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="8", PAP_IO_PULLUP="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* \Y_obuf[1]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \Y_obuf[1]  (
+            .O (Y[1]),
+            .I (nt_Y[1]));
+	// ../../rtl/not_gate.v:22
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="P15", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="8", PAP_IO_PULLUP="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* \Y_obuf[2]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \Y_obuf[2]  (
+            .O (Y[2]),
+            .I (nt_Y[2]));
+	// ../../rtl/not_gate.v:22
+
+(* PAP_IO_DIRECTION="OUTPUT", PAP_IO_LOC="P16", PAP_IO_VCCIO="3.3", PAP_IO_STANDARD="LVCMOS33", PAP_IO_DRIVE="8", PAP_IO_PULLUP="TRUE", PAP_IO_SLEW="SLOW" *)    GTP_OUTBUF /* \Y_obuf[3]  */ #(
+            .IOSTANDARD("DEFAULT"), 
+            .SLEW_RATE("SLOW"), 
+            .DRIVE_STRENGTH("8"))
+        \Y_obuf[3]  (
+            .O (Y[3]),
+            .I (nt_Y[3]));
+	// ../../rtl/not_gate.v:22
+
+
+endmodule
+

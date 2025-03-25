@@ -1,0 +1,1 @@
+.rtl_screen -top_module {ip_pll} -include_path {<E:/PDS/ip_pll/prj>} -design_files {<E:/PDS/ip_pll/rtl/ip_pll.v|work><E:/PDS/ip_pll/prj/ipcore/pll_clk/pll_clk.v|work>}

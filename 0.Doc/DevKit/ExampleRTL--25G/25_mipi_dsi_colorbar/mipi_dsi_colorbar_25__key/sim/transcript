@@ -1,0 +1,251 @@
+# Reading C:/modeltech64_10.4/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# do sim.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 16:30:38 on Dec 14,2022
+# vlog -reportprogress 300 -f file_list.f -l vlog.log 
+# -- Compiling module tb_mipi_dsi_colorbar_touch
+# -- Compiling module clock_gen
+# -- Compiling module key_debounce
+# -- Compiling module rst_ctrl
+# -- Compiling module crc16_d8
+# -- Compiling module ecc
+# -- Compiling module esc_lpdt_tx
+# -- Compiling module lcm_init
+# -- Compiling module lcm_reg_cfg
+# -- Compiling module lp_to_hs_clk
+# -- Compiling module mipi_dsi_rst_crtl
+# -- Compiling module crc16_d32
+# -- Compiling module mipi_dsi_hs_pkt
+# -- Compiling module packet_data_ctrl
+# -- Compiling module rgb2byte_4lane
+# -- Compiling module i2c_dri_m
+# -- Compiling module touch_dri
+# -- Compiling module touch_top
+# ** Error: (vlog-7) Failed to open design unit file "../rtl/drm_32x512.v" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)
+# -- Compiling module dsi_display
+# -- Compiling module lp_hs_delay_ctrl
+# -- Compiling module mipi_dsi_colorbar_touch
+# -- Compiling module mipi_phy_io_tx
+# -- Compiling module ipml_sdpram_v1_6_async_fifo_1024x32b
+# -- Compiling module ipml_fifo_ctrl_v1_3
+# -- Compiling module ipml_prefetch_fifo_v1_6_async_fifo_1024x32b
+# -- Compiling module ipml_fifo_v1_6_async_fifo_1024x32b
+# -- Compiling module async_fifo_1024x32b
+# -- Compiling module ipml_sdpram_v1_6_sync_fifo_256x32b
+# -- Compiling module ipml_prefetch_fifo_v1_6_sync_fifo_256x32b
+# -- Compiling module ipml_fifo_v1_6_sync_fifo_256x32b
+# -- Compiling module sync_fifo_256x32b
+# -- Compiling module pll_clk_hs
+# -- Compiling module pll_clk_pixel
+# -- Compiling module rom_1024x8b_lcm_para
+# -- Compiling module ipml_rom_v1_5_rom_1024x8b_lcm_para
+# -- Compiling module ipml_spram_v1_5_rom_1024x8b_lcm_para
+# -- Compiling module GTP_GRS
+# -- Compiling module GTP_CLKBUFG
+# -- Compiling module GTP_PLL_E1
+# -- Compiling module GTP_PLL_E2
+# -- Compiling module GTP_PLL_E3
+# -- Compiling module GTP_IOCLKBUF
+# -- Compiling module GTP_IOCLKDIV
+# -- Compiling module GTP_IOCLKDIV_E1
+# -- Compiling module GTP_CLKBUFGCE
+# -- Compiling module GTP_IOCLKDELAY
+# -- Compiling module GTP_OSERDES
+# -- Compiling module GTP_OSERDES_E1
+# -- Compiling module GTP_ISERDES
+# -- Compiling module GTP_ISERDES_E1
+# -- Compiling UDP INT_LUTMUX2_UDP
+# -- Compiling module GTP_IOBUF_TX_MIPI
+# -- Compiling module GTP_IOBUF_RX_MIPI
+# -- Compiling module GTP_OSC_E2
+# -- Compiling module GTP_OUTBUFDS
+# -- Compiling module GTP_OUTBUFTDS
+# -- Compiling module GTP_OUTBUFTCO
+# -- Compiling module GTP_DRM18K
+# -- Compiling module GTP_DRM9K
+# End time: 16:30:38 on Dec 14,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/modeltech64_10.4/win64/vlog failed.
+# Error in macro ./sim.tcl line 3
+# C:/modeltech64_10.4/win64/vlog failed.
+#     while executing
+# "vlog -f file_list.f -l vlog.log"
+do sim.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:39:10 on Dec 14,2022
+# vlog -reportprogress 300 -f file_list.f -l vlog.log 
+# -- Compiling module tb_mipi_dsi_colorbar_touch
+# -- Compiling module clock_gen
+# -- Compiling module key_debounce
+# -- Compiling module rst_ctrl
+# -- Compiling module crc16_d8
+# -- Compiling module ecc
+# -- Compiling module esc_lpdt_tx
+# -- Compiling module lcm_init
+# -- Compiling module lcm_reg_cfg
+# -- Compiling module lp_to_hs_clk
+# -- Compiling module mipi_dsi_rst_crtl
+# -- Compiling module crc16_d32
+# -- Compiling module mipi_dsi_hs_pkt
+# -- Compiling module packet_data_ctrl
+# -- Compiling module rgb2byte_4lane
+# -- Compiling module i2c_dri_m
+# -- Compiling module touch_dri
+# -- Compiling module touch_top
+# ** Error: (vlog-7) Failed to open design unit file "../rtl/drm_32x512.v" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)
+# -- Compiling module dsi_display
+# -- Compiling module lp_hs_delay_ctrl
+# -- Compiling module mipi_dsi_colorbar_touch
+# -- Compiling module mipi_phy_io_tx
+# -- Compiling module ipml_sdpram_v1_6_async_fifo_1024x32b
+# -- Compiling module ipml_fifo_ctrl_v1_3
+# -- Compiling module ipml_prefetch_fifo_v1_6_async_fifo_1024x32b
+# -- Compiling module ipml_fifo_v1_6_async_fifo_1024x32b
+# -- Compiling module async_fifo_1024x32b
+# -- Compiling module ipml_sdpram_v1_6_sync_fifo_256x32b
+# -- Compiling module ipml_prefetch_fifo_v1_6_sync_fifo_256x32b
+# -- Compiling module ipml_fifo_v1_6_sync_fifo_256x32b
+# -- Compiling module sync_fifo_256x32b
+# -- Compiling module pll_clk_hs
+# -- Compiling module pll_clk_pixel
+# -- Compiling module rom_1024x8b_lcm_para
+# -- Compiling module ipml_rom_v1_5_rom_1024x8b_lcm_para
+# -- Compiling module ipml_spram_v1_5_rom_1024x8b_lcm_para
+# -- Compiling module GTP_GRS
+# -- Compiling module GTP_CLKBUFG
+# -- Compiling module GTP_PLL_E1
+# -- Compiling module GTP_PLL_E2
+# -- Compiling module GTP_PLL_E3
+# -- Compiling module GTP_IOCLKBUF
+# -- Compiling module GTP_IOCLKDIV
+# -- Compiling module GTP_IOCLKDIV_E1
+# -- Compiling module GTP_CLKBUFGCE
+# -- Compiling module GTP_IOCLKDELAY
+# -- Compiling module GTP_OSERDES
+# -- Compiling module GTP_OSERDES_E1
+# -- Compiling module GTP_ISERDES
+# -- Compiling module GTP_ISERDES_E1
+# -- Compiling UDP INT_LUTMUX2_UDP
+# -- Compiling module GTP_IOBUF_TX_MIPI
+# -- Compiling module GTP_IOBUF_RX_MIPI
+# -- Compiling module GTP_OSC_E2
+# -- Compiling module GTP_OUTBUFDS
+# -- Compiling module GTP_OUTBUFTDS
+# -- Compiling module GTP_OUTBUFTCO
+# -- Compiling module GTP_DRM18K
+# -- Compiling module GTP_DRM9K
+# End time: 18:39:11 on Dec 14,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: C:/modeltech64_10.4/win64/vlog failed.
+# Error in macro ./sim.tcl line 3
+# C:/modeltech64_10.4/win64/vlog failed.
+#     while executing
+# "vlog -f file_list.f -l vlog.log"
+do sim.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 18:39:59 on Dec 14,2022
+# vlog -reportprogress 300 -f file_list.f -l vlog.log 
+# -- Compiling module tb_mipi_dsi_colorbar_touch
+# -- Compiling module clock_gen
+# -- Compiling module key_debounce
+# -- Compiling module rst_ctrl
+# -- Compiling module crc16_d8
+# -- Compiling module ecc
+# -- Compiling module esc_lpdt_tx
+# -- Compiling module lcm_init
+# -- Compiling module lcm_reg_cfg
+# -- Compiling module lp_to_hs_clk
+# -- Compiling module mipi_dsi_rst_crtl
+# -- Compiling module crc16_d32
+# -- Compiling module mipi_dsi_hs_pkt
+# -- Compiling module packet_data_ctrl
+# -- Compiling module rgb2byte_4lane
+# -- Compiling module i2c_dri_m
+# -- Compiling module touch_dri
+# -- Compiling module touch_top
+# -- Compiling module dsi_display
+# -- Compiling module lp_hs_delay_ctrl
+# -- Compiling module mipi_dsi_colorbar_touch
+# -- Compiling module mipi_phy_io_tx
+# -- Compiling module ipml_sdpram_v1_6_async_fifo_1024x32b
+# -- Compiling module ipml_fifo_ctrl_v1_3
+# -- Compiling module ipml_prefetch_fifo_v1_6_async_fifo_1024x32b
+# -- Compiling module ipml_fifo_v1_6_async_fifo_1024x32b
+# -- Compiling module async_fifo_1024x32b
+# -- Compiling module ipml_sdpram_v1_6_sync_fifo_256x32b
+# -- Compiling module ipml_prefetch_fifo_v1_6_sync_fifo_256x32b
+# -- Compiling module ipml_fifo_v1_6_sync_fifo_256x32b
+# -- Compiling module sync_fifo_256x32b
+# -- Compiling module pll_clk_hs
+# -- Compiling module pll_clk_pixel
+# -- Compiling module rom_1024x8b_lcm_para
+# -- Compiling module ipml_rom_v1_5_rom_1024x8b_lcm_para
+# -- Compiling module ipml_spram_v1_5_rom_1024x8b_lcm_para
+# -- Compiling module GTP_GRS
+# -- Compiling module GTP_CLKBUFG
+# -- Compiling module GTP_PLL_E1
+# -- Compiling module GTP_PLL_E2
+# -- Compiling module GTP_PLL_E3
+# -- Compiling module GTP_IOCLKBUF
+# -- Compiling module GTP_IOCLKDIV
+# -- Compiling module GTP_IOCLKDIV_E1
+# -- Compiling module GTP_CLKBUFGCE
+# -- Compiling module GTP_IOCLKDELAY
+# -- Compiling module GTP_OSERDES
+# -- Compiling module GTP_OSERDES_E1
+# -- Compiling module GTP_ISERDES
+# -- Compiling module GTP_ISERDES_E1
+# -- Compiling UDP INT_LUTMUX2_UDP
+# -- Compiling module GTP_IOBUF_TX_MIPI
+# -- Compiling module GTP_IOBUF_RX_MIPI
+# -- Compiling module GTP_OSC_E2
+# -- Compiling module GTP_OUTBUFDS
+# -- Compiling module GTP_OUTBUFTDS
+# -- Compiling module GTP_OUTBUFTCO
+# -- Compiling module GTP_DRM18K
+# -- Compiling module GTP_DRM9K
+# 
+# Top level modules:
+# 	tb_mipi_dsi_colorbar_touch
+# 	ipml_prefetch_fifo_v1_6_async_fifo_1024x32b
+# 	ipml_prefetch_fifo_v1_6_sync_fifo_256x32b
+# 	GTP_CLKBUFG
+# 	GTP_PLL_E2
+# 	GTP_PLL_E3
+# 	GTP_IOCLKDIV_E1
+# 	GTP_CLKBUFGCE
+# 	GTP_IOCLKDELAY
+# 	GTP_OSERDES_E1
+# 	GTP_ISERDES
+# 	GTP_ISERDES_E1
+# 	GTP_IOBUF_RX_MIPI
+# 	GTP_OSC_E2
+# 	GTP_OUTBUFDS
+# 	GTP_OUTBUFTDS
+# 	GTP_OUTBUFTCO
+# End time: 18:39:59 on Dec 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

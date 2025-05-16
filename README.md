@@ -3,7 +3,7 @@
 This is our sandbox for shaking out [PangoMicro](https://www.pangomicro.com/en) FPGAs.
 
 <p align="center">
-   <img width=500 src="0.doc\artwork\Tango-with-Pango.png">
+   <img width=500 src="0.Doc\artwork\Tango-with-Pango.png">
 </p>
 
 The first Pango chip we shall play with is **PGL25G** from the Logos family, featuring 25K LUT5. Logos family is pin-compatible with Xilinx Spartan7 LUT6 silicon. It is interesting that Pango LUT5-based achitecture is mid-ground beetween LUT4 and LUT6 camps.

@@ -4,7 +4,7 @@
 
 This project is a demonstration of a complex digital hardware/software system. 
 
-The hardware consists of a custom SoC with RISC-V CPU and our special _Video Controller_ that operates with _Mega Characters (MC)_, which are a close kin to the infamous _"Sprites"_. 
+The hardware consists of a custom SoC with RISC-V CPU and our special _Video Controller_ that operates with _Mega Characters (MC)_, which are akin to infamous _"Sprites"_. 
 
 The software is bare-metal, w/o an OS, and implements a well-known, classic game, now rotated by 90 degrees and mirror-duplicated. 
 
@@ -19,9 +19,9 @@ For the complete design detail (game logic, system block diagram, memory mapping
 
 Other than the expected changes related to constraints, pinouts, makefile etc., the operating clock frequency emerged as the main (and indeed unexpected) difference between these two designs.
 
-The original TetriSaraj ran on Artix-7 at `100MHz` w/o problems, even when built with openXC7 PNR, as opposed to Xilinx-proprietary Vivado. That was however far from possible on GateMate FPGA, where the `Fmax for the original design was 16MHz`, and for a reduced/optimized version barely reached 31 MHz, even at the highest VDD_CORE setting. 
+The original TetriSaraj ran on Artix-7 at `100MHz` w/o problems, even when built with openXC7 PNR, as opposed to Xilinx-proprietary Vivado. However, that was far from possible on GateMate FPGA, where the `Fmax for the original design was 16MHz`, and for a reduced/optimized version barely reached 31 MHz, even at the highest VDD_CORE setting. 
 
-With VGA sub-system needing at least 25MHz, we decided to scale down the clock of the entire (already reduced) system to the `25MHz`. This then caused multiple timing issues in the video generation section (such as within _vga_controller.v_ and _top.v_), calling for significant timing-driven adaptations, in some instances even an overhaul. 
+With VGA sub-system needing at least 25MHz, we decided to scale down the clock of the entire (already reduced) system to `25MHz`. This then caused multiple timing issues in the video generation section (such as within _vga_controller.v_ and _top.v_), calling for significant timing-driven adaptations, in some instances even an overhaul. 
 
 ## Hardware setup
 
